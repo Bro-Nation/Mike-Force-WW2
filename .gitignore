@@ -1,0 +1,10 @@
+sources/scratch.sqf
+mission/mission.sqm
+mission/description_map.inc
+mission/map_config/*
+mission/paradigm/*
+mission/map_config
+mission/paradigm
+build_output
+user_paths.py
+*.code-workspace
