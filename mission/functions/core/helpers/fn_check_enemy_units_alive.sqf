@@ -19,4 +19,4 @@
 params [
 	"_marker" // 0: STRING or ARRAY - marker name, location, trigger or [center, a, b, angle, isRectangle, c]
 ];
-(allUnits inAreaArray _marker) select {alive _x && side _x == east} isEqualTo []
+(allUnits inAreaArray _marker) select {alive _x && side _x == west} isEqualTo []

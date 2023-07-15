@@ -81,7 +81,7 @@ _taskDataStore setVariable ["destroy_targets", {
 		};
 	} forEach vn_mf_task_sup_cas_killTracker;
 
-	if (allUnits select {side _x == east} inAreaArray [_targetPos, 100, 100, 0, false] isEqualTo []) exitWith {
+	if (allUnits select {side _x == west} inAreaArray [_targetPos, 100, 100, 0, false] isEqualTo []) exitWith {
 		["CANCELED"] call _fnc_finishSubtask;
 		["CANCELED"] call _fnc_finishTask;
 	};

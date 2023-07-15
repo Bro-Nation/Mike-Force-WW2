@@ -66,7 +66,7 @@ _dataStore setVariable ["find_and_destroy", {
 
 	private _campPos = _taskDataStore getVariable "campPos";
 	private _validUnits = allUnits inAreaArray [_campPos, 100, 100, 0, true] select {
-		side group _x == east && alive _x && (_x distance2D _campPos) < 100 
+		side group _x == west && alive _x && (_x distance2D _campPos) < 100 
 	};
 	//Max 1 prevents it ever being 0 and causing a divide by 0 error
 	private _totalUnits = (_taskDataStore getVariable "defenseScaling") call para_g_fnc_ai_scale_to_player_count;

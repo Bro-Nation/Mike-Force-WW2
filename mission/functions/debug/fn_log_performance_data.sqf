@@ -16,11 +16,11 @@
 
 private _allUnits = allUnits;
 private _deadUnitCount = {!alive _x} count _allUnits;
-private _enemyUnitCount = {side _x == east} count _allUnits;
+private _enemyUnitCount = {side _x == west} count _allUnits;
 private _vehicleCount = count vehicles;
 private _groups = allGroups;
-private _groupsWestCount = {side _x == west} count _groups;
-private _groupsEast = _groups select {side _x == east};
+private _groupsWestCount = {side _x == independent} count _groups;
+private _groupsEast = _groups select {side _x == west};
 private _combatGroupCount = {combatBehaviour _x == "COMBAT"} count _groupsEast;
 
 

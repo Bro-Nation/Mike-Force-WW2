@@ -68,7 +68,7 @@ _dataStore setVariable ["patrol_area", {
 		//This isn't a good way of determining spawn position. It needs to be more realistic, and check if there's friendly units nearby.
 		private _spawnPosition = _patrolPosition getPos [1000, ((getMarkerPos "mf_respawn_greenhornets") getDir _patrolPosition) + random 45];
 		private _aircraftClass = selectRandom selectRandom [vehicles_nva_planes, vehicles_nva_helis];
-		private _spawnInfo = [_spawnPosition, _spawnPosition getDir _patrolPosition, _aircraftClass, east call para_g_fnc_create_group] call BIS_fnc_spawnVehicle;
+		private _spawnInfo = [_spawnPosition, _spawnPosition getDir _patrolPosition, _aircraftClass, west call para_g_fnc_create_group] call BIS_fnc_spawnVehicle;
 
 		_currentAircraft pushBack (_spawnInfo select 0);
 		_units append (_spawnInfo select 1);

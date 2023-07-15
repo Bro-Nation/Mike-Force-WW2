@@ -36,11 +36,11 @@ _taskDataStore setVariable ["INIT", {
 	private _relevantPlayerCount = (_relevantGroups call para_g_fnc_count_units_in_groups) max 1;
 	private _unitCount = if (vn_mf_param_ai_quantity == 0) then { 1 } else { _relevantPlayerCount * 1 };
 	private _squadComposition = [_unitCount] call vn_mf_fnc_squad_standard;
-	private _result = [_squadComposition, east, _spawnPos] call para_g_fnc_create_squad;
+	private _result = [_squadComposition, west, _spawnPos] call para_g_fnc_create_squad;
 
 	private _taxCollector = [
 		_result # 1, 
-		selectRandom getArray (missionConfigFile >> "gamemode" >> "units" >> "east" >> "vc_local_officers"),
+		selectRandom getArray (missionConfigFile >> "gamemode" >> "units" >> "west" >> "vc_local_officers"),
 		_spawnPos,
 		[],
 		5,

@@ -87,11 +87,11 @@ _taskDataStore setVariable ["defend_base", {
 	//Side check - downed players don't count. Nor do players in aircraft. Ground vehicles are fair game.
 	private _alivePlayersInArea = 
 		allPlayers inAreaArray _areaDescriptor
-		select {alive _x && side _x == west && !(vehicle _x isKindOf "Air") && !(_x getVariable ["vn_revive_incapacitated", false])};
+		select {alive _x && side _x == independent && !(vehicle _x isKindOf "Air") && !(_x getVariable ["vn_revive_incapacitated", false])};
 
 	private _aliveEnemyInArea = 
 		allUnits inAreaArray _areaDescriptor 
-		select {alive _x && side _x == east};
+		select {alive _x && side _x == west};
 
 	private _enemyOwnAreaStartTime = _taskDataStore getVariable "enemyOwnAreaStartTime";
 	//Enemy hold the area if no living players, and there's at least 1 guy in the area.

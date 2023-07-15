@@ -64,7 +64,7 @@ _taskDataStore setVariable ["INIT", {
 	for "_i" from 1 to _unitCount do {
 		private _spawnPosition = _minefieldCenter getPos [random 300+200, random 360];
 		if (!surfaceIsWater _spawnPosition) then {
-			private _group = [east] call para_g_fnc_create_group;
+			private _group = [west] call para_g_fnc_create_group;
 			_groups pushBack _group;
 			_units pushBack ([_group, selectRandom units_vc_marksman, _spawnPosition, [], 10, "NONE"] call para_g_fnc_create_unit);
 

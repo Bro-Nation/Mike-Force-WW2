@@ -53,7 +53,7 @@ _taskDataStore setVariable ["defend_village", {
 		private _squadComposition = [8] call vn_mf_fnc_squad_standard;
 
 		for "_i" from 1 to _squadCount do {
-			private _squad = [_squadComposition, east, _defendPos getPos [300 + random 100, random 360]] call para_g_fnc_create_squad;
+			private _squad = [_squadComposition, west, _defendPos getPos [300 + random 100, random 360]] call para_g_fnc_create_squad;
 			_groups pushBack (_squad # 1);
 			_units append (_squad # 0);
 		};

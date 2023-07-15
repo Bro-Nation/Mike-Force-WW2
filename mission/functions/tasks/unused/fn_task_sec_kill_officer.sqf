@@ -42,7 +42,7 @@ _dataStore setVariable ["INIT", {
 
 	private _buildings = [_spawnPos] call vn_mf_fnc_create_camp_buildings;
 
-	private _officerGroup = [east] call para_g_fnc_create_group;
+	private _officerGroup = [west] call para_g_fnc_create_group;
 	private _officer = [_officerGroup, selectRandom units_vc_officer, _spawnPos getPos [random 5, random 360], [], 5, "NONE"] call para_g_fnc_create_unit;
 
 	_taskDataStore setVariable ['campPos', _spawnPos];
