@@ -33,614 +33,179 @@ class vn_whitelisted_arsenal_loadouts
 
 				Entry:
 					{"vn_dp28",{3,-1,-1,6}}
+
+			SIDES:
+				WEST: Germany
+				EAST: N/A
+				INDEP: French, US
+				CIV: N/A
 		*/
 		//Reorganized based on West Rank Unlocks since East and Indi aren't used. I'm saving the old order just in case.
 		weapons[] =
 		{
-			//Rifles
-			{"vn_m1891",{2,-1,-1,3}}, //5rnd Bolt Action
-			{"vn_m38",{1,-1,-1,1}}, //5rnd Bolt Action
-			{"vn_m9130",{2,-1,-1,2}}, //5rnd Bolt Action
-			{"vn_m40a1",{-1,3,-1,-1}}, //5rnd Bolt Action
-			{"vn_m40a1_camo",{-1,4,-1,-1}}, //5rnd Bolt Action
-			{"vn_sks",{3,-1,-1,4}}, //10rnd Semi-auto
-			{"vn_sks_gl",{4,-1,-1,5}}, //10rnd Semi-auto, Rifle Grenades
-			{"vn_m14",{-1,1,3,-1}},
-			{"vn_m14_camo",{-1,5,-1,-1}},
-			//Assault Rifles
-			{"vn_m16",{-1,0,0,-1}}, //Default Green Hornet Loadout
-			{"vn_m16_camo",{-1,4,-1,-1}},
-			{"vn_m16_xm148",{-1,5,6,-1}}, //Underslung Grenade Launcher
-			{"vn_m63a",{-1,3,-1,-1}}, //30rnd Magazines
-			{"vn_type56",{0,3,2,4}},
-			{"vn_xm177_stock",{-1,5,2,-1}}, //Hard Butt-stock, Heavier
-			{"vn_xm177_stock_camo",{-1,5,2,-1}}, //Hard Butt-stock, Heavier
-			{"vn_xm177_short",{-1,3,3,-1}}, //Shorter Barrel
-			{"vn_xm177",{-1,0,1,-1}}, //Set to 0 for the default loadout, but I think the hard butt-stock should be the default
-			{"vn_xm177_camo",{-1,5,-1,-1}},
-			{"vn_xm177_fg",{-1,5,-1,-1}}, //Foregrip
-			{"vn_xm177_xm148",{-1,6,6,-1}}, //Underbarrel Grenade Launcher
-			{"vn_xm177_xm148_camo",{-1,6,-1,-1}}, //Underbarrel Grenade Launcher
-			//Carbine
-			{"vn_m1carbine",{0,0,0,0}}, //Default Spike Team Loadout
-			{"vn_m1carbine_gl",{5,1,-1,5}}, //Rifle Grenades
-			{"vn_m2carbine",{1,1,1,1}}, //Automatic
-			{"vn_m2carbine_gl",{5,2,-1,5}}, //Automatic, Rifle Grenades
-			{"vn_m3carbine",{4,4,4,-1}}, //Automatic, Integrated Night Vision
-			{"vn_m4956",{4,-1,-1,4}},
-			{"vn_m4956_gl",{5,-1,-1,5}}, //Rifle Grenades
-			//Light Machine Guns
-			{"vn_rpd_shorty",{-1,4,4,-1}},
-			{"vn_rpd_shorty_01",{-1,4,4,-1}},
-			{"vn_rpd",{4,-1,-1,-1}},
-			{"vn_dp28",{3,-1,-1,3}},
-			{"vn_m60_shorty",{-1,2,2,-1}},
-			{"vn_m60_shorty_camo",{-1,3,3,-1}},
-			{"vn_m60",{-1,0,0,-1}}, //Better Iron Sights
-			{"vn_pk",{4,-1,-1,-1}},
-			//1.1 Content
-			{"vn_m63a_cdo",{-1,6,-1,-1}}, //150rnd
-			{"vn_m63a_lmg",{-1,4,-1,-1}}, //100rnd, Longer Barrel
-			//---
-			//Submachine Guns
-			{"vn_k50m",{3,-1,-1,-1}},
-			{"vn_m3a1",{-1,0,0,0}}, //Default ACAV loadout
-			{"vn_m3sd",{-1,0,0,0}}, //Not available in arsenal
-			{"vn_m45",{-1,3,3,-1}},
-			{"vn_m45_camo",{-1,5,6,-1}},
-			{"vn_m45_fold",{-1,4,4,-1}},
-			{"vn_mat49",{-1,2,2,2}},
-			{"vn_mat49_f",{-1,1,1,1}},
-			{"vn_mat49_vc",{0,-1,-1,0}}, //Longer Barrel
-			{"vn_mc10",{-1,4,4,-1}},
-			{"vn_mc10_sd",{-1,5,6,-1}}, //Not found in arsenal
-			{"vn_mp40",{2,-1,-1,3}},
-			{"vn_pps43",{2,-1,-1,2}}, //No Butt-stock
-			{"vn_pps52",{2,-1,-1,2}}, //Butt-stock
-			{"vn_ppsh41",{3,-1,-1,2}},
-			{"vn_sten",{-1,0,0,0}},
-			{"vn_sten_sd",{-1,0,0,0}}, //Not found in arsenal
-			//1.1 Content
-			{"vn_vz61",{-1,2,-1,-1}},
-			{"vn_m1928_tommy",{-1,4,-1,-1}}, //Foregrip
-			{"vn_m1928a1_tommy",{-1,3,-1,-1}}, //More range???
-			{"vn_m1a1_tommy",{-1,2,-1,-1}},
-			{"vn_m1a1_tommy_so",{-1,1,-1,-1}}, //Shorter, Weighs the same???
-			{"vn_mpu",{-1,2,-1,-1}},
-			//---
-			//Shotguns
-			{"vn_izh54",{1,-1,0,0}}, //Double Barrel
-			{"vn_izh54_shorty",{2,-1,2,2}}, //Double Barrel
-			{"vn_m1897",{-1,0,1,-1}}, //6rnd Pump Action
-			//Sidearm
-			{"vn_fkb1_pm",{-1,3,3,-1}}, //Flashlight
-			{"vn_fkb1_pm_sd",{-1,4,4,-1}}, //Not found in arsenal
-			{"vn_mx991_m1911",{-1,3,3,-1}}, //Flashlight
-			{"vn_mx991_m1911_sd",{-1,4,4,-1}}, //Not found in arsenal
-			{"vn_welrod",{-1,3,-1,-1}}, //Bolt action meme pistol
-			{"vn_pm",{3,-1,-1,-1}},
-			{"vn_pm_sd",{3,-1,-1,-1}}, //Not found in arsenal
-			{"vn_tt33",{0,-1,-1,-1}},
-			{"vn_hd",{-1,4,5,-1}},
-			{"vn_hp",{-1,3,5,-1}},
-			{"vn_m1911",{-1,2,2,-1}},
-			{"vn_mk22",{-1,5,-1,-1}},
-			{"vn_m712",{4,-1,-1,4}}, //20rnd Magazine
-			{"vn_izh54_p",{4,-1,4,4}}, //Shotgun
-			{"vn_m10",{-1,1,1,-1}}, //Revolver (Need to check reload speed)
-			{"vn_m10_sd",{-1,1,1,-1}}, //Not found in arsenal
-			{"vn_m1895",{0,-1,-1,1}}, //Revolver
-			{"vn_p38s",{-1,0,0,0}}, //Revolver
-			//1.1 Content
-			{"vn_vz61_p",{-1,4,-1,-1}}, //Sidearm SMG
-			//1.2 Content
-			{"vn_m1918",{-1,3,2,-1}},
-			{"vn_m1_garand",{-1,0,0,-1}},
-			{"vn_m1_garand_gl",{-1,1,1,-1}},
-			{"vn_m16_xm148",{-1,4,4,-1}},
-			{"vn_m16_m203",{-1,3,4,-1}},
-			{"vn_m16_m203_camo",{-1,5,6,-1}},
-			{"vn_xm16e1",{-1,0,0,-1}},
-			{"vn_xm16e1_xm148",{-1,4,5,-1}},
-			{"vn_xm177e1",{-1,1,1,-1}},
-			{"vn_xm177e1_camo",{-1,2,2,-1}},
-			{"vn_gau5a",{-1,2,2,-1}},
-			{"vn_m14a1",{-1,2,-1,-1}},
-			{"vn_f1_smg",{-1,1,2,-1}},
-			{"vn_l1a1_01",{4,-1,4,4}},
-			{"vn_l1a1_01_camo",{-1,1,1,-1}},
-			{"vn_l1a1_01_gl",{-1,2,2,-1}},
-			{"vn_l1a1_02",{-1,1,1,-1}},
-			{"vn_l1a1_02_camo",{-1,2,2,-1}},
-			{"vn_l1a1_02_gl",{-1,3,3,-1}},
-			{"vn_l1a1_03",{-1,4,4,-1}},
-			{"vn_l1a1_03_camo",{-1,5,5,-1}},
-			{"vn_l1a1_xm148",{-1,4,4,-1}},
-			{"vn_l1a1_xm148_camo",{-1,5,5,-1}},
-			{"vn_l2a1_01",{-1,3,3,-1}},
-			{"vn_vz54",{2,-1,-1,-1}},
-			{"vn_m16_usaf",{-1,0,0,-1}},
-			{"vn_m16_usaf_bayo",{-1,1,1,-1}},
-			{"vn_m16_usaf_mrk",{-1,2,2,-1}},
-			{"vn_m16_usaf_sniper",{-1,3,3,-1}},
-			{"vn_m16_usaf_nvg",{-1,4,4,-1}},
-			{"vn_xm16e1_bayo",{-1,1,1,-1}},
-			{"vn_xm16e1_mrk",{-1,2,2,-1}},
-			{"vn_xm16e1_sniper",{-1,3,3,-1}},
-			{"vn_xm16e1_nvg",{-1,4,4,-1}},
-			{"vn_gau5a_mrk",{-1,3,3,-1}},
-			{"vn_m1_garand_bayo",{-1,2,2,-1}},
-			{"vn_m1_garand_sniper",{-1,3,3,-1}},
-			{"vn_xm177e1_mrk",{-1,3,3,-1}},
-			{"vn_xm177e1_sniper",{-1,4,4,-1}},
-			{"vn_xm177e1_nvg",{-1,5,5,-1}},
-			{"vn_f1_smg_bayo",{-1,2,3,-1}},
-			{"vn_l1a1_01",{4,-1,4,4}},
-			{"vn_l1a1_01_mrk",{4,-1,4,4}},
-			{"vn_l1a1_01_camo",{4,-1,4,4}},
-			{"vn_l1a1_01_bayo",{4,-1,4,4}},
-			{"vn_l1a1_01_gl",{4,-1,4,4}},
-			{"vn_l1a1_02",{4,-1,4,4}},
-			{"vn_l1a1_02_mrk",{4,-1,4,4}},
-			{"vn_l1a1_02_camo",{4,-1,4,4}},
-			{"vn_l1a1_02_bayo",{4,-1,4,4}},
-			{"vn_l1a1_02_gl",{4,-1,4,4}},
-			{"vn_l1a1_03",{4,-1,4,4}},
-			{"vn_l1a1_03_camo",{4,-1,4,4}},
-			{"vn_l1a1_xm148",{4,-1,4,4}},
-			{"vn_l1a1_xm148_camo",{4,-1,4,4}},
-			{"vn_l2a1_01",{4,-1,4,4}},
-			{"vn_m14a1_camo",{-1,3,-1,-1}},
-			{"vn_m14a1_sniper",{-1,4,-1,-1}},
-			{"vn_m14a1_nvg",{-1,5,-1,-1}},
-			{"vn_m14a1_bipod",{-1,3,-1,-1}},
-			{"vn_m1918_bipod",{-1,4,3,-1}},
-			{"vn_vz54_sniper",{3,-1,-1,-1}},
-			//Launchers
-			{"vn_m72",{-1,0,0,-1}}, //Single-Use
-			{"vn_m79",{-1,0,0,-1}}, //Grenade Launcher, Primary Slot
-			{"vn_m79_p",{-1,4,-1,-1}}, //Grenade Launcher, Smaller, Sidearm Slot
-			{"vn_rpg2",{0,-1,-1,0}}, //Smaller Warheads
-			{"vn_rpg7",{2,-1,-1,-1}},
-			// {"vn_sa7",{4,-1,-1,-1}}, //AA Launcher
-			// {"vn_sa7b",{5,-1,-1,-1}}, //AA Launcher, More Impact
-			//Other
-			{"vn_mx991",{0,0,0,0}}, //Flashlight, Sidearm Slot
-			{"vn_mx991_red",{0,1,1,1}}, //Flashlight, Sidearm Slot
-			{"vn_fkb1",{0,0,0,0}}, //Flashlight, Sidearm Slot
-			{"vn_fkb1_red",{0,1,1,1}}, //Flashlight, Sidearm Slot
-			{"vn_m127",{-1,0,0,-1}}, //Flare launcher, Launcher
-			//1.1 Content
-			{"vn_mk1_udg",{-1,2,-1,-1}},
-			//--
-			//Melee Weapons:
-			{"vn_m_axe_01",{0,0,0,0}},
-			{"vn_m_axe_fire",{0,0,0,0}},
-			{"vn_m_bayo_carbine",{0,0,0,0}},
-			{"vn_m_bayo_m14",{0,0,0,0}},
-			{"vn_m_bayo_m16",{0,0,0,0}},
-			{"vn_m_bayo_m1897",{0,0,0,0}},
-			{"vn_m_bayo_m4956",{0,0,0,0}},
-			{"vn_m_bolo_01",{0,0,0,0}},
-			{"vn_m_fighting_knife_01",{0,0,0,0}},
-			{"vn_m_hammer",{0,0,0,0}},
-			{"vn_m_m51_etool_01",{0,0,0,0}},
-			{"vn_m_machete_01",{0,0,0,0}},
-			{"vn_m_machete_02",{0,0,0,0}},
-			{"vn_m_mk2_knife_01",{0,0,0,0}},
-			{"vn_m_shovel_01",{0,0,0,0}},
-			{"vn_m_typeivaxe_01",{0,0,0,0}},
-			{"vn_m_vc_knife_01",{0,0,0,0}},
-			{"vn_m_wrench_01",{0,0,0,0}},
-			// 1.3 content
-			{"vn_b_melee_m43_etool_01",{-1,0,0,-1}},
-			{"vn_b_melee_m1903",{0,0,0,0}},
-			{"vn_b_melee_k98k",{0,-1,-1,0}},
-			{"vn_b_melee_m36",{0,0,0,0}},
-			{"vn_type64",{5,-1,-1,6}},
-			{"vn_ppk",{1,2,2,0}},
-			{"vn_ppk_sd",{4,4,4,5}},
-			{"vn_p38",{1,1,1,1}},
-			{"vn_p38_sd",{5,5,5,6}},
-			{"vn_hp_sd",{-1,6,6,-1}},
-			{"vn_type64_smg",{6,6,-1,-1}},
-			{"vn_type64_f_smg",{6,6,-1,-1}},
-			{"vn_l2a3",{-1,2,2,-1}},
-			{"vn_l2a3_f",{-1,3,3,-1}},
-			{"vn_l34a1",{-1,4,4,-1}},
-			{"vn_l34a1_f",{-1,5,5,-1}},
-			{"vn_l34a1_xm148",{-1,6,6,-1}},
-			{"vn_kbkg",{2,-1,-1,4}},
-			{"vn_kbkg_gl",{3,-1,-1,6}},
-			{"vn_ak_01",{0,4,4,2}},
-			{"vn_xm177_m203",{-1,5,5,-1}},
-			{"vn_xm177_m203_camo",{-1,6,6,-1}},
-			{"vn_m1903",{0,0,0,0}},
-			{"vn_m1903_sniper",{1,1,1,1}},
-			{"vn_m1903_bayo",{1,1,1,1}},
-			{"vn_m1903_gl",{2,2,2,2}},
-			{"vn_svd",{5,-1,-1,-1}},
-			{"vn_svd_sniper",{6,-1,-1,-1}},
-			{"vn_svd_sniper_camo",{6,-1,-1,-1}},
-			{"vn_m36",{0,0,0,0}},
-			{"vn_m36_bayo",{0,0,0,0}},
-			{"vn_m36_camo",{1,1,1,1}},
-			{"vn_k98k",{0,-1,0,0}},
-			{"vn_k98k_bayo",{0,-1,0,0}},
-			{"vn_k98k_mrk",{2,-1,2,2}},
-			{"vn_k98k_mrk_camo",{3,-1,3,3}},
-			{"vn_m14a1_shorty",{-1,4,4,-1}},
-			{"vn_m14a1_shorty_fs",{-1,5,5,-1}},
-			{"vn_m1carbine_shorty",{-1,6,6,-1}},
-			{"vn_l4",{-1,2,-1,-1}},
-			{"vn_m20a1b1_01",{-1,3,3,-1}},
-			{"vn_mg42",{2,-1,-1,4}},
-			{"vn_camera_01",{-1,1,1,-1}}
+			{"SPE_P08"                                   ,{0, -1, -1, 1}},
+			{"SPE_M1911"                                 ,{-1, -1, 0, 1}},
+			{"SPE_MP40"                                  ,{0, -1, -1, 1}},
+			{"SPE_M3_GreaseGun"                          ,{-1, -1, 0, 1}},
+			{"SPE_Sten_Mk2"                              ,{-1, -1, 0, 1}},
+			{"SPE_M1A1_Thompson"                         ,{-1, -1, 0, 1}},
+			{"SPE_K98"                                   ,{0, -1, -1, 1}},
+			{"SPE_M1903A3_Springfield"                   ,{-1, -1, 0, 1}},
+			{"SPE_G43"                                   ,{0, -1, -1, 1}},
+			{"SPE_M1_Garand"                             ,{-1, -1, 0, 1}},
+			{"SPE_M1_Carbine"                            ,{-1, -1, 0, 1}},
+			{"SPE_STG44"                                 ,{0, -1, -1, 1}},
+			{"SPE_MG42"                                  ,{0, -1, -1, 1}},
+			{"SPE_MG34"                                  ,{0, -1, -1, 1}},
+			{"SPE_M1919A4"                               ,{-1, -1, 0, 1}},
+			{"SPE_M1918A2_BAR"                           ,{-1, -1, 0, 1}},
+			{"SPE_FM_24_M29"                             ,{-1, -1, 0, 1}},
+			{"SPE_K98ZF39"                               ,{0, -1, -1, 1}},
+			{"SPE_M1903A4_Springfield"                   ,{-1, -1, 0, 1}},
+			{"SPE_PzFaust_30m"                           ,{0, -1, -1, 1}},
+			{"SPE_M1A1_Bazooka"                          ,{-1, -1, 0, 1}},
+			{"SPE_Sten_Mk2_Suppressed"                   ,{-1, -1, 0, 1}},
+			{"SPE_M3_GreaseGun_Suppressed"               ,{-1, -1, 0, 1}},
+			{"SPE_K98_Bayonet"                           ,{0, -1, -1, 1}},
+			{"SPE_K98_GW"                                ,{0, -1, -1, 1}},
+			{"SPE_K98_Late"                              ,{0, -1, -1, 1}},
+			{"SPE_K98_Late_altReload1"                   ,{0, -1, -1, 1}},
+			{"SPE_K98_Late_Bayonet"                      ,{0, -1, -1, 1}},
+			{"SPE_K98_Late_GW"                           ,{0, -1, -1, 1}},
+			{"SPE_M1903A3_Springfield_M1_Bayonet"        ,{-1, -1, 0, 1}},
+			{"SPE_M1903A3_Springfield_M1905_Bayonet"     ,{-1, -1, 0, 1}},
+			{"SPE_M1903A3_Springfield_M1_GL"             ,{-1, -1, 0, 1}},
+			{"SPE_M1_Garand_Bayonet"                     ,{-1, -1, 0, 1}},
+			{"SPE_M1_Garand_M1905_Bayonet"               ,{-1, -1, 0, 1}},
+			{"SPE_M1_Garand_M7"                          ,{-1, -1, 0, 1}},
+			{"SPE_M1_Carbine_M8"                         ,{-1, -1, 0, 1}},
+			{"SPE_M2_Flamethrower"                       ,{-1, -1, 0, 1}},
+			{"SPE_Flammenwerfer41"                       ,{0, -1, -1, 1}},
+			{"SPE_M1919A6"                               ,{-1, -1, 0, 1}},
+			{"SPE_Fusil_Mle_208_12"                      ,{-1, -1, 0, 1}},
+			{"SPE_Fusil_Mle_208_12_Sawedoff"             ,{-1, -1, 0, 1}},
+			{"SPE_PzFaust_60m"                           ,{0, -1, -1, 1}},
+			{"SPE_Faustpatrone"                          ,{0, -1, -1, 1}}
 			//---
 		};
 
 		magazines[] =
 		{
-			//Rifle Grenades
-			{"vn_22mm_cs_mag",{0,-1,-1,-1}},
-			{"vn_22mm_he_mag",{0,-1,-1,-1}},
-			{"vn_22mm_lume_mag",{0,-1,-1,-1}},
-			{"vn_22mm_m17_frag_mag",{0,-1,-1,-1}},
-			{"vn_22mm_m19_wp_mag",{0,-1,-1,-1}},
-			{"vn_22mm_m1a2_frag_mag",{0,-1,-1,-1}},
-			{"vn_22mm_m22_smoke_mag",{0,-1,-1,-1}},
-			{"vn_22mm_m60_frag_mag",{-1,1,1,-1}},
-			{"vn_22mm_m60_heat_mag",{-1,2,2,-1}},
-			{"vn_22mm_m9_heat_mag",{0,-1,-1,-1}},
-			//40mm Grenader Launcher Ammo
-			{"vn_40mm_m381_he_mag",{-1,0,0,-1}},
-			{"vn_40mm_m397_ab_mag",{-1,2,3,-1}},
-			{"vn_40mm_m406_he_mag",{-1,1,1,-1}},
-			{"vn_40mm_m433_hedp_mag",{-1,4,5,-1}},
-			{"vn_40mm_m576_buck_mag",{-1,3,4,-1}},
-			{"vn_40mm_m583_flare_w_mag",{-1,0,0,-1}},
-			{"vn_40mm_m651_cs_mag",{-1,5,6,-1}},
-			{"vn_40mm_m661_flare_g_mag",{-1,1,1,-1}},
-			{"vn_40mm_m662_flare_r_mag",{-1,2,2,-1}},
-			{"vn_40mm_m680_smoke_w_mag",{-1,0,0,-1}},
-			{"vn_40mm_m682_smoke_r_mag",{-1,1,1,-1}},
-			{"vn_40mm_m695_flare_y_mag",{-1,3,3,-1}},
-			{"vn_40mm_m715_smoke_g_mag",{-1,1,1,-1}},
-			{"vn_40mm_m716_smoke_y_mag",{-1,2,2,-1}},
-			{"vn_40mm_m717_smoke_p_mag",{-1,2,2,-1}},
-
-			//Rifle Cartridge
-				//Clips
-				{"vn_m38_mag",{2,-1,-1,3}},
-				{"vn_m38_t_mag",{2,-1,-1,3}},
-				{"vn_m40a1_mag",{-1,4,-1,-1}},
-				{"vn_m40a1_t_mag",{-1,4,-1,-1}},
-				{"vn_sks_mag",{4,-1,-1,5}},
-				{"vn_sks_t_mag",{4,-1,-1,5}},
-				//Mags
-				{"vn_dp28_mag",{3,-1,-1,3}},
-				{"vn_m14_10_mag",{-1,5,3,-1}},
-				{"vn_m14_10_t_mag",{-1,5,4,-1}},
-				{"vn_m14_mag",{-1,5,4,-1}},
-				{"vn_m14_t_mag",{-1,5,5,-1}},
-				{"vn_m16_20_mag",{-1,0,6,-1}},
-				{"vn_m16_20_t_mag",{-1,0,6,-1}},
-				{"vn_m16_30_mag",{-1,4,6,-1}},
-				{"vn_m16_30_t_mag",{-1,4,6,-1}},
-				{"vn_m16_40_mag",{-1,6,6,-1}},
-				{"vn_m16_40_t_mag",{-1,6,6,-1}},
-				{"vn_m4956_10_mag",{5,-1,-1,5}},
-				{"vn_m4956_10_t_mag",{5,-1,-1,5}},
-				{"vn_m60_100_mag",{-1,3,3,-1}},
-				{"vn_m63a_30_mag",{-1,3,-1,-1}},
-				{"vn_m63a_30_t_mag",{-1,4,-1,-1}},
-				{"vn_pk_100_mag",{4,-1,-1,-1}},
-				{"vn_rpd_100_mag",{4,4,4,-1}},
-				{"vn_rpd_125_mag",{4,4,4,-1}},
-				{"vn_type56_mag",{0,3,2,4}},
-				{"vn_type56_t_mag",{1,4,3,5}},
-			//Pistol Cartridge
-				//Sidearm Mags
-				{"vn_hd_mag",{-1,4,5,-1}},
-				{"vn_hp_mag",{-1,4,5,-1}},
-				{"vn_m1911_mag",{-1,4,4,-1}},
-				{"vn_m712_mag",{4,-1,-1,4}},
-				{"vn_mk22_mag",{-1,5,-1,-1}},
-				{"vn_pm_mag",{3,4,4,3}},
-				{"vn_tt33_mag",{0,-1,-1,1}},
-				{"vn_welrod_mag",{-1,3,-1,-1}},
-				//Primary Mags
-				{"vn_carbine_15_mag",{5,0,4,5}},
-				{"vn_carbine_30_mag",{5,4,4,5}},
-				{"vn_carbine_15_t_mag",{5,0,4,5}},
-				{"vn_carbine_30_t_mag",{5,4,4,5}},
-				{"vn_m3a1_mag",{-1,0,1,1}},
-				{"vn_m3a1_t_mag",{-1,0,2,2}},
-				{"vn_m45_mag",{-1,5,6,-1}},
-				{"vn_m45_t_mag",{-1,5,6,-1}},
-				{"vn_mat49_mag",{-1,2,2,2}},
-				{"vn_mat49_t_mag",{-1,2,2,2}},
-				{"vn_mat49_vc_mag",{0,-1,-1,0}}, //Not sure what this is
-				{"vn_mc10_mag",{-1,5,6,-1}},
-				{"vn_mc10_t_mag",{-1,5,6,-1}},
-				{"vn_mp40_mag",{2,-1,-1,3}},
-				{"vn_mp40_t_mag",{2,-1,-1,3}},
-				{"vn_pps_mag",{3,-1,-1,3}},
-				{"vn_pps_t_mag",{4,-1,-1,4}},
-				{"vn_ppsh41_35_mag",{3,-1,-1,2}},
-				{"vn_ppsh41_35_t_mag",{3,-1,-1,2}},
-				{"vn_ppsh41_71_mag",{3,-1,-1,3}},
-				{"vn_ppsh41_71_t_mag",{4,-1,-1,4}},
-				{"vn_sten_mag",{-1,1,1,1}},
-				{"vn_sten_t_mag",{-1,2,2,2}},
-			//Revolver Ammo
-			{"vn_m10_mag",{-1,1,1,0}},
-			{"vn_m1895_mag",{0,-1,-1,1}}, //7rnds
-			//Shotgun Ammo
-			{"vn_izh54_mag",{4,-1,4,4}},
-			{"vn_izh54_so_mag",{4,-1,4,4}}, //Sawed-off Rounds, I know it doesn't make sense
-			{"vn_m1897_buck_mag",{-1,0,1,-1}},
-			{"vn_m1897_fl_mag",{-1,2,3,-1}},
-			//Grenades
-			{"vn_chicom_grenade_mag",{0,-1,-1,0}}, //Frag
-			{"vn_f1_grenade_mag",{0,-1,-1,0}}, //Frag
-			{"vn_t67_grenade_mag",{2,-1,-1,-1}}, //Frag
-			{"vn_rg42_grenade_mag",{2,-1,-1,-1}}, //Frag
-			{"vn_rgd33_grenade_mag",{1,-1,-1,-1}}, //Frag
-			{"vn_rgd5_grenade_mag",{4,-1,-1,-1}}, //Frag
-			{"vn_v40_grenade_mag",{-1,3,4,-1}}, //Frag
-			{"vn_m61_grenade_mag",{-1,0,0,-1}}, //Standard US Frag
-			{"vn_m67_grenade_mag",{-1,1,2,-1}}, //Improved US Frag
-			{"vn_rkg3_grenade_mag",{5,-1,-1,-1}}, //HEAT (Anti-Tank) Grenade
-			{"vn_molotov_grenade_mag",{0,-1,-1,0}}, //Incendiary, Contact
-			{"vn_m14_grenade_mag",{-1,4,5,-1}}, //Incendiary
-			{"vn_m34_grenade_mag",{-1,0,6,-1}}, //White Phosphorus
-			{"vn_m7_grenade_mag",{-1,3,4,-1}}, //CS Gas
-			{"vn_m18_green_mag",{-1,0,3,-1}}, //Smoke
-			{"vn_m18_purple_mag",{-1,0,1,-1}}, //Smoke
-			{"vn_m18_red_mag",{-1,0,1,-1}}, //Smoke
-			{"vn_m18_white_mag",{-1,0,0,-1}}, //Smoke
-			{"vn_m18_yellow_mag",{-1,0,2,-1}}, //Smoke
-			{"vn_rdg2_mag",{0,-1,-1,-1}}, //Smoke, Non-US, White
-			//Rockets/Missiles
-			{"vn_m72_mag",{-1,0,0,-1}}, //Standard Rocket
-			{"vn_rpg2_mag",{0,-1,-1,0}},
-			{"vn_rpg7_mag",{2,-1,-1,-1}},
-			{"vn_sa7_mag",{4,-1,-1,-1}}, //AA Missile
-			{"vn_sa7b_mag",{5,-1,-1,-1}}, //AA Missile
-			//Explosives
-			{"vn_mine_ammobox_range_mag",{-1,0,-1,-1}},
-			{"vn_mine_m112_remote_mag",{-1,0,0,-1}},
-			{"vn_mine_m14_mag",{-1,0,0,-1}},
-			{"vn_mine_m15_mag",{-1,0,0,-1}},
-			{"vn_mine_m16_mag",{-1,0,0,-1}},
-			{"vn_mine_m18_mag",{-1,0,0,-1}},
-			{"vn_mine_m18_range_mag",{-1,1,1,-1}},
-			{"vn_mine_m18_x3_mag",{-1,2,2,-1}},
-			{"vn_mine_m18_x3_range_mag",{-1,3,3,-1}},
-			{"vn_mine_punji_01_mag",{2,-1,-1,2}},
-			{"vn_mine_punji_02_mag",{0,-1,-1,0}},
-			{"vn_mine_punji_03_mag",{1,-1,-1,1}},
-			{"vn_mine_satchel_remote_02_mag",{0,-1,-1,0}},
-			{"vn_mine_tm57_mag",{0,-1,-1,0}},
-			{"vn_mine_tripwire_arty_mag",{-1,0,0,-1}},
-			{"vn_mine_tripwire_f1_02_mag",{-1,0,0,-1}},
-			{"vn_mine_tripwire_f1_04_mag",{-1,0,0,-1}},
-			{"vn_mine_tripwire_m16_02_mag",{-1,0,0,-1}},
-			{"vn_mine_tripwire_m16_04_mag",{-1,0,0,-1}},
-			{"vn_mine_tripwire_m49_02_mag",{0,0,0,0}},
-			{"vn_mine_tripwire_m49_04_mag",{0,0,0,0}},
-			//Other
-			{"vn_m127_mag",{-1,0,0,-1}}, //Flare
-			{"vn_m128_mag",{-1,0,0,-1}}, //Flare (Green)
-			{"vn_m129_mag",{-1,0,0,-1}}, //Flare (Red)
-			{"vn_prop_fort_mag",{0,0,0,0}}, //Sandbag
-			//Not sure
-			{"vn_type56_v_12_he_mag",{5,5,-1,-1}}, //Uh, what?
-			{"vn_type56_v_12_heat_mag",{5,5,-1,-1}}, //Uh, what?
-			{"MineDetector",{0,0,0,0}}, //???Magazines???
-			{"vn_b_item_trapkit",{0,0,0,0}}, //???Magazines???
-			//Vehicle Ammo, I think???
-			{"vn_v_m18r_mag",{-1,0,-1,-1}},
-			{"vn_v_m61_mag",{-1,0,-1,-1}},
-			{"vn_v_m7_mag",{-1,3,-1,-1}},
-			{"vn_v_rdg2_mag",{-1,0,-1,-1}},
-			{"vn_v_rgd5_mag",{-1,3,-1,-1}},
-			//Food and Drink
-			{"vn_prop_drink_01",{0,0,0,0}},
-			{"vn_prop_drink_02",{0,0,0,0}},
-			{"vn_prop_drink_03",{0,0,0,0}},
-			{"vn_prop_drink_04",{0,0,0,0}},
-			{"vn_prop_drink_05",{0,0,0,0}},
-			{"vn_prop_drink_06",{0,0,0,0}},
-			{"vn_prop_drink_07_01",{0,0,0,0}},
-			{"vn_prop_drink_07_02",{0,0,0,0}},
-			{"vn_prop_drink_07_03",{0,0,0,0}},
-			{"vn_prop_drink_08_01",{0,0,0,0}},
-			{"vn_prop_drink_09_01",{0,0,0,0}},
-			{"vn_prop_food_box_01_01",{0,0,0,0}},
-			{"vn_prop_food_box_01_02",{0,0,0,0}},
-			{"vn_prop_food_box_01_03",{0,0,0,0}},
-			{"vn_prop_food_box_02_01",{0,0,0,0}},
-			{"vn_prop_food_box_02_02",{0,0,0,0}},
-			{"vn_prop_food_box_02_03",{0,0,0,0}},
-			{"vn_prop_food_box_02_04",{0,0,0,0}},
-			{"vn_prop_food_box_02_05",{0,0,0,0}},
-			{"vn_prop_food_box_02_06",{0,0,0,0}},
-			{"vn_prop_food_box_02_07",{0,0,0,0}},
-			{"vn_prop_food_box_02_08",{0,0,0,0}},
-			{"vn_prop_food_can_01_01",{0,0,0,0}},
-			{"vn_prop_food_can_01_02",{0,0,0,0}},
-			{"vn_prop_food_can_01_03",{0,0,0,0}},
-			{"vn_prop_food_can_01_04",{0,0,0,0}},
-			{"vn_prop_food_can_01_05",{0,0,0,0}},
-			{"vn_prop_food_can_01_06",{0,0,0,0}},
-			{"vn_prop_food_can_01_07",{0,0,0,0}},
-			{"vn_prop_food_can_01_08",{0,0,0,0}},
-			{"vn_prop_food_can_01_09",{0,0,0,0}},
-			{"vn_prop_food_can_01_10",{0,0,0,0}},
-			{"vn_prop_food_can_01_11",{0,0,0,0}},
-			{"vn_prop_food_can_01_12",{0,0,0,0}},
-			{"vn_prop_food_can_01_13",{0,0,0,0}},
-			{"vn_prop_food_can_01_14",{0,0,0,0}},
-			{"vn_prop_food_can_01_15",{0,0,0,0}},
-			{"vn_prop_food_can_01_16",{0,0,0,0}},
-			{"vn_prop_food_can_02_01",{0,0,0,0}},
-			{"vn_prop_food_can_02_02",{0,0,0,0}},
-			{"vn_prop_food_can_02_03",{0,0,0,0}},
-			{"vn_prop_food_can_02_04",{0,0,0,0}},
-			{"vn_prop_food_can_02_05",{0,0,0,0}},
-			{"vn_prop_food_can_02_06",{0,0,0,0}},
-			{"vn_prop_food_can_02_07",{0,0,0,0}},
-			{"vn_prop_food_can_02_08",{0,0,0,0}},
-			{"vn_prop_food_can_03_01",{0,0,0,0}},
-			{"vn_prop_food_can_03_02",{0,0,0,0}},
-			{"vn_prop_food_can_03_03",{0,0,0,0}},
-			{"vn_prop_food_can_03_04",{0,0,0,0}},
-			{"vn_prop_food_fresh_01",{0,0,0,0}},
-			{"vn_prop_food_fresh_02",{0,0,0,0}},
-			{"vn_prop_food_fresh_03",{0,0,0,0}},
-			{"vn_prop_food_fresh_04",{0,0,0,0}},
-			{"vn_prop_food_fresh_05",{0,0,0,0}},
-			{"vn_prop_food_fresh_06",{0,0,0,0}},
-			{"vn_prop_food_fresh_07",{0,0,0,0}},
-			{"vn_prop_food_fresh_08",{0,0,0,0}},
-			{"vn_prop_food_fresh_09",{0,0,0,0}},
-			{"vn_prop_food_fresh_10",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_01",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_02",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_03",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_04",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_05",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_06",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_07",{0,0,0,0}},
-			{"vn_prop_food_lrrp_01_08",{0,0,0,0}},
-			{"vn_prop_food_meal_01",{0,0,0,0}},
-			{"vn_prop_food_meal_01_01",{0,0,0,0}},
-			{"vn_prop_food_meal_01_02",{0,0,0,0}},
-			{"vn_prop_food_meal_01_03",{0,0,0,0}},
-			{"vn_prop_food_meal_01_04",{0,0,0,0}},
-			{"vn_prop_food_meal_01_05",{0,0,0,0}},
-			{"vn_prop_food_meal_01_06",{0,0,0,0}},
-			{"vn_prop_food_meal_01_07",{0,0,0,0}},
-			{"vn_prop_food_meal_01_08",{0,0,0,0}},
-			{"vn_prop_food_meal_01_09",{0,0,0,0}},
-			{"vn_prop_food_meal_01_10",{0,0,0,0}},
-			{"vn_prop_food_meal_01_11",{0,0,0,0}},
-			{"vn_prop_food_meal_01_12",{0,0,0,0}},
-			{"vn_prop_food_meal_01_13",{0,0,0,0}},
-			{"vn_prop_food_meal_01_14",{0,0,0,0}},
-			{"vn_prop_food_meal_01_15",{0,0,0,0}},
-			{"vn_prop_food_meal_01_16",{0,0,0,0}},
-			{"vn_prop_food_meal_01_17",{0,0,0,0}},
-			{"vn_prop_food_meal_01_18",{0,0,0,0}},
-			{"vn_prop_food_meal_02_01",{0,0,0,0}},
-			{"vn_prop_food_meal_02_02",{0,0,0,0}},
-			{"vn_prop_food_meal_02_03",{0,0,0,0}},
-			{"vn_prop_food_meal_02_04",{0,0,0,0}},
-			{"vn_prop_food_meal_02_05",{0,0,0,0}},
-			{"vn_prop_food_meal_02_06",{0,0,0,0}},
-			{"vn_prop_food_pir_01_01",{0,0,0,0}},
-			{"vn_prop_food_pir_01_02",{0,0,0,0}},
-			{"vn_prop_food_pir_01_03",{0,0,0,0}},
-			{"vn_prop_food_pir_01_04",{0,0,0,0}},
-			{"vn_prop_food_pir_01_05",{0,0,0,0}},
-			{"vn_prop_food_sack_01",{0,0,0,0}},
-			{"vn_prop_food_sack_02",{0,0,0,0}},
-			//Medication
-			{"vn_prop_med_antibiotics",{0,0,0,0}},
-			{"vn_prop_med_antimalaria",{0,0,0,0}},
-			{"vn_prop_med_antivenom",{0,0,0,0}},
-			{"vn_prop_med_dysentery",{0,0,0,0}},
-			{"vn_prop_med_painkillers",{0,0,0,0}},
-			{"vn_prop_med_wormpowder",{0,0,0,0}},
-			// 1.1 Content
-			{"vn_m63a_150_mag",{-1,6,-1,-1}},
-			{"vn_m63a_150_t_mag",{-1,6,-1,-1}},
-			{"vn_m63a_100_mag",{-1,4,-1,-1}},
-			{"vn_m63a_100_t_mag",{-1,4,-1,-1}},
-			{"vn_vz61_mag",{-1,2,-1,-1}},
-			{"vn_vz61_t_mag",{-1,2,-1,-1}},
-			{"vn_m1928_mag",{-1,5,-1,-1}},
-			{"vn_m1928_t_mag",{-1,5,-1,-1}},
-			{"vn_m1a1_20_mag",{-1,1,-1,-1}},
-			{"vn_m1a1_20_t_mag",{-1,1,-1,-1}},
-			{"vn_m1a1_30_mag",{-1,3,-1,-1}},
-			{"vn_m1a1_30_t_mag",{-1,3,-1,-1}},
-			{"vn_mpu_mag",{-1,2,-1,-1}},
-			{"vn_mpu_t_mag",{-1,2,-1,-1}},
-			{"vn_mk1_udg_mag",{-1,2,-1,-1}},
-			//1.2 Content
-			{"vn_mine_bangalore_mag",{0,-1,-1,0}},
-			{"vn_mine_bike_mag",{0,-1,-1,0}},
-			{"vn_mine_bike_range_mag",{0,-1,-1,0}},
-			{"vn_mine_cartridge_mag",{0,-1,-1,0}},
-			{"vn_mine_dh10_mag",{0,-1,-1,0}},
-			{"vn_mine_dh10_range_mag",{0,-1,-1,0}},
-			{"vn_mine_jerrycan_mag",{0,-1,-1,0}},
-			{"vn_mine_jerrycan_range_mag",{0,-1,-1,0}},
-			{"vn_mine_lighter_mag",{0,-1,-1,0}},
-			{"vn_mine_limpet_01_mag",{0,-1,-1,0}},
-			{"vn_mine_limpet_02_mag",{0,-1,-1,0}},
-			{"vn_mine_mortar_range_mag",{0,-1,-1,0}},
-			{"vn_mine_chicom_no8_mag",{0,-1,-1,0}},
-			{"vn_mine_pot_mag",{0,-1,-1,0}},
-			{"vn_mine_pot_range_mag",{0,-1,-1,0}},
-			{"vn_mine_gboard_range_mag",{0,-1,-1,0}},
-			{"vn_mine_punji_04_mag",{0,-1,-1,0}},
-			{"vn_mine_punji_05_mag",{0,-1,-1,0}},
-			{"vn_mine_satchel_remote_02_mag",{0,-1,-1,0}},
-			{"vn_satchelcharge_02_throw_mag",{0,-1,-1,0}},
-			{"vn_mine_tripwire_m16_02_mag",{0,-1,-1,0}},
-			{"vn_mine_tripwire_m16_04_mag",{0,-1,-1,0}},
-			{"vn_f1_smg_mag",{-1,0,-1,-1}},
-			{"vn_f1_smg_t_mag",{-1,1,-1,-1}},
-			{"vn_l1a1_10_mag",{-1,0,-1,-1}},
-			{"vn_l1a1_10_t_mag",{-1,1,-1,-1}},
-			{"vn_l1a1_20_mag",{-1,0,-1,-1}},
-			{"vn_l1a1_20_t_mag",{-1,1,-1,-1}},
-			{"vn_l1a1_30_mag",{-1,2,-1,-1}},
-			{"vn_l1a1_30_t_mag",{-1,3,-1,-1}},
-			{"vn_l1a1_30_02_mag",{-1,2,-1,-1}},
-			{"vn_l1a1_30_02_t_mag",{-1,3,-1,-1}},
-			{"vn_22mm_m61_frag_mag",{-1,1,-1,-1}},
-			{"vn_22mm_n94_heat_mag",{-1,2,-1,-1}},
-			{"vn_m1_garand_mag",{-1,0,-1,-1}},
-			{"vn_m1_garand_t_mag",{-1,1,-1,-1}},
-			{"vn_m1918_mag",{-1,0,-1,-1}},
-			{"vn_m1918_t_mag",{-1,1,-1,-1}},
-			//1.3 mags
-			{"vn_mine_m18_range_mag",{-1,1,1,-1}},
-			{"vn_mine_m18_fuze10_mag",{-1,3,3,-1}},
-			{"vn_mine_m18_wp_mag",{-1,2,2,-1}},
-			{"vn_mine_m18_wp_range_mag",{-1,3,3,-1}},
-			{"vn_mine_m18_wp_fuze10_mag",{-1,4,4,-1}},
-			{"vn_mine_m18_x3_mag",{-1,2,2,-1}},
-			{"vn_mine_m18_x3_range_mag",{-1,3,3,-1}},
-			{"vn_20mm_f1n60_frag_mag",{3,-1,-1,3}},
-			{"vn_20mm_kgn_frag_mag",{4,-1,-1,4}},
-			{"vn_20mm_pgn60_heat_mag",{5,-1,-1,5}},
-			{"vn_20mm_dgn_wp_mag",{6,-1,-1,6}},
-			{"vn_type64_mag",{5,-1,-1,5}},
-			{"vn_ppk_mag",{0,0,0,0}},
-			{"vn_p38_mag",{0,0,0,0}},
-			{"vn_type64_smg_mag",{4,4,-1,-1}},
-			{"vn_type64_smg_t_mag",{5,5,-1,-1}},
-			{"vn_kbkg_mag",{2,-1,-1,4}},
-			{"vn_kbkg_t_mag",{3,-1,-1,5}},
-			{"vn_k98k_mag",{0,0,0,0}},
-			{"vn_k98k_t_mag",{1,1,1,1}},
-			{"vn_svd_mag",{4,-1,-1,-1}},
-			{"vn_svd_t_mag",{5,-1,-1,-1}},
-			{"vn_m36_mag",{0,0,0,0}},
-			{"vn_m36_t_mag",{1,1,1,1}},
-			{"vn_m1903_mag",{0,0,0,0}},
-			{"vn_m1903_t_mag",{1,1,1,1}},
-			{"vn_m20a1b1_heat_mag",{-1,3,3,-1}},
-			{"vn_m20a1b1_wp_mag",{-1,4,4,-1}},
-			{"vn_rpg2_fuze_mag",{2,2,2,2}},
-			{"vn_mg42_50_mag",{2,-1,-1,4}},
-			{"vn_mg42_50_t_mag",{3,-1,-1,5}}
+			{"SPE_8Rnd_9x19_P08"                     ,{0, -1, -1, 1}},
+			{"SPE_32Rnd_9x19"                        ,{0, -1, -1, 1}},
+			{"SPE_32rnd_9x19_t"                      ,{0, -1, -1, 1}},
+			{"SPE_5Rnd_792x57"                       ,{0, -1, -1, 1}},
+			{"SPE_10Rnd_792x57"                      ,{0, -1, -1, 1}},
+			{"SPE_50Rnd_792x57"                      ,{0, -1, -1, 1}},
+			{"SPE_100Rnd_792x57"                     ,{0, -1, -1, 1}},
+			{"SPE_5Rnd_762x63"                       ,{-1, -1, 0, 1}},
+			{"SPE_5Rnd_762x63_t"                     ,{-1, -1, 0, 1}},
+			{"SPE_5Rnd_762x63_M1"                    ,{-1, -1, 0, 1}},
+			{"SPE_5Rnd_762x63_M2_AP"                 ,{-1, -1, 0, 1}},
+			{"SPE_8Rnd_762x63"                       ,{-1, -1, 0, 1}},
+			{"SPE_8Rnd_762x63_t"                     ,{-1, -1, 0, 1}},
+			{"SPE_8Rnd_762x63_M1"                    ,{-1, -1, 0, 1}},
+			{"SPE_8Rnd_762x63_M2_AP"                 ,{-1, -1, 0, 1}},
+			{"SPE_50Rnd_762x63"                      ,{-1, -1, 0, 1}},
+			{"SPE_100Rnd_762x63"                     ,{-1, -1, 0, 1}},
+			{"SPE_50Rnd_762x63_M1"                   ,{-1, -1, 0, 1}},
+			{"SPE_100Rnd_762x63_M1"                  ,{-1, -1, 0, 1}},
+			{"SPE_50Rnd_762x63_M2_AP"                ,{-1, -1, 0, 1}},
+			{"SPE_100Rnd_762x63_M2_AP"               ,{-1, -1, 0, 1}},
+			{"SPE_20Rnd_762x63"                      ,{-1, -1, 0, 1}},
+			{"SPE_20Rnd_762x63_M1"                   ,{-1, -1, 0, 1}},
+			{"SPE_20Rnd_762x63_M2_AP"                ,{-1, -1, 0, 1}},
+			{"SPE_15Rnd_762x33"                      ,{-1, -1, 0, 1}},
+			{"SPE_15Rnd_762x33_t"                    ,{-1, -1, 0, 1}},
+			{"SPE_30Rnd_Thompson_45ACP"              ,{-1, -1, 0, 1}},
+			{"SPE_20Rnd_Thompson_45ACP"              ,{-1, -1, 0, 1}},
+			{"SPE_30Rnd_M3_GreaseGun_45ACP"          ,{-1, -1, 0, 1}},
+			{"SPE_30Rnd_Thompson_45ACP_t"            ,{-1, -1, 0, 1}},
+			{"SPE_20Rnd_Thompson_45ACP_t"            ,{-1, -1, 0, 1}},
+			{"SPE_30Rnd_M3_GreaseGun_45ACP_t"        ,{-1, -1, 0, 1}},
+			{"SPE_7Rnd_45ACP_1911"                   ,{-1, -1, 0, 1}},
+			{"SPE_25Rnd_75x54"                       ,{-1, -1, 0, 1}},
+			{"SPE_25Rnd_75x54_35P_AP"                ,{-1, -1, 0, 1}},
+			{"SPE_2Rnd_12x65_Pellets"                ,{0, -1, -1, 1}},
+			{"SPE_2Rnd_12x65_Slug"                   ,{0, -1, -1, 1}},
+			{"SPE_2Rnd_12x65_No4_Buck"               ,{0, -1, -1, 1}},
+			{"SPE_M2_Flamethrower_Mag"               ,{-1, -1, 0, 1}},
+			{"SPE_Flammenwerfer41_Mag"               ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_PzFaust_30m"                  ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_PzFaust_60m"                  ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_Faustpatrone"                 ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_60mm_M6"                      ,{-1, -1, 0, 1}},
+			{"SPE_Shg24"                             ,{0, -1, -1, 1}},
+			{"SPE_Shg24_Frag"                        ,{0, -1, -1, 1}},
+			{"SPE_Shg24x7"                           ,{0, -1, -1, 1}},
+			{"SPE_M39"                               ,{-1, -1, 0, 1}},
+			{"SPE_US_Mk_2"                           ,{-1, -1, 0, 1}},
+			{"SPE_US_Mk_2_Yellow"                    ,{-1, -1, 0, 1}},
+			{"SPE_US_Mk_3"                           ,{-1, -1, 0, 1}},
+			{"SPE_US_M15"                            ,{-1, -1, 0, 1}},
+			{"SPE_US_AN_M14"                         ,{-1, -1, 0, 1}},
+			{"SPE_US_M18"                            ,{-1, -1, 0, 1}},
+			{"SPE_US_M18_Red"                        ,{-1, -1, 0, 1}},
+			{"SPE_US_M18_Green"                      ,{-1, -1, 0, 1}},
+			{"SPE_US_M18_Yellow"                     ,{-1, -1, 0, 1}},
+			{"SPE_US_M18_Violet"                     ,{-1, -1, 0, 1}},
+			{"SPE_US_Mk_1"                           ,{-1, -1, 0, 1}},
+			{"SPE_NB39"                              ,{0, -1, -1, 1}},
+			{"SPE_NBK39b"                            ,{0, -1, -1, 1}},
+			{"SPE_Handrauchzeichen_Red"              ,{0, -1, -1, 1}},
+			{"SPE_Handrauchzeichen_Violet"           ,{0, -1, -1, 1}},
+			{"SPE_Handrauchzeichen_Yellow"           ,{0, -1, -1, 1}},
+			{"SPE_Rauchsichtzeichen_Orange"          ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_G_SPRGR_30"                   ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_G_PZGR_30"                    ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_G_PZGR_40"                    ,{0, -1, -1, 1}},
+			{"SPE_1Rnd_G_NBGR_42"                    ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_FLGR"                       ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_Mk2"                        ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M9A1"                       ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M2_ANM8"                    ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M2_M18_Red"                 ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M2_M18_Yellow"              ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M2_M18_Green"               ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M2_M18_Violet"              ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M2_AN_M14"                  ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M17A1"                      ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M19A1"                      ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M21A1"                      ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_G_M51A1"                      ,{-1, -1, 0, 1}},
+			{"SPE_5Rnd_792x57_t"                     ,{0, -1, -1, 1}},
+			{"SPE_5Rnd_792x57_sS"                    ,{0, -1, -1, 1}},
+			{"SPE_5Rnd_792x57_SMK"                   ,{0, -1, -1, 1}},
+			{"SPE_10Rnd_792x57_T"                    ,{0, -1, -1, 1}},
+			{"SPE_10Rnd_792x57_T2"                   ,{0, -1, -1, 1}},
+			{"SPE_10Rnd_792x57_sS"                   ,{0, -1, -1, 1}},
+			{"SPE_10Rnd_792x57_SMK"                  ,{0, -1, -1, 1}},
+			{"SPE_50Rnd_792x57_sS"                   ,{0, -1, -1, 1}},
+			{"SPE_100Rnd_792x57_sS"                  ,{0, -1, -1, 1}},
+			{"SPE_50Rnd_792x57_SMK"                  ,{0, -1, -1, 1}},
+			{"SPE_100Rnd_792x57_SMK"                 ,{0, -1, -1, 1}},
+			{"SPE_Shg24x7_Improvised_Mine_mag"       ,{0, -1, -1, 1}},
+			{"SPE_TMI_42_MINE_mag"                   ,{0, -1, -1, 1}},
+			{"SPE_SMI_35_1_MINE_mag"                 ,{0, -1, -1, 1}},
+			{"SPE_SMI_35_MINE_mag"                   ,{0, -1, -1, 1}},
+			{"SPE_SMI_35_Pressure_MINE_mag"          ,{0, -1, -1, 1}},
+			{"SPE_STMI_MINE_mag"                     ,{0, -1, -1, 1}},
+			{"SPE_shumine_42_MINE_mag"               ,{0, -1, -1, 1}},
+			{"SPE_Ladung_Small_MINE_mag"             ,{0, -1, -1, 1}},
+			{"SPE_Ladung_Big_MINE_mag"               ,{0, -1, -1, 1}},
+			{"SPE_US_M1A1_ATMINE_mag"                ,{-1, -1, 0, 1}},
+			{"SPE_US_M3_MINE_mag"                    ,{-1, -1, 0, 1}},
+			{"SPE_US_M3_Pressure_MINE_mag"           ,{-1, -1, 0, 1}},
+			{"SPE_US_TNT_4pound_mag"                 ,{-1, -1, 0, 1}},
+			{"SPE_US_TNT_half_pound_mag"             ,{-1, -1, 0, 1}},
+			{"SPE_US_Bangalore_mag"                  ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_81mmHE_M1_M43A1"              ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_81mm_FA_Mle_1932_HE"          ,{-1, -1, 0, 1}},
+			{"SPE_1Rnd_81mmWP_M1_M57"                ,{-1, -1, 0, 1}},
+			{"SPE_81mm_M1_M57_SmokeShell"            ,{-1, -1, 0, 1}},
+			{"SPE_81mm_FA_Mle_1932_Smoke"            ,{-1, -1, 0, 1}},
+			{"SPE_8Rnd_81mm_FA_Mle_1932_Illu"        ,{-1, -1, 0, 1}},
+			{"SPE_81mm_FA_Mle_1932_Illu"             ,{-1, -1, 0, 1}}
 		};
 
 		items[] =
