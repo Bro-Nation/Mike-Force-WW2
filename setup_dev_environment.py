@@ -38,8 +38,9 @@ else:
         for path in source.iterdir():
             (target / path.name).symlink_to(path, target_is_directory=path.is_dir())
 
-    existing_path_found = False
+    
     for map_folder in map_folders:
+        existing_path_found = False
         target_folder = arma_missions_folder / f"{mission_stem}.{map_folder.name}"
         if target_folder.exists():
             print(f"Existing mission folder exists: {target_folder}")
