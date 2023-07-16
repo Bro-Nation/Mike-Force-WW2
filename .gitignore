@@ -7,5 +7,6 @@ mission/map_config
 mission/paradigm
 build_output
 user_paths.py
+user_paths_example.py
 *.code-workspace
 *.pyc
