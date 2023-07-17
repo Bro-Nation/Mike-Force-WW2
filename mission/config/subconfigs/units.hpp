@@ -326,21 +326,21 @@ class squad_compositions
 	{
 		ger_army_patrol[] = {
 			"ger_army_officers",
-			{"ger_army_basic", "ger_army_marksmen", "ger_army_grenadiers", "ger_army_mgs"},
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_grenadiers", "ger_army_smgs"},
 			{"ger_army_ats", "ger_army_officers"},
 			"ger_st_marksmen"
 		};
 
 		ger_army_standard[] = {
 			"ger_army_officers",
-			{"ger_army_basic", "ger_army_marksmen", "ger_army_grenadiers", "ger_army_mgs"},
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_grenadiers", "ger_army_smgs"},
 			{"ger_army_ats", "ger_army_officers"},
 			"ger_army_medics",
-			{"ger_army_marksmen", "ger_army_mgs"},
+			{"ger_army_marksmen", "ger_army_lmgs"},
 			{"ger_army_grenadiers", "ger_army_grenadiers", "ger_army_basic"},
 			{"ger_army_basic", "ger_army_ats"},
 			{"ger_army_basic", "ger_army_smgs"},
-			{"ger_army_basic", "ger_army_mgs", "ger_army_smgs"},
+			{"ger_army_basic", "ger_army_lmgs", "ger_army_smgs"},
 			{"ger_army_basic", "ger_army_marksmen", "ger_army_smgs"}
 		};
 
@@ -354,8 +354,8 @@ class squad_compositions
 
 		ger_army_cover_element[] = {
 			"ger_army_marksmen",
-			"ger_army_mgs",
-			{"ger_army_marksmen", "ger_army_mgs"},
+			"ger_army_lmgs",
+			{"ger_army_marksmen", "ger_army_lmgs"},
 			"ger_army_basic",
 			"ger_army_smgs",
 			"ger_army_grenadiers"
@@ -372,7 +372,7 @@ class squad_compositions
 		
 		ger_army_sentry[] = {
 			"ger_army_sentrys",
-			{"ger_army_basic", "ger_army_marksmen", "ger_army_mgs", "ger_army_smgs"}
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_lmgs", "ger_army_smgs"}
 		};
 
 		ger_st_patrol[] = {
