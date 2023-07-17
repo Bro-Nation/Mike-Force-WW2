@@ -357,7 +357,7 @@ class vn_logistics
     class item_data
     {
 		//Building supplies crate
-        class vn_b_ammobox_supply_05
+        class SPE_Weaponcrate_K98_GER
         {
             item_weight = 200;
             item_size = 2.5;
@@ -376,17 +376,16 @@ class vn_logistics
 
 		//Small komex containers
 		class vn_us_komex_small_01 : Land_Cargo10_brick_red_F {};
-		class vn_us_komex_small_02 : Land_Cargo10_brick_red_F {};
-		class vn_us_komex_small_03 : Land_Cargo10_brick_red_F {};
+		
 
 		//Workshop supplies
-		class vn_b_ammobox_supply_06 : vn_b_ammobox_supply_05 {};
+		class vn_b_ammobox_supply_06 {};
 
 		//Sandbag supplies
-		class vn_b_ammobox_supply_10 : vn_b_ammobox_supply_05 {};
+		class vn_b_ammobox_supply_10 {};
 
 		//Small US ammo
-		class vn_b_ammobox_supply_04
+		class SPE_BasicAmmunitionBox_US
 		{
 			item_weight = 50;
 			item_size = 1;
@@ -403,14 +402,14 @@ class vn_logistics
             rotation_offset = 0;
         };
 		//US Ammo
-		class vn_b_ammobox_supply_01 : vn_b_ammobox_sog {};
+		class SPE_US_Ammocrate_Grenades_Frag {};
 		//Medical supplies
 		class vn_b_ammobox_supply_03 : vn_b_ammobox_sog {};
 		//Food supplies
 		class vn_b_ammobox_supply_02 : vn_b_ammobox_supply_03 {};
 
 		//Resupply Fuel/Repair/Ammo
-		class vn_b_ammobox_supply_07 : vn_b_ammobox_supply_05
+		class vn_b_ammobox_supply_07
 		{
 				item_weight = 400;
 				item_size = 10;

@@ -15,16 +15,16 @@ class MedicalCrate
 
 class AmmoCrateLight
 {
-	objectClassname = "vn_b_ammobox_supply_01";
-	weapons[] = {{"vn_m127",3}};
+	objectClassname = "SPE_BasicAmmunitionBox_US";
+	weapons[] = {};
 	magazines[] = {
-		{"ACRE_PRC343",5},
-		{"ACRE_PRC77",1},
-		{"vn_m1911_mag",20},
-		{"vn_mk22_mag",20},
-		{"vn_m16_40_mag",15},
-		{"vn_welrod_mag",20},
-		{"vn_m61_grenade_mag",10},
+		{},
+		{},
+		{"SPE_8Rnd_762x63",30},
+		{"SPE_8Rnd_762x63_t",25},
+		{"SPE_8Rnd_762x63_M2_AP",25},
+		{"SPE_15Rnd_762x33",20},
+		{"SPE_15Rnd_762x33_t",20},
 		{"vn_m67_grenade_mag",10},
 		{"vn_v40_grenade_mag",10},
 		{"vn_m18_green_mag",10},
@@ -66,10 +66,10 @@ class AmmoCrateLight
 
 class AmmoCrateSupport
 {
-	objectClassname = "vn_b_ammobox_supply_01";
+	objectClassname = "SPE_BasicAmmunitionBox_US";
 	weapons[] = {
-		{"vn_m79",2},
-		{"vn_m127",15}
+		{},
+		{}
 	};
 	magazines[] = {
 		{"vn_m60_100_mag",20},
@@ -106,10 +106,10 @@ class AmmoCrateSupport
 
 class AmmoCrateExplosives
 {
-	objectClassname = "vn_b_ammobox_supply_01";
+	objectClassname = "SPE_US_Ammocrate_Grenades_Frag";
 	weapons[] = {
-		{"vn_m79",2},
-		{"vn_m72",10},
+		{},
+		{},
 	};
 	magazines[] = {
 		{"vn_m61_grenade_mag",30},

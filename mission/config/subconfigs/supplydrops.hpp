@@ -6,7 +6,7 @@ class construction
 	class BuildingSuppliesCrate
 	{
 		name = "STR_vn_mf_building_supplies_crate";
-		className = "vn_b_ammobox_supply_05";
+		className = "SPE_Weaponcrate_K98_GER";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_build_ca.paa";
 		supplyType = "BuildingSupplies";
 		supplyQuantity = 500;
@@ -72,21 +72,21 @@ class ammo
 	class LightAmmoSupplies
 	{
 		name = "STR_vn_mf_light_ammo_supplies";
-		className =	"vn_b_ammobox_supply_01";
+		className =	"SPE_BasicAmmunitionBox_US";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
 		crateConfig = "AmmoCrateLight";
 	};
 	class SupportSupplies
 	{
 		name = "STR_vn_mf_support_ammo_supplies";
-		className =	"vn_b_ammobox_supply_01";
+		className =	"SPE_BasicAmmunitionBox_US";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
 		crateConfig = "AmmoCrateSupport";
 	};
 	class ExplosivesSupplies
 	{
 		name = "STR_vn_mf_explosives_supplies";
-		className =	"vn_b_ammobox_supply_01";
+		className =	"SPE_US_Ammocrate_Grenades_Frag";
 		icon = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_sup_ammo_ca.paa";
 		crateConfig = "AmmoCrateExplosives";
 	};
