@@ -2,35 +2,65 @@ class units
 {
 	class west
 	{
-		sog_demolitions = "vn_b_men_sog_08";
-		sog_grenadier = "vn_b_men_sog_07";
-		sog_grenadier_1 = "vn_b_men_sog_11";
-		sog_machine_gunner = "vn_b_men_sog_06";
-		sog_machinegunner_1 = "vn_b_men_sog_16";
-		sog_machinegunner_2 = "vn_b_men_sog_18";
-		sog_marksman_2 = "vn_b_men_sog_21";
-		sog_medic = "vn_b_men_sog_10";
-		sog_medic_1 = "vn_b_men_sog_20";
-		sog_one_one_rto = "vn_b_men_sog_02";
-		sog_one_one_rto_2 = "vn_b_men_sog_14";
-		sog_one_two_medic = "vn_b_men_sog_03";
-		sog_one_two_medic_2 = "vn_b_men_sog_15";
-		sog_one_zero_team_leader = "vn_b_men_sog_01";
-		sog_one_zero_team_leader_1 = "vn_b_men_sog_13";
-		sog_rto = "vn_b_men_sog_05";
-		sog_rto_1 = "vn_b_men_sog_12";
-		sog_rto_2 = "vn_b_men_sog_17";
-		sog_scout = "vn_b_men_sog_09";
-		sog_scout_1 = "vn_b_men_sog_19";
-		sog_squad_leader = "vn_b_men_sog_04";
+		ger_army_rifleman = "SPE_GER_rifleman_2";
+		ger_army_rifleman_mortar_ammo = "SPE_GER_Mortar_AGunner";
+		ger_army_rifleman_mortar = "SPE_GER_Mortar_AmmoBearer";
+		ger_army_rifleman_hmg_ammo = "SPE_GER_HMG_AmmoBearer";
+		ger_army_rifleman_hmg = "SPE_GER_ahmgunner";
+		ger_army_rifleman_grenadier = "SPE_GER_ober_grenadier";
+		ger_army_rifleman_medic = "SPE_GER_medic";
+		ger_army_rifleman_sapper = "SPE_GER_sapper";
+		ger_army_at_grenadier = "SPE_GER_AT_grenadier";
+		ger_army_at_faustpatrone = "SPE_GER_LAT_Klein_Rifleman";
+		ger_army_at_faustlong = "SPE_GER_LAT_Rifleman";
+		ger_army_at_faustshort = "SPE_GER_LAT_30m_Rifleman";
+		ger_army_flame_rifleman = "SPE_GER_Flamethrower_Operator";
+		ger_army_lmg_mg34 = "SPE_GER_hmgunner2";
+		ger_army_lmg_mg42 = "SPE_GER_hmgunner";
+		ger_army_officer = "SPE_GER_SquadLead";
+		ger_army_officer_assist = "SPE_GER_Assist_SquadLead";
+		ger_army_mg_stg = "SPE_GER_stggunner";
+		ger_army_mg_mp40 = "SPE_GER_sapper_gefr";
 
-		sog_teamleaders[] = {"sog_one_zero_team_leader", "sog_one_zero_team_leader_1"};
-		sog_rtos[] = {"sog_rto", "sog_rto_1", "sog_rto_2"};
-		sog_medics[] = {"sog_medic", "sog_medic_1"};
-		sog_scouts[] = {"sog_scout", "sog_scout_1"};
-		sog_grenadiers[] = {"sog_grenadier", "sog_grenadier_1"};
-		sog_mgs[] = {"sog_machine_gunner", "sog_machinegunner_1", "sog_machinegunner_2"};
-		sog_ats[] = {"sog_demolitions"};
+		ger_army_basic[] = {"ger_army_rifleman", "ger_army_rifleman_grenadier", "ger_army_rifleman_medic", "ger_army_rifleman_sapper"};
+		ger_army_officers[] = {"ger_army_officer", "ger_army_officer_assist"};
+		ger_army_smgs[] = {"ger_army_mg_mp40", "ger_army_flame_rifleman", "ger_army_mg_stg"};
+		ger_army_lmgs[] = {"ger_army_lmg_mg34", "ger_army_lmg_mg42"};
+		ger_army_marksmen[] = {"ger_army_rifleman_mortar_ammo", "ger_army_rifleman_mortar", "ger_army_rifleman_hmg_ammo", "ger_army_rifleman_hmg", "ger_army_rifleman_medic"};
+		ger_army_grenadiers[] = {"ger_army_rifleman_grenadier", "ger_army_rifleman_sapper"};
+		ger_army_ats[] = {"ger_army_at_faustpatrone", "ger_army_at_faustlong", "ger_army_at_faustshort"};
+		ger_army_sentrys[] = {"ger_army_rifleman", "ger_army_rifleman_grenadier", "ger_army_rifleman_medic", "ger_army_rifleman_sapper"};
+		ger_army_medics[] = {"ger_army_rifleman_medic", "ger_army_rifleman_grenadier", "ger_army_rifleman"};
+
+		ger_st_rifleman = "SPE_sturmtrooper_rifleman";
+		ger_st_rifleman_mortar_ammo = "SPE_sturmtrooper_Mortar_AGunner";
+		ger_st_rifleman_mortar = "SPE_sturmtrooper_Mortar_AmmoBearer";
+		ger_st_rifleman_hmg_ammo = "SPE_sturmtrooper_HMG_AmmoBearer";
+		ger_st_rifleman_hmg = "SPE_sturmtrooper_ahmgunner";
+		ger_st_rifleman_grenadier = "SPE_sturmtrooper_ober_grenadier";
+		ger_st_rifleman_medic = "SPE_sturmtrooper_medic";
+		ger_st_rifleman_sapper = "SPE_sturmtrooper_sapper";
+		ger_st_at_grenadier = "SPE_sturmtrooper_AT_grenadier";
+		ger_st_at_faustpatrone = "SPE_sturmtrooper_LAT_Klein_Rifleman";
+		ger_st_at_faustlong = "SPE_sturmtrooper_LAT_Rifleman";
+		ger_st_at_faustshort = "SPE_sturmtrooper_LAT_30m_Rifleman";
+		ger_st_flame_rifleman = "SPE_sturmtrooper_Flamethrower_Operator";
+		ger_st_lmg_mg34 = "SPE_sturmtrooper_hmgunner2";
+		ger_st_lmg_mg42 = "SPE_sturmtrooper_hmgunner";
+		ger_st_officer = "SPE_sturmtrooper_SquadLead";
+		ger_st_officer_assist = "SPE_sturmtrooper_Assist_SquadLead";
+		ger_st_mg_stg = "SPE_sturmtrooper_stggunner";
+		ger_st_mg_mp40 = "SPE_sturmtrooper_sapper_gefr";
+		ger_st_sniper = "SPE_sturmtrooper_sniper";
+
+		ger_st_basic[] = {"ger_st_rifleman", "ger_st_rifleman_grenadier", "ger_st_rifleman_medic", "ger_st_rifleman_sapper"};
+		ger_st_officers[] = {"ger_st_officer", "ger_st_officer_assist"};
+		ger_st_smgs[] = {"ger_st_mg_mp40", "ger_st_flame_rifleman", "ger_st_mg_stg"};
+		ger_st_lmgs[] = {"ger_st_lmg_mg34", "ger_st_lmg_mg42"};
+		ger_st_marksmen[] = {"ger_st_rifleman_mortar_ammo", "ger_st_rifleman_mortar", "ger_st_rifleman_hmg_ammo", "ger_st_rifleman_hmg", "ger_st_rifleman_medic"};
+		ger_st_grenadiers[] = {"ger_st_rifleman_grenadier", "ger_st_rifleman_sapper"};
+		ger_st_ats[] = {"ger_st_at_faustpatrone", "ger_st_at_faustlong", "ger_st_at_faustshort"};
+		ger_st_sentrys[] = {"ger_st_rifleman", "ger_st_rifleman_grenadier", "ger_st_rifleman_medic", "ger_st_rifleman_sapper"};
 	};
 
 	class east
@@ -294,18 +324,106 @@ class squad_compositions
 {
 	class west 
 	{
-		patrol[] = {
-			"sog_teamleaders",
-			"sog_rtos",
-			{"sog_scouts", "sog_medics"},
-			{"sog_scouts", "sog_medics"}
+		ger_army_patrol[] = {
+			"ger_army_officers",
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_grenadiers", "ger_army_mgs"},
+			{"ger_army_ats", "ger_army_officers"},
+			"ger_st_marksmen"
 		};
 
-		standard[] = {
-			"sog_teamleaders",
-			"sog_rtos",
-			{"sog_scouts", "sog_medics"},
-			{"sog_scouts", "sog_medics"}
+		ger_army_standard[] = {
+			"ger_army_officers",
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_grenadiers", "ger_army_mgs"},
+			{"ger_army_ats", "ger_army_officers"},
+			"ger_army_medics",
+			{"ger_army_marksmen", "ger_army_mgs"},
+			{"ger_army_grenadiers", "ger_army_grenadiers", "ger_army_basic"},
+			{"ger_army_basic", "ger_army_ats"},
+			{"ger_army_basic", "ger_army_smgs"},
+			{"ger_army_basic", "ger_army_mgs", "ger_army_smgs"},
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_smgs"}
+		};
+
+		ger_army_at[] = {
+			"ger_army_ats",
+			"ger_army_ats",
+			"ger_army_basic",
+			{"ger_army_smgs"},
+			{"ger_army_medics"}
+		};
+
+		ger_army_cover_element[] = {
+			"ger_army_marksmen",
+			"ger_army_mgs",
+			{"ger_army_marksmen", "ger_army_mgs"},
+			"ger_army_basic",
+			"ger_army_smgs",
+			"ger_army_grenadiers"
+		};
+
+		ger_army_storm_element[] = {
+			"ger_army_smgs",
+			"ger_army_medics",
+			{"ger_army_rtos", "ger_army_sappers"},
+			"ger_army_basic",
+			"ger_army_basic",
+			"ger_army_smgs"
+		};
+		
+		ger_army_sentry[] = {
+			"ger_army_sentrys",
+			{"ger_army_basic", "ger_army_marksmen", "ger_army_mgs", "ger_army_smgs"}
+		};
+
+		ger_st_patrol[] = {
+			"ger_st_officers",
+			{"ger_st_basic", "ger_st_grenadiers"},
+			{"ger_st_smgs", "ger_st_officers"},
+			"ger_st_marksmen"
+		};
+
+		ger_st_at[] = {
+			"ger_st_ats",
+			"ger_st_ats",
+			"ger_st_basic",
+			{"ger_st_smgs"},
+			{"ger_army_medics"}
+		};
+
+		ger_st_cover_element[] = {
+			"ger_st_marksmen",
+			"ger_st_smgs",
+			{"ger_st_marksmen", "ger_st_smgs"},
+			"ger_st_basic",
+			"ger_st_smgs",
+			"ger_st_grenadiers"
+		};
+
+		ger_st_storm_element[] = {
+			"ger_st_smgs",
+			"ger_army_medics",
+			{"ger_st_rtos", "ger_st_sappers"},
+			"ger_st_basic",
+			"ger_st_basic",
+			"ger_st_smgs"
+		};
+
+		ger_st_sentry[] = {
+			"ger_st_sentrys",
+			{"ger_st_basic", "ger_st_marksmen", "ger_st_lmgs", "ger_st_smgs"}
+		};
+
+		ger_st_standard[] = {
+			"ger_st_officers",
+			{"ger_st_basic", "ger_st_marksmen", "ger_st_grenadiers", "ger_st_lmgs"},
+			{"ger_st_ats", "ger_st_officers"},
+			"ger_army_medics",
+			{"ger_st_marksmen", "ger_st_smgs"},
+			{"ger_st_grenadiers", "ger_st_grenadiers", "ger_st_basic"},
+			{"ger_st_basic", "ger_st_ats"},
+			{"ger_st_basic", "ger_st_smgs"},
+			{"ger_st_basic", "ger_st_lmgs", "ger_st_smgs"},
+			{"ger_st_basic", "ger_st_marksmen", "ger_st_smgs"}
 		};
 	};
 

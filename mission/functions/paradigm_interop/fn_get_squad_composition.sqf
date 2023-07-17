@@ -30,35 +30,35 @@ private _faction = "";
 
 if (_pos isEqualTo []) then 
 {
-	_faction = "nva";
+	_faction = "ger_army";
 } 
 else 
 {
 	if (_pos distance2D [14296, 5932, 0] < 7000) exitWith {
-		_faction = "vc";
+		_faction = "ger_st";
 	};
 
 	if (_pos # 0 < 6303) exitWith {
-		_faction = "dac_cong";
+		_faction = "ger_st";
 	};
 
-	_faction = "nva";
+	_faction = "ger_army";
 };
 
 if (_type == "PATROL") then 
 {
 	_resolvedType = switch (_faction) do {
-		case "vc":
+		case "ger_army":
 		{
-			selectRandom ["vc_regional_sentry", "vc_main_sentry", "vc_local_sentry", "vc_local_patrol"]
+			selectRandom ["ger_army_sentry", "ger_army_patrol"]
 		};
 		case "dac_cong":
 		{
-			selectRandom ["nva_dac_cong_sentry"]
+			selectRandom ["ger_st_sentry"]
 		};
 		default
 		{
-			selectRandom ["nva_main_sentry", "nva_main_patrol"]
+			selectRandom ["ger_army_sentry", "ger_st_sentry"]
 		};
 	};
 };
@@ -66,17 +66,17 @@ if (_type == "PATROL") then
 if (_type == "STANDARD") then 
 {
 	_resolvedType = switch (_faction) do {
-		case "vc":
+		case "ger_army":
 		{
-			selectRandom ["vc_regional_standard", "vc_main_standard", "vc_local_standard", "vc_regional_cover_element", "vc_local_cover_element", "vc_main_cover_element", "vc_regional_at", "vc_main_at", "vc_local_at"]
+			selectRandom ["ger_army_standard", "ger_army_cover_element", "ger_army_at"]
 		};
-		case "dac_cong":
+		case "ger_st":
 		{
-			selectRandom ["nva_dac_cong_standard", "nva_dac_cong_standard", "nva_dac_cong_at", "nva_dac_cong_cover_element"]
+			selectRandom ["ger_st_standard", "ger_st_at", "ger_st_cover_element"]
 		};
 		default 
 		{
-			selectRandom ["nva_main_standard", "nva_main_standard", "nva_main_cover_element", "nva_main_at"];
+			selectRandom ["ger_army_standard", "ger_st_standard", "ger_st_at", "ger_army_at"];
 		}; 
 	};
 };
