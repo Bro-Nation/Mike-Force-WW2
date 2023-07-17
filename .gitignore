@@ -9,3 +9,5 @@ build_output
 *.py
 *.code-workspace
 *.pyc
+user_paths_example.py
+user_paths_example.py
