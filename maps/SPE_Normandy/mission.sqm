@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=627;
+		nextID=699;
 	};
 	class Camera
 	{
@@ -35442,7 +35442,7 @@ class Mission
 			text="@STR_vn_mf_arsenal";
 			type="mil_dot";
 			colorName="ColorPink";
-			angle=216.72308;
+			angle=216.72305;
 			id=1182;
 			atlOffset=12.132309;
 		};

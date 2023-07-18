@@ -53,8 +53,8 @@ class vn_logistics
 	class vn_b_wheeled_m151_mg_06 : vn_defaults_tiny {};
 
 	//APC
-	class vn_b_armor_m113_01 : vn_defaults_medium {};
-	class vn_b_armor_m113_acav_01 : vn_defaults_small {};
+	class SPE_US_M3_Halftrack : vn_defaults_medium {};
+	class SPE_US_M16_Halftrack : vn_defaults_small {};
 	class vn_b_armor_m113_acav_02 : vn_defaults_small {};
 	class vn_b_armor_m113_acav_03 : vn_defaults_small {};
 	class vn_b_armor_m113_acav_04 : vn_defaults_small {};
@@ -62,30 +62,34 @@ class vn_logistics
 	class vn_b_armor_m113_acav_06 : vn_defaults_small {};
 
 	//Transport trucks
-	class vn_b_wheeled_m54_01 : vn_defaults_extra_large {};
-	class vn_b_wheeled_m54_01_airport : vn_defaults_extra_large {};
+	class SPE_US_M3_Halftrack_Unarmed : vn_defaults_extra_large {};
+	class SPE_US_M3_Halftrack_Unarmed_Open : vn_defaults_extra_large {};
 	class vn_b_wheeled_m54_02 : vn_defaults_extra_large {};
 	//M109 Command Truck
 	class vn_b_wheeled_m54_03 : vn_defaults_medium {};
 	//Repair Truck
-	class vn_b_wheeled_m54_repair : vn_defaults_medium {};
-	class vn_b_wheeled_m54_repair_airport : vn_defaults_medium {};
+	class SPE_US_M3_Halftrack_Repair : vn_defaults_medium {};
+	class SPE_US_M3_Halftrack_Ambulance : vn_defaults_medium {};
 	//Fuel trucks
-	class vn_b_wheeled_m54_fuel : vn_defaults_medium {};
+	class SPE_US_M3_Halftrack_Fuel : vn_defaults_medium {};
 	class vn_b_wheeled_m54_fuel_airport : vn_defaults_medium {};
 	//Ammo truck
-	class vn_b_wheeled_m54_ammo : vn_defaults_medium {};
+	class SPE_US_M3_Halftrack_Ammo : vn_defaults_medium {};
 	//Gun trucks
 	class vn_b_wheeled_m54_mg_01 : vn_defaults_small {};
 	class vn_b_wheeled_m54_mg_02 : vn_defaults_small {};
 	class vn_b_wheeled_m54_mg_03 : vn_defaults_small {};
 
 	//Armor
-	class vn_b_armor_m41_01_01 : vn_defaults_tiny {};
-	class vn_o_armor_type63_01 : vn_defaults_tiny {};
-	class vn_b_armor_m48_01_01 : vn_defaults_tiny {};
-	class vn_b_armor_m67_01_01 : vn_defaults_tiny {};
-	class vn_i_armor_type63_01 : vn_defaults_tiny {};
+	class SPE_M10 : vn_defaults_medium {};
+	class SPE_M18_Hellcat : vn_defaults_medium {};
+	class SPE_M4A0_75_Early : vn_defaults_small {};
+	class SPE_M4A0_75 : vn_defaults_small {};
+	class SPE_M4A1_75 : vn_defaults_small {};
+	class SPE_M4A1_T34_Calliope_Direct : vn_defaults_small {};
+	class SPE_M4A1_T34_Calliope : vn_defaults_small {};
+	class SPE_M4A1_76 : vn_defaults_medium {};
+
 
 	//Small VC boats
 	class vn_o_boat_01_00 : vn_defaults_small {};
@@ -215,7 +219,7 @@ class vn_logistics
 	class vn_b_air_uh1c_06_02 : vn_defaults_tiny {};
 
 	//UH1B - Slick
-	class vn_b_air_uh1c_07_01 : vn_defaults_small {};
+	class SPE_P47 : vn_defaults_small {};
 
 	//UH1B - Dustoff 
 	class vn_b_air_uh1b_01_01 : vn_defaults_small {};
