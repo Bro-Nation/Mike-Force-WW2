@@ -28,36 +28,36 @@ class vehicles {
 		tags[] = {"m3a1","armed","antiair","apc"};
 	};
 
-	class vn_b_armor_m113_acav_04 {
-		tags[] = {"m113","armed","transport","apc"};
+	class SPE_M18_Hellcat {
+		tags[] = {"m18","armed","antitank","apc"};
 	};
 
-	class vn_b_armor_m113_acav_05 {
-		tags[] = {"m113","armed","transport","apc"};
+	class SPE_M10 {
+		tags[] = {"m10","armed","antitank","apc"};
 	};
 
-	class vn_b_armor_m113_acav_06 {
-		tags[] = {"m113","armed","transport","apc","antitank"};
+	class SPE_M4A0_75_Early {
+		tags[] = {"sherman","armed","tank"};
 	};
 
-	class vn_b_armor_m125_01 {
-		tags[] = {"m113","armed","firesupport","apc","artillery"};
+	class SPE_M4A0_75 {
+		tags[] = {"sherman","armed","tank"};
 	};
 
-	class vn_b_armor_m132_01 {
-		tags[] = {"m113","armed","firesupport","apc","flamethrower"};
+	class SPE_M4A1_T34_Calliope {
+		tags[] = {"sherman","armed","firesupport"};
 	};
 
-	class vn_b_armor_m41_01_01 {
-		tags[] = {"m41a3","armed","firesupport","tank","lighttank","antitank"};
+	class SPE_M4A1_T34_Calliope_Direct {
+		tags[] = {"sherman","armed","firesupport"};
 	};
 
-	class vn_b_armor_m48_01_01 {
-		tags[] = {"m48a3","armed","firesupport","tank","heavytank","antitank"};
+	class SPE_M4A1_75 {
+		tags[] = {"sherman","armed","tank"};
 	};
 
-	class vn_b_armor_m577_01 {
-		tags[] = {"m577","transport","apc"};
+	class SPE_M4A1_76 {
+		tags[] = {"sherman","armed","tank","heavytank"};
 	};
 
 	class SPE_US_M3_Halftrack_Ambulance {
@@ -376,29 +376,29 @@ class spawn_point_types {
 		WRECK_SHORT;
 
 		class categories {
-			class trucks {
-				name = "Trucks";
+			class antitank {
+				name = "Tank Destroyers";
 				icon = VEHICLE_ICON_TRUCK;
-				include[] = { {"m3a1", "antiair" } };
+				include[] = { {"m10","m18"} };
 			};
 
 			class armor {
 				name = "M3A1 Armed";
 				icon = VEHICLE_ICON_ARMOUR;
-				include[] = { { "m3a1", "armed" } };
+				include[] = { { "m3a1", "armed","antiair"} };
 			};
 		};
 	};
 
 	class heavy_fire_support {
-		name = "Heavy fire support";
+		name = "Armored Assets";
 		WRECK_LONG;
 
 		class categories {
 			class tanks {
 				name = "Tanks";
 				icon = VEHICLE_ICON_ARMOUR;
-				include[] = { { "tank" } };
+				include[] = { { "tank","sherman","firesupport","heavytank" } };
 			};
 		};
 	};
@@ -610,12 +610,12 @@ class spawn_point_types {
 		WRECK_LONG;
 
 		class categories {
-			class m101 {
-				name = "M101";
+			class artillery {
+				name = "Artillery";
 				icon = VEHICLE_ICON_STATIC;
-				include[] = { { "static", "artillery" } };
-				exclude[] = { "mortar" };
+				include[] = { { "static", "artillery","firesupport","heavytank"} };
+				exclude[] = {};
+				};
 			};
-		};
 	};
 };
