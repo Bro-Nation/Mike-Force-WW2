@@ -384,7 +384,7 @@ class spawn_point_types {
 			class tanks {
 				name = "Tank";
 				icon = VEHICLE_ICON_ARMOUR;
-				include[] = { { "tank","sherman","heavytank","firesupport" } };
+				include[] = { { "tank","sherman","heavytank" } };
 			};
 		};
 	};
