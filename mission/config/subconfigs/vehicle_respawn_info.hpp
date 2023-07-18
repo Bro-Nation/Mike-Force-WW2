@@ -64,12 +64,12 @@ class vehicles {
 		tags[] = {"m3a1","medical","apc"};
 	};
 
-	class vn_b_army_static_tow {
-		tags[] = {"bgm71","armed","firesupport","static","antitank"};
+	class SPE_57mm_M1 {
+		tags[] = {"m57","armed","firesupport","static","antitank","nodisassemble"};
 	};
 
-	class vn_b_sf_static_tow {
-		tags[] = {"bgm71","armed","firesupport","static","antitank"};
+	class SPE_M1_81 {
+		tags[] = {"m181","armed","firesupport","static","mortar"};
 	};
 
 	class vn_b_navy_static_l60mk3 {
@@ -112,36 +112,36 @@ class vehicles {
 		tags[] = {"m2hb","armed","firesupport","static","machinegun"};
 	};
 
-	class vn_b_army_static_m2_scoped_high {
-		tags[] = {"m2hb","armed","firesupport","static","machinegun"};
+	class SPE_M1919_M2 {
+		tags[] = {"m1919","armed","firesupport","static","machinegun"};
 	};
 
 	class vn_b_army_static_m2_low {
 		tags[] = {"m2hb","armed","firesupport","static","machinegun"};
 	};
 
-	class vn_b_army_static_m2_scoped_low {
-		tags[] = {"m2hb","armed","firesupport","static","machinegun"};
+	class SPE_M1919A6_Bipod {
+		tags[] = {"m1919","armed","firesupport","static","machinegun"};
 	};
 
-	class vn_b_army_static_m40a1rr {
-		tags[] = {"m40","armed","firesupport","static","antitank","nodisassemble"};
+	class SPE_M1919_M2_Trench_Deployed {
+		tags[] = {"m1919","armed","firesupport","static","antitank"};
 	};
 
-	class vn_b_army_static_m45 {
+	class SPE_M45_Quadmount {
 		tags[] = {"m45","armed","firesupport","static","antiair","nodisassemble"};
 	};
 
-	class vn_b_army_static_m60_high {
-		tags[] = {"m60","armed","firesupport","static","machinegun"};
+	class SPE_MG42_Lafette_Deployed {
+		tags[] = {"mg42","armed","firesupport","static","machinegun"};
 	};
 
-	class vn_b_army_static_m60_low {
-		tags[] = {"m60","armed","firesupport","static","machinegun"};
+	class SPE_MG34_Lafette_Deployed {
+		tags[] = {"mg42","armed","firesupport","static","machinegun"};
 	};
 
-	class vn_b_army_static_mk18 {
-		tags[] = {"m60","armed","firesupport","static","machinegun"};
+	class SPE_GER_SearchLight {
+		tags[] = {"gsl","armed","firesupport","static","machinegun","nodisassemble"};
 	};
 
 	class vn_b_wheeled_lr2a_01_aus_army {
@@ -384,7 +384,8 @@ class spawn_point_types {
 			class tanks {
 				name = "Tank";
 				icon = VEHICLE_ICON_ARMOUR;
-				include[] = { { "tank","sherman","heavytank" } };
+				include[] = { { "tank","sherman","armed" } };
+				exclude[] = { {"m3a1"} };
 			};
 		};
 	};
@@ -599,7 +600,7 @@ class spawn_point_types {
 			class artillery {
 				name = "Artillery";
 				icon = VEHICLE_ICON_STATIC;
-				include[] = { { "static", "artillery","firesupport","heavytank"} };
+				include[] = { { "artillery","firesupport"} };
 				exclude[] = {};
 				};
 			};

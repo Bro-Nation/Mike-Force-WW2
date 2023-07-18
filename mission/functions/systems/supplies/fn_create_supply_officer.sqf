@@ -23,7 +23,6 @@ private _officer = missionNamespace getVariable [_officerMarker, objNull];
 if (isNull _officer) then {
 	_officer = createAgent ["SPE_US_Pilot_Unequipped", getMarkerPos _officerMarker, [], 0, "NONE"];
 	_officer setDir markerDir _officerMarker;
-	removeHeadgear _officer;
 	removeGoggles _officer;
 	_officer removeWeapon (primaryWeapon _officer);
 	_officer removeWeapon (secondaryWeapon _officer);

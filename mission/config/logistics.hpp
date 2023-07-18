@@ -485,13 +485,13 @@ class vn_logistics
 		class vn_b_sf_static_m2_low : vn_static_tiny {};
 		class vn_b_army_static_m2_high : vn_static_tiny {};
 		class vn_b_sf_static_m2_high : vn_static_tiny {};
-		class vn_b_army_static_m60_low : vn_static_tiny {};
-		class vn_b_sf_static_m60_low : vn_static_tiny {};
-		class vn_b_army_static_m60_high : vn_static_tiny {};
-		class vn_b_sf_static_m60_high : vn_static_tiny {};
-		class vn_b_sf_static_m40a1rr : vn_static_small {};
+		class SPE_M1919_M2 : vn_static_tiny {};
+		class SPE_M1919A6_Bipod : vn_static_tiny {};
+		class SPE_M1919_M2_Trench_Deployed : vn_static_tiny {};
+		class SPE_M1_81 : vn_static_tiny {};
+		class SPE_57mm_M1 : vn_static_medium {};
 		class vn_b_army_static_tow : vn_static_small {};
-		class vn_b_sf_static_tow : vn_static_small {};
+		class SPE_M45_Quadmount : vn_static_medium {};
 		class vn_b_army_static_m40a1rr : vn_static_medium {};
 		class vn_b_army_static_mk18 : vn_static_small {};
 		//TODO - Bump these to large when slingloading is added to M45s
@@ -515,11 +515,8 @@ class vn_logistics
 		class vn_i_static_m1919a4_high:	vn_b_army_static_m1919a4_high {};
 		class vn_i_static_m2_low: 	vn_b_army_static_m2_low {};
 		class vn_i_static_m2_high: 	vn_b_army_static_m2_high {};
-		class vn_i_static_m60_low: 	vn_b_army_static_m60_low {};
-		class vn_i_static_m60_high: 	vn_b_army_static_m60_high {};
 		class vn_i_army_static_m45: 	vn_b_army_static_m45 {};
 
-		class vn_o_nva_static_rpd_high: 	vn_b_army_static_m60_high {};
 		class vn_o_nva_static_dshkm_high_01:	vn_b_army_static_m2_high {};
 		class vn_o_nva_static_dshkm_high_02: 	vn_b_army_static_m2_high {};
 		class vn_o_nva_static_dshkm_low_01:	vn_b_army_static_m2_low {};
@@ -527,7 +524,6 @@ class vn_logistics
 		class vn_o_nva_static_mortar_type53: 	vn_b_army_static_mortar_m29 {};
 		class vn_o_nva_static_mortar_type63: 	vn_b_army_static_mortar_m2 {};
 
-		class vn_o_nva_navy_static_rpd_high: 		vn_b_army_static_m60_high {};
 		class vn_o_nva_navy_static_dshkm_high_01:	vn_b_army_static_m2_high {};
 		class vn_o_nva_navy_static_dshkm_high_02: 	vn_b_army_static_m2_high {};
 		class vn_o_nva_navy_static_dshkm_low_01:	vn_b_army_static_m2_low {};
@@ -535,8 +531,6 @@ class vn_logistics
 		class vn_o_nva_navy_static_mortar_type53: 	vn_b_army_static_mortar_m29 {};
 		class vn_o_nva_navy_static_mortar_type63: 	vn_b_army_static_mortar_m2 {};
 
-		class vn_o_vc_static_rpd_high: 		vn_b_army_static_m60_high {};
-		class vn_o_vc_static_dp28_high: 	vn_b_army_static_m60_high {};
 		class vn_o_vc_static_dshkm_high_01:	vn_b_army_static_m2_high {};
 		class vn_o_vc_static_dshkm_high_02: 	vn_b_army_static_m2_high {};
 		class vn_o_vc_static_dshkm_low_01:	vn_b_army_static_m2_low {};
@@ -580,8 +574,6 @@ class vn_logistics
 		class vn_b_usmc_static_m2_high: vn_static_small {};
 		class vn_b_usmc_static_m2_scoped_high: vn_static_small {};
 		class vn_b_usmc_static_m2_scoped_low: vn_static_small {};
-		class vn_b_usmc_static_m60_low: vn_static_small {};
-		class vn_b_usmc_static_m60_high: vn_static_small {};
 		class vn_b_usmc_static_mortar_m2: vn_static_small {};
 		class vn_b_usmc_static_mortar_m29: vn_static_small {};
 		class vn_b_usmc_static_m101_01: vn_static_small {};
@@ -595,8 +587,6 @@ class vn_logistics
 		class vn_i_fank_71_static_m2_low: vn_static_small {};
 		class vn_i_fank_71_static_m2_high: vn_static_small {};
 		class vn_i_fank_71_static_m45: vn_static_small {};
-		class vn_i_fank_71_static_m60_low: vn_static_small {};
-		class vn_i_fank_71_static_m60_high: vn_static_small {};
 		class vn_i_fank_71_static_mortar_m2: vn_static_small {};
 		class vn_i_fank_71_static_mortar_m29: vn_static_small {};
 		class vn_i_fank_71_static_m40a1rr: vn_static_small {};
