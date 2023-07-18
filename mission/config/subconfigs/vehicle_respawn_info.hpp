@@ -29,11 +29,11 @@ class vehicles {
 	};
 
 	class SPE_M18_Hellcat {
-		tags[] = {"m18","armed","antitank","apc"};
+		tags[] = {"tank","armed","firesupport"};
 	};
 
 	class SPE_M10 {
-		tags[] = {"m10","armed","antitank","apc"};
+		tags[] = {"tank","armed","firesupport"};
 	};
 
 	class SPE_M4A0_75_Early {
@@ -62,10 +62,6 @@ class vehicles {
 
 	class SPE_US_M3_Halftrack_Ambulance {
 		tags[] = {"m3a1","medical","apc"};
-	};
-
-	class vn_b_armor_m67_01_01 {
-		tags[] = {"m67a2","armed","firesupport","tank","flamethrower"};
 	};
 
 	class vn_b_army_static_tow {
@@ -260,10 +256,6 @@ class vehicles {
 		tags[] = {"offroad","civilian","transport","car"};
 	};
 
-	class vn_i_armor_type63_01 {
-		tags[] = {"type63","armed","firesupport","tank","lighttank"};
-	};
-
 	class vn_i_fank_70_static_sgm_high_01 {
 		tags[] = {"sgm","static","machinegun"};
 	};
@@ -317,15 +309,15 @@ class spawn_point_types {
 	};
 
 	class patrol {
-		name = "Patrol";
+		name = "Tank Destroyer";
 		RESPAWN_MEDIUM;
 
 		class categories {
-			class dirtranger {
-				name = "M3A1 armed";
+			class tank {
+				name = "Tank Destroyer";
 				icon = VEHICLE_ICON_CAR;
-				include[] = { { "m3a1", "armed" } };
-				exclude[] = { "m113" };
+				include[] = { { "tank", "armed","firesupport" } };
+				exclude[] = { "sherman" };
 			};
 		};
 	};
@@ -376,12 +368,6 @@ class spawn_point_types {
 		WRECK_SHORT;
 
 		class categories {
-			class antitank {
-				name = "Tank Destroyers";
-				icon = VEHICLE_ICON_TRUCK;
-				include[] = { {"m10","m18"} };
-			};
-
 			class armor {
 				name = "M3A1 Armed";
 				icon = VEHICLE_ICON_ARMOUR;
@@ -391,14 +377,14 @@ class spawn_point_types {
 	};
 
 	class heavy_fire_support {
-		name = "Armored Assets";
+		name = "Armored";
 		WRECK_LONG;
 
 		class categories {
 			class tanks {
-				name = "Tanks";
+				name = "Tank";
 				icon = VEHICLE_ICON_ARMOUR;
-				include[] = { { "tank","sherman","firesupport","heavytank" } };
+				include[] = { { "tank","sherman","heavytank","firesupport" } };
 			};
 		};
 	};
@@ -412,19 +398,19 @@ class spawn_point_types {
 				name = "Fuel";
 				icon = VEHICLE_ICON_TRUCK;
 				include[] = { "fuel","m3a1"};
-				exclude[] = { "airport" };
+				exclude[] = { "airport","medical","armed" };
 			};
 			class ammo {
 				name = "Ammo";
 				icon = VEHICLE_ICON_TRUCK;
 				include[] = { "ammo","m3a1"};
-				exclude[] = { "airport" };
+				exclude[] = { "airport","medical","armed" };
 			};
 			class repair {
 				name = "Repair";
 				icon = VEHICLE_ICON_TRUCK;
 				include[] = { "repair","m3a1"};
-				exclude[] = { "airport" };
+				exclude[] = { "airport","medical","armed" };
 			};
 		};
 	};
