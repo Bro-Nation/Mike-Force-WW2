@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=555;
+		nextID=627;
 	};
 	class Camera
 	{
@@ -1360,7 +1360,7 @@ class Mission
 			text="@STR_vn_mf_arsenal";
 			type="mil_dot";
 			colorName="ColorPink";
-			angle=156.68336;
+			angle=156.68335;
 			id=45;
 			atlOffset=43.730167;
 		};
@@ -1400,7 +1400,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1394.1042,53.599998,642.94983};
-						angles[]={-0,2.8229175,0};
+						angles[]={0,2.8229175,0};
 					};
 					side="Empty";
 					flags=4;
@@ -1469,7 +1469,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1422.7496,54.994999,596.96545};
-						angles[]={-0,5.6110492,0.0066592805};
+						angles[]={0,5.6110492,0.0066592805};
 					};
 					side="Empty";
 					flags=4;
@@ -1537,7 +1537,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5360.5176,46.84,11252.551};
-						angles[]={-0,5.1955147,0};
+						angles[]={0,5.1955147,0};
 					};
 					side="Empty";
 					flags=4;
@@ -1571,7 +1571,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={6470.6504,56.310848,5209.731};
-						angles[]={-0,2.8229175,-0};
+						angles[]={0,2.8229175,0};
 					};
 					side="Empty";
 					flags=4;
@@ -1605,7 +1605,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11945.472,47.233234,2397.46};
-						angles[]={-0,0.71133643,-0};
+						angles[]={0,0.71133643,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2109,7 +2109,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1248.7836,51.642159,634.5835};
-						angles[]={0,5.3745327,-0};
+						angles[]={0,5.3745327,0};
 					};
 					side="Empty";
 					flags=5;
@@ -3014,7 +3014,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1424.8357,55.01329,596.72266};
-				angles[]={-0,5.526453,0.0066592805};
+				angles[]={0,5.526453,0.0066592805};
 			};
 			side="Empty";
 			flags=4;
@@ -3032,7 +3032,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1395.639,53.602257,642.66278};
-				angles[]={-0,5.8941493,6.2798738};
+				angles[]={0,5.8941493,6.2798738};
 			};
 			side="Empty";
 			flags=4;
@@ -4381,7 +4381,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1803.8345,47.00375,666.50385};
-						angles[]={0,3.0887053,-0};
+						angles[]={0,3.0887053,0};
 					};
 					side="Empty";
 					flags=5;
@@ -4767,7 +4767,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1799.5587,46.994984,666.04382};
-						angles[]={0,3.0553231,-0};
+						angles[]={0,3.0553231,0};
 					};
 					side="Empty";
 					flags=5;
@@ -5329,7 +5329,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={1807.8275,47.015533,667.22009};
-						angles[]={0,3.0169468,-0};
+						angles[]={0,3.0169468,0};
 					};
 					side="Empty";
 					flags=5;
@@ -19570,7 +19570,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorPink";
 			id=655;
-			atlOffset=56.440212;
+			atlOffset=56.44022;
 		};
 		class Item308
 		{
@@ -20961,7 +20961,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1430.9135,55.154766,589.8562};
-				angles[]={-0,5.0069571,0};
+				angles[]={0,5.0069571,0};
 			};
 			side="Empty";
 			flags=4;
@@ -35442,7 +35442,7 @@ class Mission
 			text="@STR_vn_mf_arsenal";
 			type="mil_dot";
 			colorName="ColorPink";
-			angle=216.72311;
+			angle=216.72308;
 			id=1182;
 			atlOffset=12.132309;
 		};
