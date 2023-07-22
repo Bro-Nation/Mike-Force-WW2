@@ -45,11 +45,11 @@ class vehicles {
 	};
 
 	class SPE_M4A1_T34_Calliope {
-		tags[] = {"sherman","armed","firesupport"};
+		tags[] = {"sherman","armed","tank"};
 	};
 
 	class SPE_M4A1_T34_Calliope_Direct {
-		tags[] = {"sherman","armed","firesupport"};
+		tags[] = {"sherman","armed","tank"};
 	};
 
 	class SPE_M4A1_75 {
@@ -138,10 +138,6 @@ class vehicles {
 
 	class SPE_MG34_Lafette_Deployed {
 		tags[] = {"mg42","armed","firesupport","static","machinegun"};
-	};
-
-	class SPE_GER_SearchLight {
-		tags[] = {"gsl","armed","firesupport","static","machinegun","nodisassemble"};
 	};
 
 	class vn_b_wheeled_lr2a_01_aus_army {
@@ -266,10 +262,6 @@ class vehicles {
 
 	class vn_i_fank_70_static_sgm_low_02 {
 		tags[] = {"sgm","static","machinegun"};
-	};
-
-	class vn_i_fank_70_static_zgu1_01 {
-		tags[] = {"zgu1","static","antiair","nodisassemble"};
 	};
 };
 

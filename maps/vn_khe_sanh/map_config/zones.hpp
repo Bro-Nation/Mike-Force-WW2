@@ -4,7 +4,7 @@ zone_ban_hoang[] = {
 	{"zone_da_nang", "connector_ban_hoang_da_nang"}
 };
 
-zone_khe_sanh[] = {
+zone_st_denis_le_gast[] = {
 	{"zone_khe_sanh_base"}
 };
 

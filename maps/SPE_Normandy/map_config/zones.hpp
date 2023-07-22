@@ -4,140 +4,147 @@ zone_ban_hoang[] = {
 	{"zone_da_nang", "connector_ban_hoang_da_nang"}
 };
 
-zone_khe_sanh[] = {
-	{"zone_khe_sanh_base"}
+zone_st_denis_le_gast[] = {
+	{"zone_hambye"}
 };
 
-zone_khe_sanh_base[] = {
-	{"zone_xom_ta_can"},
-	{"zone_hill_203"}
+zone_hambye[] = {
+	{"zone_le_bourg_junction"},
+	{"zone_la_riverie_junction"}
 };
 
-zone_french_fort[] = {
-	{"zone_kok"},
-	{"zone_koanphan"},
-	{"zone_that"}
+zone_la_riverie_junction[] = {
+	{"zone_ouville"},
+	{"zone_cerisy_la_salle"},
+	{"zone_notre_dame_de_cenilly"}
 };
 
-zone_koanphan[] = {
-	{"zone_that"},
-	{"zone_nabo"}
+zone_le_bourg_junction[] = {
+	{"zone_ouville"},
+	{"zone_roncey"}
 };
 
-zone_that[] = {
-	{"zone_nabo"}
+zone_ouville[] = {
+	{"zone_roncey"}
 };
 
-zone_nabo[] = {
-	{"zone_river_edge"},
-	{"zone_koanphan"}
+zone_cerisy_la_salle[] = {
+	{"zone_la_croix_perrier"},
+	{"zone_notre_dame_de_cenilly"}
 };
 
-zone_river_edge[] = {
-	{"zone_hill_203"},
-	{"zone_kate"},
-	{"zone_nabo"}
+zone_notre_dame_de_cenilly[] = {
+	{"zone_la_huberdiere"},
+	{"zone_le_hamel_bouteiller"},
+	{"zone_cerisy_la_salle"}
 };
 
-zone_hill_203[] = {
-	{"zone_khe_sanh_base"},
-	{"zone_hill_538"},
-	{"zone_river_edge"}
+zone_la_croix_perrier[] = {
+	{"zone_camprond"},
+	{"zone_eglise_sainte_vierge"},
+	{"zone_hauteville_la_guichard"}
 };
 
-zone_hill_538[] = {
-	{"zone_kate"},
-	{"zone_river_edge"},
-	{"zone_hickory_hill"}
+zone_roncey[] = {
+	{"zone_la_croix_perrier"},
+	{"zone_cerisy_la_salle"},
+	{"zone_notre_dame_de_cenilly"}
 };
 
-zone_kate[] = {
-	{"zone_hill_399"}
+zone_camprond[] = {
+	{"zone_hauteville_la_guichard"}
 };
 
-zone_hill_399[] = {
-	{"zone_xom_bau"}
+zone_eglise_sainte_vierge[] = {
+	{"zone_hauteville_la_guichard"}
 };
 
-zone_xom_bau[] = {
-	{"zone_nam_hung"},
-	{"zone_hill_399"},
-	{"zone_hill_538"},
+zone_hauteville_la_guichard[] = {
+	{"zone_la_quesneliere_junction"},
+	{"zone_marigny"},
+	{"zone_la_chapelle_en_juger"},
 };
 
-zone_hickory_hill[] = {
-	{"zone_pomkhoun"},
-	{"zone_hill_538"}
+zone_la_quesneliere_junction[] = {
+	{"zone_marigny"},
+	{"zone_cametours"}
 };
 
-zone_pomkhoun[] = {
-	{"zone_hill_861"},
+zone_cametours[] = {
+	{"zone_dangy"},
 	{"zone_sei_na"},
 	{"zone_hickory_hill"}
 };
 
-zone_hill_861[] = {
-	{"zone_xom_ta_can"},
-	{"zone_hill_881"},
-	{"zone_pomkhoun"}
+zone_dangy[] = {
+	{"zone_marigny"},
+	{"zone_la_bourdonniere"},
+	{"zone_saint_gilles"}
 };
 
-zone_xom_ta_can[] = {
-	{"zone_hill_861"},
-	{"zone_a_bung"},
-	{"zone_lang_temp"}
+zone_saint_gilles[] = {
+	{"zone_la_chapelle_en_juger"},
+	{"zone_la_bourdonniere"},
+	{"zone_hebecrevon"}
 };
 
-zone_lang_temp[] = {
-	{"zone_kok"},
-	{"zone_lang_vei"},
-	{"zone_lang_ou_hi"}
+
+zone_la_huberdiere[] = {
+	{"zone_villebaudon_junction"},
+	{"zone_la_hulliere"}
 };
 
-zone_lang_vei[] = {
-	{"zone_co_put"}
+zone_le_hamel_bouteiller[] = {
+	{"zone_villebaudon_junction"},
+	{"zone_montabot"}
 };
 
-zone_kok[] = {
-	{"zone_lang_temp"}
+zone_villebaudon_junction[] = {
+	{"zone_chevry"}
 };
 
-zone_a_bung[] = {
-	{"zone_lang_hoan_tap"},
-	{"zone_hill_881"}
+zone_chevry[] = {
+	{"zone_moyon"}
 };
 
-zone_hill_881[] = {
+zone_la_hulliere[] = {
+	{"zone_st_romphaire"}
+};
+
+zone_la_maugerie[] = {
 	{"zone_mouang_nong"}
 };
 
-zone_sei_na[] = {
-	{"zone_mouang_nong"},
-	{"zone_ro_ro"},
-	{"zone_pomkhoun"}
-};
-
-zone_ro_ro[] = {
+zone_la_chapelle_en_juger[] = {
 	{"zone_northwest_jungle"},
-	{"zone_mouang_nong"}
+	{"zone_hebecrevony"}
 };
 
-zone_northwest_jungle[] = {
-	{"zone_mu_ta"},
-	{"zone_ro_ro"}
+zone_montabot[] = {
+	{"zone_chevry"},
+	{"zone_villebaudon_junction"}
 };
 
-zone_mu_ta[] = {
-	{"zone_pagnouy"},
-	{"zone_northwest_jungle"}
+zone_moyon[] = {
+	{"zone_st_romphaire"},
+	{"zone_la_maugerie"}
 };
 
-zone_pagnouy[] = {
-	{"zone_nam_hung"},
-	{"zone_mu_ta"}
+zone_st_romphaire[] = {
+	{"zone_la_maugerie"},
+	{"zone_chateau_du_beron"}
 };
 
-zone_nam_hung[] = {
-	{"zone_pagnouy"},
-	{"zone_xom_bau"}
+zone_chateau_du_beron[] = {
+	{"zone_saint_lo"}
 };
+
+zone_hebecrevon[] = {
+	{"zone_chateau_du_beron"}
+};
+
+zone_zone_saint_lo[] = {
+	{"zone_st_denis_le_gast"},
+	{"zone_hambye"}
+};
+
