@@ -55,26 +55,33 @@ class vn_logistics
 	//APC
 	class SPE_US_M3_Halftrack : vn_defaults_medium {};
 	class SPE_US_M16_Halftrack : vn_defaults_small {};
-	class vn_b_armor_m113_acav_02 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_03 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_04 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_05 : vn_defaults_small {};
-	class vn_b_armor_m113_acav_06 : vn_defaults_small {};
+	class SPE_SdKfz250_1 : vn_defaults_small {};
+	class SPE_OpelBlitz_Flak38 : vn_defaults_small {};
+	class SPE_PzKpfwIII_J : vn_defaults_small {};
+	class SPE_PzKpfwIII_L : vn_defaults_small {};
+	class SPE_PzKpfwIII_M : vn_defaults_small {};
+	class SPE_PzKpfwIII_N : vn_defaults_small {};
+	class SPE_PzKpfwIV_G : vn_defaults_small {};
 
 	//Transport trucks
 	class SPE_US_M3_Halftrack_Unarmed : vn_defaults_extra_large {};
 	class SPE_US_M3_Halftrack_Unarmed_Open : vn_defaults_extra_large {};
-	class vn_b_wheeled_m54_02 : vn_defaults_extra_large {};
+	class SPE_OpelBlitz_Open : vn_defaults_extra_large {};
+	class SPE_OpelBlitz : vn_defaults_extra_large {};
 	//M109 Command Truck
 	class vn_b_wheeled_m54_03 : vn_defaults_medium {};
 	//Repair Truck
 	class SPE_US_M3_Halftrack_Repair : vn_defaults_medium {};
 	class SPE_US_M3_Halftrack_Ambulance : vn_defaults_medium {};
+	class SPE_OpelBlitz_Repair : vn_defaults_medium {};
+	class SPE_OpelBlitz_Ambulance : vn_defaults_medium {};
 	//Fuel trucks
 	class SPE_US_M3_Halftrack_Fuel : vn_defaults_medium {};
 	class vn_b_wheeled_m54_fuel_airport : vn_defaults_medium {};
+	class SPE_OpelBlitz_Fuel : vn_defaults_medium {};
 	//Ammo truck
 	class SPE_US_M3_Halftrack_Ammo : vn_defaults_medium {};
+	class SPE_OpelBlitz_Ammo : vn_defaults_medium {};
 	//Gun trucks
 	class vn_b_wheeled_m54_mg_01 : vn_defaults_small {};
 	class vn_b_wheeled_m54_mg_02 : vn_defaults_small {};
@@ -89,6 +96,8 @@ class vn_logistics
 	class SPE_M4A1_T34_Calliope_Direct : vn_defaults_small {};
 	class SPE_M4A1_T34_Calliope : vn_defaults_small {};
 	class SPE_M4A1_76 : vn_defaults_medium {};
+	class SPE_PzKpfwVI_H1 : vn_defaults_medium {};
+	class SPE_Nashorn : vn_defaults_large {};
 
 
 	//Small VC boats
@@ -490,10 +499,27 @@ class vn_logistics
 		class SPE_M1919_M2_Trench_Deployed : vn_static_tiny {};
 		class SPE_M1_81 : vn_static_tiny {};
 		class SPE_57mm_M1 : vn_static_medium {};
+		class SPE_MG34_Lafette_Deployed : vn_static_tiny {};
+		class SPE_MG34_Bipod : vn_static_tiny {};
+		class SPE_MG34_Lafette_low_Deployed : vn_static_tiny {};
+		class SPE_MG34_Lafette_Trench_Deployed : vn_static_tiny {};
+		class SPE_MG42_Lafette_Deployed : vn_static_tiny {};
+		class SPE_MG42_Bipod : vn_static_tiny {};
+		class SPE_MG42_Lafette_low_Deployed : vn_static_tiny {};
+		class SPE_MG42_Lafette_trench_Deployed : vn_static_tiny {};
+		class SPE_GrW278_1 : vn_static_tiny {};
+		class SPE_GER_SearchLight : vn_static_small {};
 		class vn_b_army_static_tow : vn_static_small {};
 		class SPE_M45_Quadmount : vn_static_medium {};
 		class vn_b_army_static_m40a1rr : vn_static_medium {};
 		class vn_b_army_static_mk18 : vn_static_small {};
+		class SPE_Pak40 : vn_static_medium {};
+		class SPE_FlaK_36_AA : vn_static_large {};
+		class SPE_FlaK_36 : vn_static_large {};
+		class SPE_FlaK_30 : vn_static_medium {};
+		class SPE_leFH18_AT : vn_static_large {};
+		class SPE_leFH18 : vn_static_large {};
+		class SPE_FlaK_38 : vn_static_medium {};
 		//TODO - Bump these to large when slingloading is added to M45s
 		class vn_b_army_static_m45 : vn_static_small {};
 		class vn_b_sf_static_m45 : vn_static_small {};
