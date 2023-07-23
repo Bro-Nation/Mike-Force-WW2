@@ -6057,6 +6057,1258 @@ class vn_b_prop_fmradio_01
 	};
 };
 
+class Land_SPE_Dugout_6m45_sandbags
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_6m45_sandbags";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_6m45_sandbags";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_6m45_sandbags";
+		};
+	};
+};
+
+class Land_SPE_Dugout_6m315_sandbags
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_6m315_sandbags";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_6m315_sandbags";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_6m315_sandbags";
+		};
+	};
+};
+
+class Land_SPE_Dugout_3m_sandbags
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_3m_sandbags";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_3m_sandbags";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_3m_sandbags";
+		};
+	};
+};
+
+class Land_SPE_Dugout_6m_sandbags
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_6m_sandbags";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_6m_sandbags";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_6m_sandbags";
+		};
+	};
+};
+
+class Land_SPE_Dugout_3m
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_3m";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_3m";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_3m";
+		};
+	};
+};
+
+class Land_SPE_Dugout_6m
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_6m";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_6m";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_6m";
+		};
+	};
+};
+
+class Land_SPE_Dugout_Cover
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_Cover";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_Cover";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_Cover";
+		};
+	};
+};
+
+class Land_SPE_Dugout_Pile_01
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_Pile_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_Pile_01";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_Pile_01";
+		};
+	};
+};
+
+class Land_SPE_Dugout_Pile_02
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Dugout_Pile_02";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Dugout_Pile_02";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Dugout_Pile_02";
+		};
+	};
+};
+
+class Land_SPE_Wood_TrenchLogWall_01_4m_v3
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v3";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v3";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v3";
+		};
+	};
+};
+
+class Land_SPE_Wood_TrenchLogWall_01_4m_v2
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v2";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v2";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v2";
+		};
+	};
+};
+
+class Land_SPE_Wood_TrenchLogWall_01_4m_v1
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v1";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v1";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Wood_TrenchLogWall_01_4m_v1";
+		};
+	};
+};
+
+class Land_SPE_Stonewall_Low_4m
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Stonewall_Low_4m";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Stonewall_Low_4m";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Stonewall_Low_4m";
+		};
+	};
+};
+
+class Land_SPE_Stonewall_Low_8m
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Stonewall_Low_8m";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Stonewall_Low_8m";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Stonewall_Low_8m";
+		};
+	};
+};
+
+class Land_SPE_Netting_01
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Netting_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Netting_01";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Netting_01";
+		};
+	};
+};
+
+class Land_SPE_Netting_02
+{
+	name = "";
+	type = "trenches";
+	categories[] = {"trenches", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Netting_02";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Netting_02";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Netting_02";
+		};
+	};
+};
+
+class Land_SPE_US_Tent
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_US_Tent";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_US_Tent";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_US_Tent";
+		};
+	};
+};
+
+class Land_SPE_Tent_02
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Tent_02";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Tent_02";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Tent_02";
+		};
+	};
+};
+
+class Land_SPE_Tent_03
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Tent_03";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Tent_03";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Tent_03";
+		};
+	};
+};
+
+class Land_SPE_Tent_01
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Tent_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Tent_01";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Tent_01";
+		};
+	};
+};
+
+class Land_SPE_German_Tent
+{
+	name = "";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_German_Tent";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_German_Tent";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_German_Tent";
+		};
+	};
+};
+
+class 
+{
+	name = "Land_SPE_German_Tent_Oak";
+	type = "bunkers";
+	categories[] = {"bunkers", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_German_Tent_Oak";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_German_Tent_Oak";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_German_Tent_Oak";
+		};
+	};
+};
+
+class SPE_FlagCarrier_USA
+{
+	name = "";
+	type = "props";
+	categories[] = {"decorative", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_FlagCarrier_USA";
+		};
+		class middle_state
+		{
+			object_class = "SPE_FlagCarrier_USA";
+		};
+		class final_state
+		{
+			object_class = "SPE_FlagCarrier_USA";
+		};
+	};
+};
+
+
+class Land_SPE_BarbedWire_04
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_BarbedWire_04";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_BarbedWire_04";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_BarbedWire_04";
+		};
+	};
+};
+
+class Land_SPE_BarbedWire_03
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_BarbedWire_03";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_BarbedWire_03";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_BarbedWire_03";
+		};
+	};
+};
+
+class Land_SPE_BarbedWire_01
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_BarbedWire_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_BarbedWire_01";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_BarbedWire_01";
+		};
+	};
+};
+
+class Land_SPE_BarbedWire_02
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_BarbedWire_02";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_BarbedWire_02";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_BarbedWire_02";
+		};
+	};
+};
+
+class Land_SPE_BarbedWire_End
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_BarbedWire_End";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_BarbedWire_End";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_BarbedWire_End";
+		};
+	};
+};
+
+class Land_SPE_Element_c_rust
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Element_c_rust";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Element_c_rust";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Element_c_rust";
+		};
+	};
+};
+
+class Land_SPE_HedgeHog
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_HedgeHog";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_HedgeHog";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_HedgeHog";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Curve
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Curve";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Curve";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Curve";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Gun_Hole
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Gun_Hole";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Gun_Hole";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Gun_Hole";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Long
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Long";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Long";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Long";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Long_Line
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Long_Line";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Long_Line";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Long_Line";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Long_Thick
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Long_Thick";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Long_Thick";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Long_Thick";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Nest
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Nest";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Nest";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Nest";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Short
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Short";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Short";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Short";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Short_Low
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Short_Low";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Short_Low";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Short_Low";
+		};
+	};
+};
+
+class Land_SPE_Sandbag_Single
+{
+	name = "";
+	type = "fences";
+	categories[] = {"fences", "fortifications", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(200, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Sandbag_Single";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Sandbag_Single";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Sandbag_Single";
+		};
+	};
+};
+
+
+
+
 /*
 class Land_vn_usaf_revetment_helipad_02
 {
