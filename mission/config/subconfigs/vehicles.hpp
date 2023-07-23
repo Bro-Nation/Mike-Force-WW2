@@ -16,7 +16,7 @@ class vn_b_wheeled_m54_mg_01
 {
 	name = "";
 	type = "wheeled";
-	categories[] = {"armed", "us", "acav"};
+	categories[] = {"armed", "acav"};
 	rank = 0;
 	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
 

@@ -6,10 +6,6 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=513;
-	mods[]=
-	{
-		"3denEnhanced"
-	};
 	class ItemIDProvider
 	{
 		nextID=1270;
@@ -20,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=682;
+		nextID=716;
 	};
 	class Camera
 	{
 		pos[]={1744.8499,107.01044,378.83762};
-		dir[]={-0.93462747,-0.35482231,-0.023930132};
-		up[]={-0.35470608,0.93493378,-0.0090818685};
-		aside[]={-0.025595538,0,0.99967247};
+		dir[]={-0.93462747,-0.35482228,-0.023930132};
+		up[]={-0.35470605,0.93493378,-0.0090818675};
+		aside[]={-0.025595538,9.3132257e-010,0.99967241};
 	};
 };
 binarizationWanted=0;
@@ -822,7 +818,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2;
+							value=0;
 						};
 					};
 				};
@@ -33637,7 +33633,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				createAsSimpleObject=1;
+				dynamicSimulation=1;
 			};
 			id=1117;
 			type="Land_SPE_StreetLamp";
@@ -35034,6 +35030,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1218;
 			type="Land_SPE_StreetLamp";
@@ -35061,12 +35058,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1400.3536,55.807682,613.45593};
-				angles[]={0,2.4639487,-0};
+				angles[]={0,2.4639487,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1219;
 			type="Land_SPE_StreetLamp";
@@ -35100,6 +35098,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1220;
 			type="Land_SPE_StreetLamp";
@@ -35133,6 +35132,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1221;
 			type="Land_SPE_StreetLamp";
@@ -35160,15 +35160,33 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1366.1512,48.372681,193.57475};
-				angles[]={0,0.16391806,-0};
+				angles[]={0,0.16391806,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1222;
 			type="Land_SPE_StreetLamp_pole";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item511
 		{
@@ -35182,6 +35200,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1223;
 			type="Land_SPE_StreetLamp_pole";
@@ -35216,6 +35235,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1224;
 			type="Land_SPE_StreetLamp";
@@ -35250,6 +35270,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1225;
 			type="Land_SPE_StreetLamp";
@@ -35284,6 +35305,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1226;
 			type="Land_SPE_StreetLamp_pole";
@@ -35317,6 +35339,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1227;
 			type="Land_SPE_StreetLamp_pole";
@@ -35351,6 +35374,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1228;
 			type="Land_SPE_StreetLamp_pole";
@@ -35378,12 +35402,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={851.81744,53.588348,924.21112};
-				angles[]={0,1.6338384,-0};
+				angles[]={0,1.6338384,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1229;
 			type="Land_SPE_StreetLamp_pole";
@@ -35411,12 +35436,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1394.5651,55.532284,643.48108};
-				angles[]={0,5.9042759,-0};
+				angles[]={0,5.9042759,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1230;
 			type="Land_SPE_StreetLamp_pole";
@@ -35444,12 +35470,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1750.1757,48.396614,656.59479};
-				angles[]={0,1.2246337,-0};
+				angles[]={0,1.2246337,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1231;
 			type="Land_SPE_StreetLamp_pole";
@@ -35483,6 +35510,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1233;
 			type="Land_SPE_StreetLamp";
@@ -35517,6 +35545,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1234;
 			type="Land_SPE_StreetLamp";
@@ -35544,15 +35573,33 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1783.108,44.575043,204.46654};
-				angles[]={0,5.6338296,-0};
+				angles[]={0,5.6338296,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1235;
 			type="Land_SPE_StreetLamp";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item523
 		{
@@ -35566,6 +35613,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1236;
 			type="SPE_GER_SearchLight";
@@ -35573,14 +35621,14 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_enableHeadlights";
-					expression="[_this, _value] remoteExec ['setPilotLight', _this]";
+					property="allowDamage";
+					expression="_this allowdamage _value;";
 					class Value
 					{
 						class data
 						{
 							singleType="BOOL";
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -35599,10 +35647,28 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1237;
 			type="SPE_GER_SearchLight";
 			atlOffset=7.6293945e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item525
 		{
@@ -35616,10 +35682,28 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1238;
 			type="SPE_GER_SearchLight";
 			atlOffset=-3.8146973e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item526
 		{
@@ -35627,7 +35711,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1242.5424,49.945889,637.52466};
-				angles[]={0,3.8707898,-0};
+				angles[]={0,3.8707898,0};
 			};
 			side="Empty";
 			flags=5;
@@ -35643,7 +35727,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1235.0557,49.926712,636.65613};
-				angles[]={0,2.2039547,-0};
+				angles[]={0,2.2039547,0};
 			};
 			side="Empty";
 			flags=5;
@@ -35659,7 +35743,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1254.5549,50.635155,625.14429};
-				angles[]={0,3.7069407,-0};
+				angles[]={0,3.7069407,0};
 			};
 			side="Empty";
 			flags=5;
@@ -35675,7 +35759,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1255.0521,50.129868,632.5733};
-				angles[]={0,2.2874572,-0};
+				angles[]={0,2.2874572,0};
 			};
 			side="Empty";
 			flags=5;
@@ -35728,6 +35812,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1246;
 			type="Land_SPE_StreetLamp";
@@ -35761,6 +35846,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1247;
 			type="Land_SPE_StreetLamp";
@@ -35794,6 +35880,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1250;
 			type="SPE_GER_SearchLight";
@@ -35801,14 +35888,14 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="ENH_enableHeadlights";
-					expression="[_this, _value] remoteExec ['setPilotLight', _this]";
+					property="allowDamage";
+					expression="_this allowdamage _value;";
 					class Value
 					{
 						class data
 						{
 							singleType="BOOL";
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -35827,6 +35914,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1251;
 			type="Land_SPE_StreetLamp";
@@ -35854,12 +35942,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1729.9692,51.108063,395.13525};
-				angles[]={0,5.9183245,-0};
+				angles[]={0,5.9183245,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1252;
 			type="Land_SPE_StreetLamp";
@@ -35892,6 +35981,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1253;
 			type="Land_SPE_StreetLamp";
@@ -35924,6 +36014,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1254;
 			type="Land_SPE_StreetLamp";
@@ -35956,6 +36047,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1255;
 			type="Land_SPE_StreetLamp";
@@ -36030,7 +36122,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1712.624,48.843086,372.54501};
-				angles[]={0,3.9418371,-0};
+				angles[]={0,3.9418371,0};
 			};
 			side="Empty";
 			flags=5;
@@ -36053,6 +36145,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1260;
 			type="Land_SPE_StreetLamp";
@@ -36080,12 +36173,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1470.6453,45.462284,109.34512};
-				angles[]={0,2.3574767,-0};
+				angles[]={0,2.3574767,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1261;
 			type="Land_SPE_StreetLamp";
@@ -36113,12 +36207,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1578.3203,45.241432,134.69238};
-				angles[]={0,1.2489457,-0};
+				angles[]={0,1.2489457,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1262;
 			type="Land_SPE_StreetLamp";
@@ -36152,6 +36247,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1263;
 			type="Land_SPE_StreetLamp";
@@ -36185,6 +36281,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1264;
 			type="Land_SPE_StreetLamp";
@@ -36218,6 +36315,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1265;
 			type="Land_SPE_StreetLamp";
@@ -36251,6 +36349,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				dynamicSimulation=1;
 			};
 			id=1266;
 			type="Land_SPE_StreetLamp_pole";
@@ -36293,7 +36392,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={1431.2227,52.244934,338.25403};
-				angles[]={-0,4.6593571,0};
+				angles[]={0,4.6593571,0};
 			};
 			side="Empty";
 			class Attributes

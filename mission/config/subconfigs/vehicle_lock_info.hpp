@@ -36,7 +36,20 @@ class vn_c_car_01_01 : unlocked {};
 class vn_c_car_02_01 : unlocked {};
 class vn_c_car_03_01 : unlocked {};
 class vn_c_car_04_01 : unlocked {};
-
+class SPE_US_M3_Halftrack_Unarmed : unlocked {};
+class SPE_US_M3_Halftrack_Unarmed_Open : unlocked {};
+class SPE_US_M3_Halftrack : unlocked {};
+class SPE_US_M16_Halftrack : unlocked {};
+class SPE_US_M3_Halftrack_Ambulance : unlocked {};
+class SPE_57mm_M1 : unlocked {};
+class SPE_M1_81 : unlocked {};
+class SPE_SdKfz250_1 : unlocked {};
+class SSPE_OpelBlitz_Flak38 : unlocked {};
+class SPE_PzKpfwIII_J : acav {};
+class SPE_PzKpfwIII_L : acav {};
+class SPE_PzKpfwIII_M  : acav {};
+class SPE_PzKpfwIII_N : acav {};
+class SPE_PzKpfwIV_G : acav {};
 //APC
 class vn_b_armor_m113_01 : acav {};
 class vn_b_armor_m113_acav_01 : acav {};
@@ -45,6 +58,19 @@ class vn_b_armor_m113_acav_03 : acav {};
 class vn_b_armor_m113_acav_04 : acav {};
 class vn_b_armor_m113_acav_05 : acav {};
 class vn_b_armor_m113_acav_06 : acav {};
+class SPE_M18_Hellcat  : acav {};
+class SPE_M10 : acav {};
+class SPE_M4A0_75_Early : acav {};
+class SPE_M4A0_75 : acav {};
+class SPE_M4A1_T34_Calliope : acav {};
+class SPE_M4A1_T34_Calliope_Direct : acav {};
+class SPE_M4A1_75 : acav {};
+class SPE_M4A1_76 : acav {};
+class SPE_US_M3_Halftrack_Ammo : acav {};
+class SPE_US_M3_Halftrack_Fuel : acav {};
+class SPE_US_M3_Halftrack_Repair : acav {};
+class SPE_Nashorn : acav {};
+class SPE_PzKpfwVI_H1 : acav {};
 
 // M113 mortar and flamethrower
 class vn_b_armor_m125_01 : acav {};
@@ -98,6 +124,7 @@ class vn_b_boat_13_01 : unlocked {};
 //Air assets
 //Cobra Helicopter
 class vn_b_air_ah1g_01 : green_hornet {};
+class SPE_P47 : green_hornet {};
 class vn_b_air_ah1g_02 : green_hornet {};
 class vn_b_air_ah1g_03 : green_hornet {};
 class vn_b_air_ah1g_04 : green_hornet {};
