@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=784;
+		nextID=818;
 	};
 	class Camera
 	{
-		pos[]={1744.8499,107.01044,378.83762};
-		dir[]={-0.93462747,-0.35482228,-0.023930132};
-		up[]={-0.35470605,0.93493378,-0.0090818675};
-		aside[]={-0.025595538,9.3132257e-010,0.99967241};
+		pos[]={1679.8341,115.47772,350.21078};
+		dir[]={-0.96199781,-0.27291057,-0.009481526};
+		up[]={-0.27289841,0.96203923,-0.0026896219};
+		aside[]={-0.0098552909,-2.3501343e-009,0.99995625};
 	};
 };
 binarizationWanted=0;
@@ -20504,7 +20504,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0028190613;
+			atlOffset=0.00071334839;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20608,7 +20608,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0021362305;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
