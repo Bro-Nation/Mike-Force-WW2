@@ -55,29 +55,43 @@ class AmmoCrateLight
 class AmmoCrateSupport
 {
 	objectClassname = "SPE_BasicAmmunitionBox_US";
-	weapons[] = {
-		{},
-		{}
+	weapons[] = {{"SPE_M1919A4",10},
+	    {"SPE_M1918A2_BAR",10},
+		{"SPE_FM_24_M29",10},
+		{"SPE_M1919A6",10},
+		{"SPE_M2_Tripod",10},
+		{"SPE_Lafette_Tripod",10},
+		{"SPE_M1_81_Stand",10},
+		{"SPE_M1_81_Barrel",10},
+        {"SPE_MLE_27_31_Stand",10},
+        {"SPE_MLE_27_31_Barrel",10},
+        {"SPE_GrW278_1_Stand",10},
+        {"SPE_GrW278_1_Barrel",10},
+        {"SPE_M2_Flamethrower",10},
+		{"vn_40mm_m717_smoke_p_mag",20},
+		{"SPE_M1A1_Bazooka",5}
 	};
 	magazines[] = {
-		{"",10},
-	    {"",10},
-		{"",10},
-		{"",10},
-		{"",10},
-		{"",10},
-		{"",10},
-		{"",10},
-		{"vn_40mm_m717_smoke_p_mag",20}};
-	items[] = {{"vn_b_item_trapkit",5}};
-	backpacks[] = {};
-};
+        {"SPE_M2_Flamethrower_Mag",10}};
+	items[] = {{"vn_m_wrench_01",10}};      
+	 backpacks[] = {
+	    {"vn_b_pack_static_m2_high_01",03},
+        {"vn_b_pack_static_m2_low_01",03},
+        {"vn_b_pack_static_m2_01",03},
+        {"vn_b_pack_static_m29_01",03},
+        {"vn_b_pack_static_m1919a4_low_01",03},
+		{"vn_b_pack_static_m1919a4_high_01",03},
+		{"vn_b_pack_static_m1919a6_01",03},
+		{"vn_b_pack_static_base_01",03},
+		{"vn_o_pack_static_mg42_high",03},
+		{"vn_o_pack_08",03}};
+}
 
 class AmmoCrateExplosives
 {
 	objectClassname = "SPE_US_Ammocrate_Grenades_Frag";
 	weapons[] = {
-		{"SPE_M1A1_Bazooka"},
+		{"SPE_M1A1_Bazooka"};
 		{},
 	};
 	magazines[] = {
