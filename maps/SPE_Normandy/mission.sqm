@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=716;
+		nextID=784;
 	};
 	class Camera
 	{
@@ -20504,7 +20504,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.00071334839;
+			atlOffset=0.0028190613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20608,7 +20608,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=3.0517578e-005;
+			atlOffset=0.0021362305;
 			class CustomAttributes
 			{
 				class Attribute0

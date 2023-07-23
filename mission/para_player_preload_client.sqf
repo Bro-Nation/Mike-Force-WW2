@@ -36,5 +36,5 @@ cutText ["", "BLACK FADED", 0, false];
 0 fadeSound 0;
 //Play some intro music
 0 fadeMusic 0;
-playMusic selectRandom ["vn_blues_for_suzy", "vn_kitty_bar_blues", "vn_drafted"];
+playMusic selectRandom ["FAM02.ogg", "FAM01.ogg"];
 4 fadeMusic 1;
