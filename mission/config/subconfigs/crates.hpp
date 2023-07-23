@@ -68,7 +68,6 @@ class AmmoCrateSupport
         {"SPE_GrW278_1_Stand",10},
         {"SPE_GrW278_1_Barrel",10},
         {"SPE_M2_Flamethrower",10},
-		{"vn_40mm_m717_smoke_p_mag",20},
 		{"SPE_M1A1_Bazooka",5}
 	};
 	magazines[] = {
