@@ -148,7 +148,7 @@ class night_length
     title = $STR_vn_mf_night_length;
     values[] = {600, 1200, 1800, 2400, 3600, 5400, 7200, 9000, 10800, 21600, 43200, 86400, 172800};
     texts[] = {"10 minutes", "20 minutes", "30 minutes", "40 minutes", "1 hour", "1.5 hours", "2 hours", "2.5 hours", "3 hours", "6 hours", "12 hours", "24 hours", "48 hours"};
-    default = 3600;
+    default = 5400;
 };
 
 class Spacer7 : Spacer1 {};

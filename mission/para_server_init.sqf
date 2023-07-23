@@ -39,9 +39,9 @@ publicVariable "vn_mf_traits_map";
 para_l_buildables_require_vehicles = [false, true] select (["buildables_require_vehicles", 1] call BIS_fnc_getParamValue);
 publicVariable "para_l_buildables_require_vehicles";
 vn_mf_dawnLength = ["dawn_length", 1800] call BIS_fnc_getParamValue;
-vn_mf_dayLength = ["day_length", 9000] call BIS_fnc_getParamValue;
+vn_mf_dayLength = ["day_length", 7200] call BIS_fnc_getParamValue;
 vn_mf_duskLength = ["dusk_length", 1800] call BIS_fnc_getParamValue;
-vn_mf_nightLength = ["night_length", 4200] call BIS_fnc_getParamValue;
+vn_mf_nightLength = ["night_length", 5400] call BIS_fnc_getParamValue;
 
 //Set whether stamia is enabled
 vn_mf_param_enable_stamina = (["param_enable_stamina", 1] call BIS_fnc_getParamValue) > 0;
