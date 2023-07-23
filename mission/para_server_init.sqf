@@ -41,7 +41,7 @@ publicVariable "para_l_buildables_require_vehicles";
 vn_mf_dawnLength = ["dawn_length", 1800] call BIS_fnc_getParamValue;
 vn_mf_dayLength = ["day_length", 9000] call BIS_fnc_getParamValue;
 vn_mf_duskLength = ["dusk_length", 1800] call BIS_fnc_getParamValue;
-vn_mf_nightLength = ["night_length", 3600] call BIS_fnc_getParamValue;
+vn_mf_nightLength = ["night_length", 4200] call BIS_fnc_getParamValue;
 
 //Set whether stamia is enabled
 vn_mf_param_enable_stamina = (["param_enable_stamina", 1] call BIS_fnc_getParamValue) > 0;
@@ -83,12 +83,12 @@ if (_airSupport != 0 || _artySupport != 0) then {
 };
 
 //TODO: Parameterise these
-vn_mf_campAttackFrequency = 600;
-vn_mf_counterAttackTime = 3600;
+vn_mf_campAttackFrequency = 300;
+vn_mf_counterAttackTime = 3000;
 vn_mf_counterAttackShortenedTime = 600;
-vn_mf_counterattackBaseInfantryMultiplier = 3;
-vn_mf_counterattackCampInfantryMultiplier = 6;
-para_s_bf_respawn_supply_cost = 50;
+vn_mf_counterattackBaseInfantryMultiplier = 4;
+vn_mf_counterattackCampInfantryMultiplier = 8;
+para_s_bf_respawn_supply_cost = 25;
 
 
 // Set desired number of simultaneously active zones.

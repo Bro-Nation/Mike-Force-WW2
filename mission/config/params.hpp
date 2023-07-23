@@ -118,7 +118,7 @@ class dawn_length
     title = $STR_vn_mf_dawn_length;
     values[] = {600, 1200, 1800, 2400, 3600, 5400, 7200, 9000, 10800};
     texts[] = {"10 minutes", "20 minutes", "30 minutes", "40 minutes", "1 hour", "1.5 hours", "2 hours", "2.5 hours", "3 hours"};
-    default = 1200;
+    default = 1800;
 };
 
 class Spacer3 : Spacer1 {};
@@ -138,7 +138,7 @@ class dusk_length
     title = $STR_vn_mf_dusk_length;
     values[] = {600, 1200, 1800, 2400, 3600, 5400, 7200, 9000, 10800};
     texts[] = {"10 minutes", "20 minutes", "30 minutes", "40 minutes", "1 hour", "1.5 hours", "2 hours", "2.5 hours", "3 hours"};
-    default = 1200;
+    default = 1800;
 };
 
 class Spacer5 : Spacer1 {};
@@ -148,7 +148,7 @@ class night_length
     title = $STR_vn_mf_night_length;
     values[] = {600, 1200, 1800, 2400, 3600, 5400, 7200, 9000, 10800, 21600, 43200, 86400, 172800};
     texts[] = {"10 minutes", "20 minutes", "30 minutes", "40 minutes", "1 hour", "1.5 hours", "2 hours", "2.5 hours", "3 hours", "6 hours", "12 hours", "24 hours", "48 hours"};
-    default = 1200;
+    default = 3600;
 };
 
 class Spacer7 : Spacer1 {};
@@ -156,9 +156,9 @@ class Spacer7 : Spacer1 {};
 class building_sandbag_value
 {
     title = $STR_vn_mf_building_sandbag_value;
-    values[] = {10};
-    texts[] = {"Default (10)"};
-    default = 10;
+    values[] = {20};
+    texts[] = {"Default (20)"};
+    default = 20;
 };
 
 class building_sandbag_value_desc
@@ -204,7 +204,7 @@ class snake_bite_chance
     title = $STR_vn_mf_param_snake_bite_chance;
     values[] = {0, 15, 25, 35, 50, 65, 75};
     texts[] = {"0% (Off)", "15%", "25%", "35%", "50% (Default)", "65%", "75%"};
-    default = 50;
+    default = 0;
 };
 
 class snake_bite_chance_desc
@@ -501,7 +501,7 @@ class enable_stamina
     title = $STR_vn_mf_param_enable_stamina;
     values[] = {1, 0};
     texts[] = {"True", "False"};
-    default = 1;
+    default = 0;
 };
 
 class set_stamina
@@ -509,7 +509,7 @@ class set_stamina
     title = $STR_vn_mf_param_set_stamina;
     values[] = {0, 1, 2, 3};
     texts[] = {"Normal", "Default", "FastDrain", "Exhausted"};
-    default = 1;
+    default = 0;
 };
 
 class Spacer19: Spacer1 {};
