@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=852;
+		nextID=886;
 	};
 	class Camera
 	{
 		pos[]={1679.8341,115.47772,350.21078};
-		dir[]={-0.76641619,-0.35686025,0.53410459};
-		up[]={-0.29277956,0.93415779,0.20403403};
-		aside[]={0.57174957,3.6554411e-008,0.82043439};
+		dir[]={-0.71176678,-0.47361946,-0.51873314};
+		up[]={-0.38275582,0.88072968,-0.27895123};
+		aside[]={-0.58898062,3.0879164e-008,0.808155};
 	};
 };
 binarizationWanted=0;
@@ -1706,44 +1706,44 @@ class Mission
 		class Item19
 		{
 			dataType="Marker";
-			position[]={1394.2021,65.125427,637.72607};
+			position[]={1394.202,65.125,637.72601};
 			name="mf_respawn_acav";
-			text="@STR_vn_mf_respawn_acav_khe_sanh";
+			text="@STR_vn_mf_respawn_8th_arm_normandy";
 			type="Empty";
-			angle=347.35364;
+			angle=347.35397;
 			id=57;
-			atlOffset=11.559235;
+			atlOffset=11.558811;
 		};
 		class Item20
 		{
 			dataType="Marker";
-			position[]={1778.7817,60.319096,632.33667};
+			position[]={1778.782,60.319,632.33698};
 			name="mf_respawn_spiketeam";
-			text="@STR_vn_mf_respawn_spike_team_khe_sanh";
+			text="@STR_vn_mf_respawn_rangers_normandy";
 			type="Empty";
 			angle=283.84796;
 			id=58;
-			atlOffset=14.654602;
+			atlOffset=14.654503;
 		};
 		class Item21
 		{
 			dataType="Marker";
-			position[]={1341.6549,53.360012,197.99928};
+			position[]={1341.655,53.360001,198};
 			name="mf_respawn_mikeforce";
-			text="@STR_vn_mf_respawn_mike_force_khe_sanh";
+			text="@STR_vn_mf_respawn_1st_inf_normandy";
 			type="Empty";
-			angle=221.60587;
+			angle=221.60599;
 			id=60;
-			atlOffset=6.8600121;
+			atlOffset=6.8600006;
 		};
 		class Item22
 		{
 			dataType="Marker";
-			position[]={1806.0022,43.540001,304.7998};
+			position[]={1806.002,43.540001,304.79999};
 			name="mf_respawn_greenhornets";
-			text="@STR_vn_mf_respawn_green_hornets_khe_sanh";
+			text="@STR_vn_mf_respawn_air_corp_normandy";
 			type="Empty";
-			angle=77.394409;
+			angle=77.39399;
 			id=61;
 		};
 		class Item23
@@ -19849,7 +19849,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0028190613;
+			atlOffset=0.00071334839;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19953,7 +19953,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0021362305;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0

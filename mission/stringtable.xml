@@ -191,6 +191,18 @@
       <Key ID="STR_vn_mf_respawn_acav_khe_sanh">
         <Original>KHE SANH SF CAMP - ACAV</Original>
       </Key>
+      <Key ID="STR_vn_mf_respawn_1st_inf_normandy">
+        <Original>NORMANDY CAMP - 1ST INFANTRY</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_air_corp_normandy">
+        <Original>NORMANDY CAMP - AIR CORP</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_rangers_normandy">
+        <Original>NORMANDY CAMP - RANGERS</Original>
+      </Key>
+      <Key ID="STR_vn_mf_respawn_8th_arm_normandy">
+        <Original>NORMANDY CAMP - VIII ARMORED CORPS</Original>
+      </Key>
       <Key ID="STR_vn_mf_respawn_spike_team_altis">
         <Original>MOLOS VILLAGE - SPIKE TEAM</Original>
       </Key>
