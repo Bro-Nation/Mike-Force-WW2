@@ -1,4 +1,4 @@
 images[] =
 {
-	"custom\loadingscreens\screen1.jpg"
+	"custom\loadingscreens\screen1.paa"
 };
