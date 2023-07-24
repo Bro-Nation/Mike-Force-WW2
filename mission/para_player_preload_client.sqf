@@ -36,5 +36,5 @@ cutText ["", "BLACK FADED", 0, false];
 0 fadeSound 0;
 //Play some intro music
 0 fadeMusic 0;
-playMusic selectRandom ["FAM02.ogg", "FAM01.ogg"];
+playMusic selectRandom ["FAM02", "FAM01"];
 4 fadeMusic 1;
