@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1271;
+		nextID=1273;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=886;
+		nextID=920;
 	};
 	class Camera
 	{
-		pos[]={1679.8341,115.47772,350.21078};
-		dir[]={-0.71176678,-0.47361946,-0.51873314};
-		up[]={-0.38275582,0.88072968,-0.27895123};
-		aside[]={-0.58898062,3.0879164e-008,0.808155};
+		pos[]={1256.67,79.681389,711.51825};
+		dir[]={-0.43601868,-0.43274513,-0.78906232};
+		up[]={-0.20929734,0.90151632,-0.37876508};
+		aside[]={-0.87526131,0,0.48365036};
 	};
 };
 binarizationWanted=0;
@@ -82,13 +82,14 @@ addons[]=
 	"WW2_SPE_Assets_c_Weapons_Misc_c_Arsenal",
 	"weapons_f_vietnam_03_c",
 	"A3_Props_F_Orange_Humanitarian_Garbage",
-	"A3_Structures_F_Ind_AirPort"
+	"A3_Structures_F_Ind_AirPort",
+	"ww2_spe_missions_p_utilityfunctions_f_revivetoksa"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			className="modules_f_vietnam";
@@ -381,6 +382,11 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item49
+		{
+			className="WW2_SPE_Missions_p_UtilityFunctions_f_ReviveToksa";
+			name="ww2_spe_missions_p_utilityfunctions_f_revivetoksa";
+		};
 	};
 };
 dlcs[]=
@@ -497,7 +503,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="SCALAR";
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -543,24 +549,26 @@ class Mission
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startFog=0.27924001;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0;
+		forecastWeather=0.49576423;
+		forecastFog=0.087637298;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=1944;
 		month=7;
 		day=25;
-		hour=8;
-		minute=0;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		hour=4;
+		startFogBase=4;
+		forecastFogBase=35;
+		startFogDecay=0.005848025;
+		forecastFogDecay=0.0099999998;
 	};
 	class Entities
 	{
-		items=552;
+		items=553;
 		class Item0
 		{
 			dataType="Logic";
@@ -1710,7 +1718,7 @@ class Mission
 			name="mf_respawn_acav";
 			text="@STR_vn_mf_respawn_8th_arm_normandy";
 			type="Empty";
-			angle=347.35397;
+			angle=347.35388;
 			id=57;
 			atlOffset=11.558811;
 		};
@@ -1732,7 +1740,7 @@ class Mission
 			name="mf_respawn_mikeforce";
 			text="@STR_vn_mf_respawn_1st_inf_normandy";
 			type="Empty";
-			angle=221.60599;
+			angle=221.60593;
 			id=60;
 			atlOffset=6.8600006;
 		};
@@ -1743,7 +1751,7 @@ class Mission
 			name="mf_respawn_greenhornets";
 			text="@STR_vn_mf_respawn_air_corp_normandy";
 			type="Empty";
-			angle=77.39399;
+			angle=77.393959;
 			id=61;
 		};
 		class Item23
@@ -5672,7 +5680,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -6928,7 +6936,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -7087,7 +7095,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -7246,7 +7254,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -7405,7 +7413,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -7564,7 +7572,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -7723,7 +7731,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -7882,7 +7890,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8041,7 +8049,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8200,7 +8208,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8359,7 +8367,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8517,7 +8525,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8676,7 +8684,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8835,7 +8843,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -8994,7 +9002,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -9152,7 +9160,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -9311,7 +9319,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -9470,7 +9478,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -9629,7 +9637,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -9788,7 +9796,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2000;
+							value=3000;
 						};
 					};
 				};
@@ -35827,42 +35835,43 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1242.863,39.243786,-152.522};
+				position[]={1258.149,38.74136,-152.021};
+				angles[]={0.067282446,0,6.250216};
 			};
-			id=1270;
-			type="vn_module_advanced_revive";
+			id=1271;
+			type="SPE_Module_Advanced_Revive";
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="vn_module_revive_revive_requirement";
-					expression="_this setVariable ['revive_requirement',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveMode";
+					expression="_this setVariable ['SPE_ReviveMode',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=0;
+							value=2;
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="vn_module_revive_revive_item";
-					expression="_this setVariable ['revive_item',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveFakAmount";
+					expression="_this setVariable ['SPE_ReviveFakAmount',_value,true];";
 					class Value
 					{
 						class data
 						{
-							singleType="STRING";
-							value="[""FirstAidKit"",""Medikit"",""vn_o_item_firstaidkit"",""vn_b_item_firstaidkit"",""vn_b_item_medikit_01""]";
+							singleType="SCALAR";
+							value=1;
 						};
 					};
 				};
 				class Attribute2
 				{
-					property="vn_module_revive_bleedout_affects_actions";
-					expression="_this setVariable ['bleedout_affects_actions',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveUnits";
+					expression="_this setVariable ['SPE_ReviveUnits',_value,true];";
 					class Value
 					{
 						class data
@@ -35874,8 +35883,8 @@ class Mission
 				};
 				class Attribute3
 				{
-					property="vn_module_revive_revive_item_remove";
-					expression="_this setVariable ['revive_item_remove',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveAutoWithstand";
+					expression="_this setVariable ['SPE_ReviveAutoWithstand',_value,true];";
 					class Value
 					{
 						class data
@@ -35887,34 +35896,47 @@ class Mission
 				};
 				class Attribute4
 				{
-					property="vn_module_revive_bleedout_time";
-					expression="_this setVariable ['bleedout_time',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveEnabled";
+					expression="_this setVariable ['SPE_ReviveEnabled',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=300;
+							value=0;
 						};
 					};
 				};
 				class Attribute5
 				{
-					property="vn_module_revive_bandage_item";
-					expression="_this setVariable ['bandage_item',_value,true];";
+					property="spe_module_advanced_revive_SPE_WithstandEnabled";
+					expression="_this setVariable ['SPE_WithstandEnabled',_value,true];";
 					class Value
 					{
 						class data
 						{
-							singleType="STRING";
-							value="[""FirstAidKit"",""vn_o_item_firstaidkit"",""vn_b_item_firstaidkit"",""vn_b_item_medikit_01"",""Medikit""]";
+							singleType="SCALAR";
+							value=2;
 						};
 					};
 				};
 				class Attribute6
 				{
-					property="vn_module_revive_revive_delay";
-					expression="_this setVariable ['revive_delay',_value,true];";
+					property="spe_module_advanced_revive_SPE_WithstandExtraFAK";
+					expression="_this setVariable ['SPE_WithstandExtraFAK',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="spe_module_advanced_revive_SPE_ReviveDelay";
+					expression="_this setVariable ['SPE_ReviveDelay',_value,true];";
 					class Value
 					{
 						class data
@@ -35924,36 +35946,23 @@ class Mission
 						};
 					};
 				};
-				class Attribute7
-				{
-					property="vn_module_revive_medic_boost";
-					expression="_this setVariable ['medic_boost',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
 				class Attribute8
 				{
-					property="vn_module_revive_grenade_chance";
-					expression="_this setVariable ['grenade_chance',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveIcons";
+					expression="_this setVariable ['SPE_ReviveIcons',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=50;
+							value=1;
 						};
 					};
 				};
 				class Attribute9
 				{
-					property="vn_module_revive_bandage_item_remove";
-					expression="_this setVariable ['bandage_item_remove',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveRequiredTrait";
+					expression="_this setVariable ['SPE_ReviveRequiredTrait',_value,true];";
 					class Value
 					{
 						class data
@@ -35965,57 +35974,509 @@ class Mission
 				};
 				class Attribute10
 				{
-					property="vn_module_revive_time_to_respawn_action";
-					expression="_this setVariable ['time_to_respawn_action',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveMedicSpeedMultiplier";
+					expression="_this setVariable ['SPE_ReviveMedicSpeedMultiplier',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=75;
+							value=5;
 						};
 					};
 				};
 				class Attribute11
 				{
-					property="vn_module_revive_withstand_percentage";
-					expression="_this setVariable ['withstand_percentage',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveBleedOutDelay";
+					expression="_this setVariable ['SPE_ReviveBleedOutDelay',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=85;
+							value=600;
 						};
 					};
 				};
 				class Attribute12
 				{
-					property="vn_module_revive_downed_icon_distance";
-					expression="_this setVariable ['downed_icon_distance',_value,true];";
+					property="spe_module_advanced_revive_SPE_ReviveForceRespawnDelay";
+					expression="_this setVariable ['SPE_ReviveForceRespawnDelay',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=150;
+							value=15;
 						};
 					};
 				};
 				class Attribute13
 				{
-					property="vn_module_revive_move_chance";
-					expression="_this setVariable ['move_chance',_value,true];";
+					property="spe_module_advanced_revive_SPE_WithstandEnabledAI";
+					expression="_this setVariable ['SPE_WithstandEnabledAI',_value,true];";
 					class Value
 					{
 						class data
 						{
 							singleType="SCALAR";
-							value=100;
+							value=1;
 						};
 					};
 				};
-				nAttributes=14;
+				class Attribute14
+				{
+					property="spe_module_advanced_revive_SPE_ReviveAutoCall";
+					expression="_this setVariable ['SPE_ReviveAutoCall',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				nAttributes=15;
+			};
+		};
+		class Item552
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1237.6689,39.408916,-152.855};
+			};
+			id=1272;
+			type="SPE_Module_AI_Systems";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="SPE_Active_TweakAI";
+					expression="missionNamespace setVariable ['SPE_Active_TweakAI', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="SPE_AffectOurSide";
+					expression="missionNamespace setVariable ['SPE_AffectOurSide', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SPE_DoReliableEmbarking";
+					expression="missionNamespace setVariable ['SPE_DoReliableEmbarking', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="SPE_DoManTurrets";
+					expression="missionNamespace setVariable ['SPE_DoManTurrets', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="SPE_CleanUp_Distances_Surrendered";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [1, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1080.4399;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="SPE_DoTweakDisembarkInCombat";
+					expression="missionNamespace setVariable ['SPE_DoTweakDisembarkInCombat', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="SPE_OurSide";
+					expression="missionNamespace setVariable ['SPE_OurSide', [east, west, independent, civilian] select _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="SPE_PermanentShockProb";
+					expression="missionNamespace setVariable ['SPE_PermanentShockProb', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.40000001;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="SPE_DoHandleBlockingStuff";
+					expression="missionNamespace setVariable ['SPE_DoHandleBlockingStuff', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="SPE_CleanUp_Distances_Panicked:";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [2, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="SPE_RFSThresholds_MultiplierRF";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.29999998;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="SPE_RFSThresholds_Multipliers";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.29999998;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="SPE_DoDiamondInCombat";
+					expression="missionNamespace setVariable ['SPE_DoDiamondInCombat', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="SPE_PlayerStressMultiplier";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1.8;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="SPE_Unstuck_HiddenOnly";
+					expression="missionNamespace setVariable ['SPE_Unstuck_HiddenOnly', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="SPE_NonCombatantKillsAllowed";
+					expression="missionNamespace setVariable ['SPE_NonCombatantKillsAllowed', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="SPE_RFS_POWWalkTimer";
+					expression="missionNamespace setVariable ['SPE_RFS_POWWalkTimer', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=120.00001;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="SPE_Active_Unstuck";
+					expression="missionNamespace setVariable ['SPE_Active_Unstuck', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="SPE_DoLeaveFootmobilesBehind";
+					expression="missionNamespace setVariable ['SPE_DoLeaveFootmobilesBehind', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="SPE_DoCatchUp";
+					expression="missionNamespace setVariable ['SPE_DoCatchUp', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="SPE_Active_Flee";
+					expression="missionNamespace setVariable ['SPE_Active_Flee', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="SPE_Active_TweakAI_Rearm";
+					expression="missionNamespace setVariable ['SPE_Active_TweakAI_Rearm', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute22
+				{
+					property="SPE_ReliableEmbarking";
+					expression="if (isNil 'SPE_ReliableEmbarking') then {SPE_ReliableEmbarking = []}; 		if (_value param [0, -1] > -1) then {SPE_ReliableEmbarking append [west]}; 		if (_value param [1, -1] > -1) then {SPE_ReliableEmbarking append [east]}; 		if (_value param [2, -1] > -1) then {SPE_ReliableEmbarking append [independent]}; 		if (_value param [3, -1] > -1) then {SPE_ReliableEmbarking append [civilian]};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=3;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute23
+				{
+					property="SPE_Active_InfoSharing";
+					expression="missionNamespace setVariable ['SPE_Active_InfoSharing', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute24
+				{
+					property="SPE_DoHideBlockingFoliage";
+					expression="missionNamespace setVariable ['SPE_DoHideBlockingFoliage', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute25
+				{
+					property="SPE_AddSpawnedGroups";
+					expression="missionNamespace setVariable ['SPE_AddSpawnedGroups', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute26
+				{
+					property="SPE_Active_Surrender";
+					expression="missionNamespace setVariable ['SPE_Active_Surrender', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute27
+				{
+					property="SPE_CrowdPsyche";
+					expression="missionNamespace setVariable ['SPE_CrowdPsyche', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute28
+				{
+					property="SPE_CleanUp_Distances_Retreating";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [0, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1080.4399;
+						};
+					};
+				};
+				class Attribute29
+				{
+					property="SPE_MoraleAffectingTargetsRange";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=60;
+						};
+					};
+				};
+				nAttributes=30;
 			};
 		};
 	};
