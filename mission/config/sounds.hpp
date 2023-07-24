@@ -18,12 +18,12 @@ class CfgSounds
 	};
 	class FAM01
 	{
-		sound[]		= { "ProjectCobra\custom\sounds\FAM01.ogg",1.0,1.0,30 };
+		sound[]		= { "custom\sounds\FAM01.ogg",1.0,1.0,30 };
 		titles[]	= { "FAM01"};
 	};
 	class FAM02
 	{
-		sound[]		= { "ProjectCobra\custom\sounds\FAM02.ogg",1.0,1.0,30 };
+		sound[]		= { "custom\sounds\FAM02.ogg",1.0,1.0,30 };
 		titles[]	= { "FAM02" };
 	};
 };
