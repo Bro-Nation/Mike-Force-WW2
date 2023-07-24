@@ -106,6 +106,22 @@ class CfgDebriefing
 	};
 };
 
+class CfgMusic
+{
+	tracks[]={};
+	class FAM01
+	{
+		name = "Load Screen Music(1)";
+		sound[] = {"custom\sounds\FAM01.ogg", db+0, 1.0};
+	};
+
+	class FAM02
+	{
+		name = "Load Screen Music(2)";
+		sound[] = {"custom\sounds\FAM02.ogg", db+0, 1.0};
+	};
+};
+
 //Show melee weapons in the arsenal
 vn_arsenalShowMelee = 1;
 
