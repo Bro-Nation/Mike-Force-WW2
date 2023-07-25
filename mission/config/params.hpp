@@ -61,9 +61,9 @@ class Spacer1 : Spacer0 {};
 class hard_ai_limit
 {
     title = $STR_vn_mf_param_hard_ai_limit;
-    values[] = {60, 80, 100, 120, 140, 160, 180, 200};
+    values[] = {50, 80, 100, 120, 140, 160, 180, 200};
     texts[] = {"60", "80 (recommended)", "100", "120", "140", "160", "180", "200"};
-    default = 80;
+    default = 50;
 };
 
 class hard_ai_limit_desc

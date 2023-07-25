@@ -17,6 +17,19 @@
         use_paradigm_init = 1;
 */
 
+[] spawn {
+    while {isNil "stopCuratorLoop"} do {
+      { _x addCuratorEditableObjects [vehicles + allUnits]} forEach allCurators;
+      uisleep 10;
+    };
+};
+
+call vn_mf_fnc_server_init_backend;
+["restart_messages", vn_mf_fnc_server_process_restart, [], 60] call para_g_fnc_scheduler_add_job;
+
+call para_s_fnc_init_curators;
+["update_curators", para_s_fnc_init_curators, [], 300] call para_g_fnc_scheduler_add_job;
+
 private _gamemode_config = (missionConfigFile >> "gamemode");
 
 private _wipeSave = (["wipe_save", 0] call BIS_fnc_getParamValue) > 0;
@@ -269,7 +282,7 @@ diag_log "VN MikeForce: Initialising Loadbalancer";
 diag_log "VN MikeForce: Initialising AI Objectives";
 // start ai subsystem. Depends on the load balancer subsystem.
 [
-    ["hardAiLimit", ["hard_ai_limit", 80] call BIS_fnc_getParamValue]
+    ["hardAiLimit", ["hard_ai_limit", 50] call BIS_fnc_getParamValue]
 ] call para_s_fnc_ai_obj_subsystem_init;
 
 diag_log "VN MikeForce: Initialising Harass";
