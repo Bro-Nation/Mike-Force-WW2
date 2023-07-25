@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1273;
+		nextID=1291;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=954;
+		nextID=988;
 	};
 	class Camera
 	{
-		pos[]={1302.761,388.31973,24.678555};
-		dir[]={-0.18657157,-0.76678026,-0.61420608};
-		up[]={-0.22286294,0.64190978,-0.73367959};
-		aside[]={-0.9568367,-4.483154e-007,0.29064772};
+		pos[]={1531.1293,161.92038,279.27328};
+		dir[]={0.32338369,-0.62855321,0.70737225};
+		up[]={0.26133913,0.77775902,0.57165796};
+		aside[]={0.90948468,-1.6890408e-007,-0.41577795};
 	};
 };
 binarizationWanted=0;
@@ -521,6 +521,19 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="SPE_All_Obj_FX";
 			expression="false";
 			class Value
@@ -532,7 +545,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -562,7 +575,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=551;
+		items=560;
 		class Item0
 		{
 			dataType="Logic";
@@ -1734,7 +1747,7 @@ class Mission
 			name="mf_respawn_mikeforce";
 			text="@STR_vn_mf_respawn_1st_inf_normandy";
 			type="Empty";
-			angle=221.60591;
+			angle=221.6059;
 			id=60;
 			atlOffset=6.8600006;
 		};
@@ -19097,7 +19110,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.00071334839;
+			atlOffset=0.0028190613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19201,7 +19214,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=3.0517578e-005;
+			atlOffset=0.0021362305;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -35279,6 +35292,825 @@ class Mission
 				};
 				nAttributes=15;
 			};
+		};
+		class Item551
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1350.343,46.838703,213.50107};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1274;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1273;
+			atlOffset=7.6293945e-006;
+		};
+		class Item552
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1351.3126,46.807102,212.92091};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1276;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1275;
+			atlOffset=7.6293945e-006;
+		};
+		class Item553
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1352.1335,46.776257,212.33545};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1278;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1277;
+			atlOffset=7.6293945e-006;
+		};
+		class Item554
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1353.3127,46.731945,211.66263};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1280;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1279;
+			atlOffset=7.6293945e-006;
+		};
+		class Item555
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1354.4889,46.6534,210.66434};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1282;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1281;
+			atlOffset=7.6293945e-006;
+		};
+		class Item556
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1355.3877,46.594044,209.83356};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1284;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1283;
+			atlOffset=7.6293945e-006;
+		};
+		class Item557
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1345.8719,47.024208,215.92921};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1286;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1285;
+			atlOffset=7.6293945e-006;
+		};
+		class Item558
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1346.6039,46.965744,215.00391};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1288;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1287;
+			atlOffset=7.6293945e-006;
+		};
+		class Item559
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1347.6812,46.90789,214.16052};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1290;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1289;
+			atlOffset=7.6293945e-006;
 		};
 	};
 	class Connections
