@@ -38,6 +38,7 @@ class CfgFunctions
 			};
 			class adv_revive_params {};
 			class init_mission_handlers {};
+			class curator_init {};
 		};
 
 		class core_input

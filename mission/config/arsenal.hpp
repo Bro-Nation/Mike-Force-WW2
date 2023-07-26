@@ -414,6 +414,21 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_b_item_watch",{0,0,0,0}},
 			{"vn_b_item_wiretap",{0,0,0,0}},
 			{"vn_wrench_01",{0,0,0,0}},
+
+			{"G_Bandana_Oli",                   {-1, -1, 0, 0}},
+			{"G_SPE_Cigar_Moza",                {-1, -1, 0, 0}},
+			{"G_SPE_Cigarette_Belomorkanal",    {-1, -1, 0, 0}},
+			{"G_SPE_Cigarette_Grundstein",      {0, -1, -1, 0}},
+			{"G_SPE_Cigarette_Strike_Outs",     {-1, -1, 0, 0}},
+			{"G_SPE_Ful_Vue_Reinforced",        {-1, -1, 0, 0}},
+			{"G_SPE_SWDG_Goggles",              {-1, -1, 0, 0}},
+			{"G_SPE_Polar_Goggles",             {-1, -1, 0, 0}},
+			{"G_SPE_Pipe_Sir_Winston",          {-1, -1, 0, 0}},
+			{"G_SPE_GER_Headset",               {0, -1, -1, 0}},
+
+			{"SPE_M1918A2_BAR_Bipod", {-1, -1, 0, 0}},
+			{"SPE_M1918A2_BAR_Handle", {-1, -1, 0, 0}},
+
 			//Headgear
 			{"H_SPE_CIV_Fedora_Cap_5",                             {-1, -1, -1, 0}},
 			{"H_SPE_CIV_Fedora_Cap_6",                             {-1, -1, -1, 0}},
