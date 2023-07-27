@@ -8,22 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1291;
+		nextID=1292;
 	};
 	class MarkerIDProvider
 	{
-		nextID=7;
+		nextID=10;
 	};
 	class LayerIndexProvider
 	{
-		nextID=988;
+		nextID=1022;
 	};
 	class Camera
 	{
-		pos[]={1531.1293,161.92038,279.27328};
-		dir[]={0.32338369,-0.62855321,0.70737225};
-		up[]={0.26133913,0.77775902,0.57165796};
-		aside[]={0.90948468,-1.6890408e-007,-0.41577795};
+		pos[]={1458.4431,80.471024,788.5752};
+		dir[]={0.44465494,-0.51648819,0.73180127};
+		up[]={0.26820201,0.8562901,0.44139963};
+		aside[]={0.8546136,3.7951395e-008,-0.51927787};
 	};
 };
 binarizationWanted=0;
@@ -575,7 +575,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=560;
+		items=561;
 		class Item0
 		{
 			dataType="Logic";
@@ -1747,7 +1747,7 @@ class Mission
 			name="mf_respawn_mikeforce";
 			text="@STR_vn_mf_respawn_1st_inf_normandy";
 			type="Empty";
-			angle=221.6059;
+			angle=221.60587;
 			id=60;
 			atlOffset=6.8600006;
 		};
@@ -19110,7 +19110,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0028190613;
+			atlOffset=0.00071334839;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19214,7 +19214,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0021362305;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -36111,6 +36111,16 @@ class Mission
 			};
 			id=1289;
 			atlOffset=7.6293945e-006;
+		};
+		class Item560
+		{
+			dataType="Marker";
+			position[]={1572.079,57.925999,718.49902};
+			name="starting_point";
+			text="Starting Point";
+			type="Empty";
+			id=1291;
+			atlOffset=-0.00025177002;
 		};
 	};
 	class Connections
