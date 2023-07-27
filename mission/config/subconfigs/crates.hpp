@@ -59,14 +59,6 @@ class AmmoCrateSupport
 	    {"SPE_M1918A2_BAR",10},
 		{"SPE_FM_24_M29",10},
 		{"SPE_M1919A6",10},
-		{"SPE_M2_Tripod",10},
-		{"SPE_Lafette_Tripod",10},
-		{"SPE_M1_81_Stand",10},
-		{"SPE_M1_81_Barrel",10},
-        {"SPE_MLE_27_31_Stand",10},
-        {"SPE_MLE_27_31_Barrel",10},
-        {"SPE_GrW278_1_Stand",10},
-        {"SPE_GrW278_1_Barrel",10},
         {"SPE_M2_Flamethrower",10},
 		{"SPE_M1A1_Bazooka",5}
 	};
@@ -83,7 +75,15 @@ class AmmoCrateSupport
 		{"vn_b_pack_static_m1919a6_01",03},
 		{"vn_b_pack_static_base_01",03},
 		{"vn_o_pack_static_mg42_high",03},
-		{"vn_o_pack_08",03}};
+		{"vn_o_pack_08",03},
+		{"SPE_M2_Tripod",10},
+		{"SPE_Lafette_Tripod",10},
+		{"SPE_M1_81_Stand",10},
+		{"SPE_M1_81_Barrel",10},
+        {"SPE_MLE_27_31_Stand",10},
+        {"SPE_MLE_27_31_Barrel",10},
+        {"SPE_GrW278_1_Stand",10},
+        {"SPE_GrW278_1_Barrel",10}};
 }
 
 class AmmoCrateExplosives
