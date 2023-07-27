@@ -32,7 +32,7 @@ if !([_task] call vn_mf_fnc_task_is_completed) then {
 };
 
 [_zone] call vn_mf_fnc_zones_capture_zone;
-[] call vn_mf_fnc_director_open_connected_zones;
+call vn_mf_fnc_director_open_closest_zone;
 
 mf_s_dir_activeZones deleteAt _zone;
 mf_g_dir_activeZoneNames = keys mf_s_dir_activeZones;

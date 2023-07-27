@@ -31,6 +31,12 @@ mf_s_dir_next_action_time = serverTime;
 mf_s_dir_attack_prep_time = 600;
 mf_s_dir_action_fired = true; //Mark it as dispatched, so we reset back to a new timer.
 
+// from old BN copy
+if (count keys mf_s_dir_activeZones == 0) then 
+{
+	call vn_mf_fnc_director_open_closest_zone;
+};
+
 //Create tasks for any zones that aren't captured, but are connected a captured zone.
 [] call vn_mf_fnc_director_open_connected_zones;
 

@@ -182,6 +182,7 @@ class CfgFunctions
 			class director_complete_zone {};
 			class director_open_connected_zones {};
 			class director_open_zone {};
+			class director_open_closest_zone {};
 			class director_process_active_zone {};
 			class director_zones_in_range_of_bases {};
 		};
