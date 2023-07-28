@@ -15,6 +15,8 @@ if(_playerIsCurator == true) then
 				if (isNil "MikeFrcCur_group") then {MikeFrcCur_group = creategroup sideLogic;};
 				_myCurObject = MikeFrcCur_group createunit["ModuleCurator_F", [0, 90, 90], [], 0.5, "NONE"];	//Logic Server
 				_myCurObject setVariable ["showNotification",false];
+
+				[_myCurObject] call vn_mf_fnc_curator_eventhandlers;
 				
 				missionNamespace setVariable [_curVarName, _myCurObject, true];
 				publicVariable "MikeFrcCur_group";
