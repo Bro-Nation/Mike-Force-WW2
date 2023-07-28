@@ -37,9 +37,6 @@ if (count keys mf_s_dir_activeZones == 0) then
 	call vn_mf_fnc_director_open_closest_zone;
 };
 
-//Create tasks for any zones that aren't captured, but are connected a captured zone.
-[] call vn_mf_fnc_director_open_connected_zones;
-
 // Trigger a zone process whenever a task completes there, to make the zones feel more responsive.
 [
 	"taskCompleted",
