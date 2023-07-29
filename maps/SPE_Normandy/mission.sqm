@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1292;
+		nextID=1294;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1022;
+		nextID=1090;
 	};
 	class Camera
 	{
-		pos[]={1458.4431,80.471024,788.5752};
-		dir[]={0.44465494,-0.51648819,0.73180127};
-		up[]={0.26820201,0.8562901,0.44139963};
-		aside[]={0.8546136,3.7951395e-008,-0.51927787};
+		pos[]={1426.8344,79.465958,713.40039};
+		dir[]={-0.41507226,-0.89547884,-0.1608218};
+		up[]={-0.83500308,0.44508761,-0.32352605};
+		aside[]={-0.36129022,-2.9511284e-007,0.93247169};
 	};
 };
 binarizationWanted=0;
@@ -19110,7 +19110,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.00071334839;
+			atlOffset=0.0028190613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19214,7 +19214,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=3.0517578e-005;
+			atlOffset=0.0021362305;
 			class CustomAttributes
 			{
 				class Attribute0
