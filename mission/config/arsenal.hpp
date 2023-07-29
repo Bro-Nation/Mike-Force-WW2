@@ -424,6 +424,8 @@ class vn_whitelisted_arsenal_loadouts
 			{"vn_b_item_wiretap",{0,0,0,0}},
 			{"vn_wrench_01",{0,0,0,0}},
 
+            {"G_Aviator",                       {-1, -1, 0, 0}},
+            {"vn_b_aviator",                    {-1, -1, 0, 0}},
 			{"G_Bandana_Oli",                   {-1, -1, 0, 0}},
 			{"G_SPE_Cigar_Moza",                {-1, -1, 0, 0}},
 			{"G_SPE_Cigarette_Belomorkanal",    {-1, -1, 0, 0}},
