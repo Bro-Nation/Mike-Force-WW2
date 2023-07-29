@@ -32,12 +32,4 @@ publicVariable "vn_mf_g_sites_scout_action_cooldown";
 missionNamespace setVariable ["sites", []];
 publicVariable "sites";
 
-private _loadSuccessful = [] call vn_mf_fnc_sites_load;
-
-if !(_loadSuccessful) then 
-{
-    //Generate sites
-    [] call vn_mf_fnc_sites_generate;
-};
-
-[] call vn_mf_fnc_sites_aa_reveal_targets;
+[] call vn_mf_fnc_sites_load;
