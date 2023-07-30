@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1294;
+		nextID=1316;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1090;
+		nextID=1124;
 	};
 	class Camera
 	{
-		pos[]={1426.8344,79.465958,713.40039};
-		dir[]={-0.41507226,-0.89547884,-0.1608218};
-		up[]={-0.83500308,0.44508761,-0.32352605};
-		aside[]={-0.36129022,-2.9511284e-007,0.93247169};
+		pos[]={1673.3643,75.171547,395.50317};
+		dir[]={-1.2363449e-007,-0.70710683,0.70710683};
+		up[]={-1.2363449e-007,0.70710671,0.70710683};
+		aside[]={1,0,1.7484557e-007};
 	};
 };
 binarizationWanted=0;
@@ -82,13 +82,14 @@ addons[]=
 	"weapons_f_vietnam_03_c",
 	"A3_Props_F_Orange_Humanitarian_Garbage",
 	"A3_Structures_F_Ind_AirPort",
-	"ww2_spe_missions_p_utilityfunctions_f_revivetoksa"
+	"ww2_spe_missions_p_utilityfunctions_f_revivetoksa",
+	"ww2_spe_missions_p_utilityfunctions_f"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			className="modules_f_vietnam";
@@ -381,6 +382,11 @@ class AddonsMetaData
 			className="WW2_SPE_Missions_p_UtilityFunctions_f_ReviveToksa";
 			name="ww2_spe_missions_p_utilityfunctions_f_revivetoksa";
 		};
+		class Item49
+		{
+			className="WW2_SPE_Missions_p_UtilityFunctions_f";
+			name="ww2_spe_missions_p_utilityfunctions_f";
+		};
 	};
 };
 dlcs[]=
@@ -521,19 +527,6 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
-			property="cba_settings_hasSettingsFile";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="SPE_All_Obj_FX";
 			expression="false";
 			class Value
@@ -545,7 +538,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=1;
 	};
 };
 class Mission
@@ -575,7 +568,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=561;
+		items=573;
 		class Item0
 		{
 			dataType="Logic";
@@ -5735,7 +5728,7 @@ class Mission
 		class Item51
 		{
 			dataType="Marker";
-			position[]={11955.296,48.288357,2437.8945};
+			position[]={11920.265,47.574917,2421.7271};
 			name="marker_3";
 			text="French Resistance Supply Stash";
 			type="SPE_n_Icon_Flag_FFI";
@@ -5814,11 +5807,12 @@ class Mission
 		class Item56
 		{
 			dataType="Marker";
-			position[]={6480.2749,55.60675,5275.1211};
+			position[]={6480.2749,55.606998,5275.1211};
 			name="marker_0";
 			text="French Resistance Supply Stash";
 			type="SPE_n_Icon_Flag_FFI";
 			id=353;
+			atlOffset=0.00024795532;
 		};
 		class Item57
 		{
@@ -5877,7 +5871,7 @@ class Mission
 		class Item61
 		{
 			dataType="Marker";
-			position[]={5344.2583,46.625549,11290.076};
+			position[]={5340.3306,47.109665,11264.545};
 			name="marker_1";
 			text="French Resistance Supply Stash";
 			type="SPE_n_Icon_Flag_FFI";
@@ -19110,7 +19104,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0028190613;
+			atlOffset=0.00071334839;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19214,7 +19208,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0021362305;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -36115,12 +36109,2128 @@ class Mission
 		class Item560
 		{
 			dataType="Marker";
-			position[]={1572.079,57.925999,718.49902};
+			position[]={72.556122,23.739502,26.343506};
 			name="starting_point";
 			text="Starting Point";
 			type="Empty";
 			id=1291;
-			atlOffset=-0.00025177002;
+		};
+		class Item561
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1284.2469,38.774513,-151.86};
+			};
+			id=1294;
+			type="SPE_Module_AI_Systems";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="SPE_Active_TweakAI";
+					expression="missionNamespace setVariable ['SPE_Active_TweakAI', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="SPE_AffectOurSide";
+					expression="missionNamespace setVariable ['SPE_AffectOurSide', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SPE_DoReliableEmbarking";
+					expression="missionNamespace setVariable ['SPE_DoReliableEmbarking', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="SPE_DoManTurrets";
+					expression="missionNamespace setVariable ['SPE_DoManTurrets', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="SPE_CleanUp_Distances_Surrendered";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [1, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1080.4399;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="SPE_DoTweakDisembarkInCombat";
+					expression="missionNamespace setVariable ['SPE_DoTweakDisembarkInCombat', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="SPE_OurSide";
+					expression="missionNamespace setVariable ['SPE_OurSide', [east, west, independent, civilian] select _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="SPE_PermanentShockProb";
+					expression="missionNamespace setVariable ['SPE_PermanentShockProb', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.1;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="SPE_DoHandleBlockingStuff";
+					expression="missionNamespace setVariable ['SPE_DoHandleBlockingStuff', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="SPE_CleanUp_Distances_Panicked:";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [2, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="SPE_RFSThresholds_MultiplierRF";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="SPE_RFSThresholds_Multipliers";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="SPE_DoDiamondInCombat";
+					expression="missionNamespace setVariable ['SPE_DoDiamondInCombat', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="SPE_PlayerStressMultiplier";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="SPE_Unstuck_HiddenOnly";
+					expression="missionNamespace setVariable ['SPE_Unstuck_HiddenOnly', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="SPE_NonCombatantKillsAllowed";
+					expression="missionNamespace setVariable ['SPE_NonCombatantKillsAllowed', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="SPE_RFS_POWWalkTimer";
+					expression="missionNamespace setVariable ['SPE_RFS_POWWalkTimer', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=60;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="SPE_Active_Unstuck";
+					expression="missionNamespace setVariable ['SPE_Active_Unstuck', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="SPE_DoLeaveFootmobilesBehind";
+					expression="missionNamespace setVariable ['SPE_DoLeaveFootmobilesBehind', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="SPE_DoCatchUp";
+					expression="missionNamespace setVariable ['SPE_DoCatchUp', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="SPE_Active_Flee";
+					expression="missionNamespace setVariable ['SPE_Active_Flee', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="SPE_Active_TweakAI_Rearm";
+					expression="missionNamespace setVariable ['SPE_Active_TweakAI_Rearm', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute22
+				{
+					property="SPE_ReliableEmbarking";
+					expression="if (isNil 'SPE_ReliableEmbarking') then {SPE_ReliableEmbarking = []}; 		if (_value param [0, -1] > -1) then {SPE_ReliableEmbarking append [west]}; 		if (_value param [1, -1] > -1) then {SPE_ReliableEmbarking append [east]}; 		if (_value param [2, -1] > -1) then {SPE_ReliableEmbarking append [independent]}; 		if (_value param [3, -1] > -1) then {SPE_ReliableEmbarking append [civilian]};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=3;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute23
+				{
+					property="SPE_Active_InfoSharing";
+					expression="missionNamespace setVariable ['SPE_Active_InfoSharing', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute24
+				{
+					property="SPE_DoHideBlockingFoliage";
+					expression="missionNamespace setVariable ['SPE_DoHideBlockingFoliage', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute25
+				{
+					property="SPE_AddSpawnedGroups";
+					expression="missionNamespace setVariable ['SPE_AddSpawnedGroups', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute26
+				{
+					property="SPE_Active_Surrender";
+					expression="missionNamespace setVariable ['SPE_Active_Surrender', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute27
+				{
+					property="SPE_CrowdPsyche";
+					expression="missionNamespace setVariable ['SPE_CrowdPsyche', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute28
+				{
+					property="SPE_CleanUp_Distances_Retreating";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [0, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1080.4399;
+						};
+					};
+				};
+				class Attribute29
+				{
+					property="SPE_MoraleAffectingTargetsRange";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=100;
+						};
+					};
+				};
+				nAttributes=30;
+			};
+		};
+		class Item562
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1270.321,37.239147,-127.988};
+				angles[]={0.037192967,0,6.2589951};
+			};
+			id=1295;
+			type="SPE_Module_Indirect_Fire_Support";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="SPE_IFS_CASAvailability_Side";
+					expression="if (isNil '') then {SPE_IFS_CASAvailability_Side = []}; 		if (_value param [0, -1] > -1) then {SPE_IFS_CASAvailability_Side append [west]}; 		if (_value param [1, -1] > -1) then {SPE_IFS_CASAvailability_Side append [east]}; 		if (_value param [2, -1] > -1) then {SPE_IFS_CASAvailability_Side append [independent]};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="SPE_IFS_CounterBatteryFireIsPriority";
+					expression="missionNamespace setVariable ['SPE_IFS_CounterBatteryFireIsPriority', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SPE_IFS_AllowAdvancedHints";
+					expression="missionNamespace setVariable ['SPE_IFS_AllowAdvancedHints', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="SPE_IFS_RequestedMortarAmount";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedMortarAmount', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=12;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="SPE_IFS_DSAvailability_Side";
+					expression="if (isNil '') then {SPE_IFS_DSAvailability_Side = []}; 		if (_value param [0, -1] > -1) then {SPE_IFS_DSAvailability_Side append [west]}; 		if (_value param [1, -1] > -1) then {SPE_IFS_DSAvailability_Side append [east]}; 		if (_value param [2, -1] > -1) then {SPE_IFS_DSAvailability_Side append [independent]};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="SPE_IFS_FOClass";
+					expression="missionNamespace setVariable ['SPE_IFS_FOClass', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=18;
+								class Item0
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_rangers_radioman";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_rangers_sniper";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_radioman";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_sniper";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_fr_sniper";
+									};
+								};
+								class Item5
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_fr_radioman";
+									};
+								};
+								class Item6
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_radioman";
+									};
+								};
+								class Item7
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_assist_squadlead";
+									};
+								};
+								class Item8
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_ober_grenadier";
+									};
+								};
+								class Item9
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_lieutenant";
+									};
+								};
+								class Item10
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_mgunner2";
+									};
+								};
+								class Item11
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_mgunner";
+									};
+								};
+								class Item12
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_ober_rifleman";
+									};
+								};
+								class Item13
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_rifleman";
+									};
+								};
+								class Item14
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_squadlead";
+									};
+								};
+								class Item15
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_sniper";
+									};
+								};
+								class Item16
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_sturmtrooper_radioman";
+									};
+								};
+								class Item17
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_sturmtrooper_sniper";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="SPE_IFS_RequestedMortarETA";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedMortarETA', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=30.000002;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="SPE_IFS_RequestedHeavyArtyAmount";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedHeavyArtyAmount', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=12;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="SPE_IFS_AllowMortarsAgainstTanks";
+					expression="missionNamespace setVariable ['SPE_IFS_AllowMortarsAgainstTanks', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="SPE_IFS_AmountMultiplier_Hard";
+					expression="if (isNil 'SPE_IFS_AmountMultiplier') then {SPE_IFS_AmountMultiplier = [0, 0, 0]}; SPE_IFS_AmountMultiplier set [2, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="SPE_IFS_RequestedHeavyArtyETA";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedHeavyArtyETA', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=45;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="SPE_IFS_RequestedMortarSpread";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedMortarSpread', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=100;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="SPE_IFS_AmountMultiplier_Infantry";
+					expression="if (isNil 'SPE_IFS_AmountMultiplier') then {SPE_IFS_AmountMultiplier = [0, 0, 0]}; SPE_IFS_AmountMultiplier set [0, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="SPE_IFS_DS_CheckFriendlyFire";
+					expression="missionNamespace setVariable ['SPE_IFS_DS_CheckFriendlyFire', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="SPE_IFS_AcceptedRadioBackpacks";
+					expression="missionNamespace setVariable ['SPE_IFS_AcceptedRadioBackpacks', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=5;
+								class Item0
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_ger_radio";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio_alt";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio_packboard";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio_packboard_light";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="SPE_IFS_Amount";
+					expression="missionNamespace setVariable ['SPE_IFS_Amount', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=12;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="SPE_IFS_AmountMultiplier_Soft";
+					expression="if (isNil 'SPE_IFS_AmountMultiplier') then {SPE_IFS_AmountMultiplier = [0, 0, 0]}; SPE_IFS_AmountMultiplier set [1, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1.1999999;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="SPE_IFS_ArtyActive";
+					expression="missionNamespace setVariable ['SPE_IFS_ArtyActive', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="SPE_IFS_RequestedHeavyArtySpread";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedHeavyArtySpread', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=150;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="SPE_IFS_AvailableCalls";
+					expression="missionNamespace setVariable ['SPE_IFS_AvailableCalls', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+										};
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+										};
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=-1;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="SPE_IFS_IncomingMarkRange";
+					expression="missionNamespace setVariable ['SPE_IFS_IncomingMarkRange', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1000;
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="SPE_IFS_CASActive";
+					expression="missionNamespace setVariable ['SPE_IFS_CASActive', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute22
+				{
+					property="SPE_IFS_Acc";
+					expression="missionNamespace setVariable ['SPE_IFS_Acc', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				class Attribute23
+				{
+					property="SPE_IFS_ArtyAvailability_Side";
+					expression="if (isNil '') then {SPE_IFS_ArtyAvailability_Side = []}; 		if (_value param [0, -1] > -1) then {SPE_IFS_ArtyAvailability_Side append [west]}; 		if (_value param [1, -1] > -1) then {SPE_IFS_ArtyAvailability_Side append [east]}; 		if (_value param [2, -1] > -1) then {SPE_IFS_ArtyAvailability_Side append [independent]};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute24
+				{
+					property="SPE_IFS_IncomingNotificationRange";
+					expression="missionNamespace setVariable ['SPE_IFS_IncomingNotificationRange', _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=500;
+						};
+					};
+				};
+				nAttributes=25;
+			};
+		};
+		class Item563
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1340.0656,46.656952,205.43108};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1297;
+					type="vn_b_men_sf_06";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1296;
+			atlOffset=-3.8146973e-006;
+		};
+		class Item564
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1341.0649,46.620415,204.77794};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1299;
+					type="vn_b_men_sf_06";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1298;
+		};
+		class Item565
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1342.0787,46.589058,203.82747};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1301;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1300;
+			atlOffset=3.8146973e-006;
+		};
+		class Item566
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1343.0471,46.562122,202.94958};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1303;
+					type="vn_b_men_sf_06";
+					atlOffset=7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1302;
+			atlOffset=7.6293945e-006;
+		};
+		class Item567
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1343.9661,46.542473,202.37029};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1305;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1304;
+			atlOffset=3.8146973e-006;
+		};
+		class Item568
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1344.9819,46.517475,201.4491};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1307;
+					type="vn_b_men_sf_06";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1306;
+		};
+		class Item569
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1346.1252,46.504349,200.60449};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1309;
+					type="vn_b_men_sf_06";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1308;
+			atlOffset=-3.8146973e-006;
+		};
+		class Item570
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1347.2687,46.501438,199.75999};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1311;
+					type="vn_b_men_sf_06";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1310;
+		};
+		class Item571
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1348.3462,46.501438,198.88554};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1313;
+					type="vn_b_men_sf_06";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1312;
+		};
+		class Item572
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1349.2844,46.501438,198.23227};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1315;
+					type="vn_b_men_sf_06";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1314;
 		};
 	};
 	class Connections
