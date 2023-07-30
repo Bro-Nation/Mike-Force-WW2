@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1192;
+		nextID=1226;
 	};
 	class Camera
 	{
@@ -19773,7 +19773,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.00071334839;
+			atlOffset=0.0028190613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19877,7 +19877,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=3.0517578e-005;
+			atlOffset=0.0021362305;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -39507,6 +39507,7 @@ class Mission
 			};
 			id=1381;
 			type="vn_i_wheeled_m151_01";
+			atlOffset=-0.00082397461;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -39542,6 +39543,7 @@ class Mission
 			};
 			id=1382;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0016174316;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -39969,6 +39971,7 @@ class Mission
 			};
 			id=1398;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0085296631;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40004,7 +40007,7 @@ class Mission
 			};
 			id=1399;
 			type="vn_i_wheeled_m151_01";
-			atlOffset=3.8146973e-006;
+			atlOffset=-0.0062713623;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40040,6 +40043,7 @@ class Mission
 			};
 			id=1400;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0096588135;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40075,6 +40079,7 @@ class Mission
 			};
 			id=1401;
 			type="vn_i_wheeled_m151_01";
+			atlOffset=-0.006855011;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40110,6 +40115,7 @@ class Mission
 			};
 			id=1402;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0065307617;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40145,6 +40151,7 @@ class Mission
 			};
 			id=1403;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0035705566;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40180,6 +40187,7 @@ class Mission
 			};
 			id=1404;
 			type="vn_i_wheeled_m151_01";
+			atlOffset=-0.0067634583;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40215,6 +40223,7 @@ class Mission
 			};
 			id=1405;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0026168823;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40250,6 +40259,7 @@ class Mission
 			};
 			id=1406;
 			type="vn_i_wheeled_m151_01";
+			atlOffset=-0.0010452271;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40285,7 +40295,7 @@ class Mission
 			};
 			id=1407;
 			type="vn_i_wheeled_m151_mg_01";
-			atlOffset=3.8146973e-006;
+			atlOffset=-0.014755249;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40321,6 +40331,7 @@ class Mission
 			};
 			id=1408;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0009803772;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40356,6 +40367,7 @@ class Mission
 			};
 			id=1409;
 			type="vn_i_wheeled_m151_01";
+			atlOffset=-0.001953125;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40391,6 +40403,7 @@ class Mission
 			};
 			id=1410;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.0016098022;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40426,7 +40439,7 @@ class Mission
 			};
 			id=1411;
 			type="vn_i_wheeled_m151_01";
-			atlOffset=3.8146973e-006;
+			atlOffset=-0.0016937256;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40462,7 +40475,7 @@ class Mission
 			};
 			id=1412;
 			type="vn_i_wheeled_m151_mg_01";
-			atlOffset=3.8146973e-006;
+			atlOffset=-0.0016288757;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40533,7 +40546,7 @@ class Mission
 			};
 			id=1416;
 			type="vn_i_wheeled_m151_mg_01";
-			atlOffset=3.8146973e-006;
+			atlOffset=-0.00022888184;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40569,6 +40582,7 @@ class Mission
 			};
 			id=1417;
 			type="vn_i_wheeled_m151_01";
+			atlOffset=-0.00033569336;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40604,6 +40618,7 @@ class Mission
 			};
 			id=1418;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-0.003238678;
 			class CustomAttributes
 			{
 				class Attribute0
