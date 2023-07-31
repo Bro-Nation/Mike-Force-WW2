@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1419;
+		nextID=1447;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1226;
+		nextID=1260;
 	};
 	class Camera
 	{
-		pos[]={1271.764,64.436455,572.29102};
-		dir[]={0.74620456,-0.52070779,-0.41480991};
-		up[]={0.45511949,0.85372835,-0.25299761};
-		aside[]={-0.48587286,-6.967457e-008,-0.8740409};
+		pos[]={1357.8354,114.53019,230.48288};
+		dir[]={-0.48259637,-0.36131704,0.79788536};
+		up[]={-0.18701501,0.93242633,0.30919605};
+		aside[]={0.85568643,-5.6919816e-007,0.51755702};
 	};
 };
 binarizationWanted=0;
@@ -568,7 +568,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=621;
+		items=631;
 		class Item0
 		{
 			dataType="Logic";
@@ -1913,8 +1913,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1541.5101,51.993549,415.23755};
-						angles[]={6.2731905,0.33155981,0.0066592805};
+						position[]={1539.0355,51.96402,413.67548};
+						angles[]={6.2798738,0.33155981,0};
 					};
 					side="Empty";
 					flags=4;
@@ -1924,7 +1924,6 @@ class Mission
 					};
 					id=72;
 					type="Land_vn_us_vehicleammo";
-					atlOffset=0.013134003;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2228,7 +2227,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1547.719,53.710644,406.73444};
+						position[]={1541.5127,53.737656,410.4834};
 						angles[]={0,5.7159386,0};
 					};
 					side="Empty";
@@ -2328,7 +2327,7 @@ class Mission
 				};
 			};
 			id=68;
-			atlOffset=-4.8025818;
+			atlOffset=-4.6805382;
 		};
 		class Item28
 		{
@@ -2799,8 +2798,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1567.6289,52.661232,404.91977};
-						angles[]={6.2332263,1.072365,0.016662678};
+						position[]={1565.7333,52.821049,410.78204};
+						angles[]={6.249866,1.072365,0.036649179};
 					};
 					side="Empty";
 					flags=4;
@@ -2858,7 +2857,7 @@ class Mission
 				};
 			};
 			id=178;
-			atlOffset=-0.050937653;
+			atlOffset=-0.025138855;
 		};
 		class Item36
 		{
@@ -2866,7 +2865,7 @@ class Mission
 			name="Heavy air support #1";
 			class Entities
 			{
-				items=6;
+				items=18;
 				class Item0
 				{
 					dataType="Object";
@@ -2993,9 +2992,261 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1535.6616,51.64315,369.15573};
+						angles[]={0.010000871,6.0688834,0.0099949092};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1419;
+					type="Sign_Arrow_Direction_Green_F";
+				};
+				class Item7
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1536.0482,51.626431,367.16248};
+						angles[]={0.019996032,4.1388564,6.2765174};
+					};
+					init="['air_heavy_fire_support', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
+					id=1420;
+					type="Logic";
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1546.4823,52.482056,370.4899};
+						angles[]={0,2.9493246,0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=1421;
+					type="vn_signad_sponsors_f";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1513.1285,51.143105,364.51959};
+						angles[]={6.2265792,6.0688834,0.043306526};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1422;
+					type="Sign_Arrow_Direction_Green_F";
+				};
+				class Item10
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1513.5154,50.996712,362.526};
+						angles[]={6.2432051,4.138854,0.043306526};
+					};
+					init="['air_heavy_fire_support', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
+					id=1423;
+					type="Logic";
+					atlOffset=3.8146973e-006;
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1524.6154,52.467457,365.00345};
+						angles[]={0,2.9493246,0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=1424;
+					type="vn_signad_sponsors_f";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1505.0817,51.857708,402.32999};
+						angles[]={6.2565274,1.6446936,0.0099949092};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1427;
+					type="Sign_Arrow_Direction_Green_F";
+				};
+				class Item13
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1503.0607,51.784637,402.526};
+						angles[]={6.2565274,5.9979696,0.0099949092};
+					};
+					init="['air_heavy_fire_support', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
+					id=1428;
+					type="Logic";
+					atlOffset=3.8146973e-006;
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1503.2847,52.650082,391.57651};
+						angles[]={0,4.8083735,-0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=1429;
+					type="vn_signad_sponsors_f";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item15
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1507.0424,52.231403,425.25137};
+						angles[]={6.276526,1.6448056,6.2432065};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=1430;
+					type="Sign_Arrow_Direction_Green_F";
+				};
+				class Item16
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={1505.0211,52.253208,425.44724};
+						angles[]={6.2665191,5.9996262,6.2398806};
+					};
+					init="['air_heavy_fire_support', 0] call vn_mf_fnc_veh_asset_3DEN_spawn_point";
+					id=1431;
+					type="Logic";
+					atlOffset=3.8146973e-006;
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1504.241,53.197277,414.10092};
+						angles[]={0,4.8083735,-0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=1432;
+					type="vn_signad_sponsors_f";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=182;
-			atlOffset=0.022514343;
+			atlOffset=-0.016731262;
 		};
 		class Item37
 		{
@@ -5905,7 +6156,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1802.3772,45.967422,669.44769};
+						position[]={1801.0587,45.982773,669.11646};
 						angles[]={6.2631893,4.6174254,6.2665229};
 					};
 					side="Empty";
@@ -5933,8 +6184,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1793.0674,46.015915,668.50641};
-						angles[]={6.2432065,4.5981288,0.013332055};
+						position[]={1790.3424,45.957546,667.30347};
+						angles[]={6.2598543,4.5981288,0.016666256};
 					};
 					side="Empty";
 					flags=4;
@@ -19773,7 +20024,7 @@ class Mission
 			};
 			id=706;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0028190613;
+			atlOffset=0.00071334839;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19877,7 +20128,7 @@ class Mission
 			};
 			id=709;
 			type="Land_vn_vojenska_palanda";
-			atlOffset=0.0021362305;
+			atlOffset=3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -36844,7 +37095,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=0.1;
+							value=0.34999999;
 						};
 					};
 				};
@@ -36883,7 +37134,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=1;
+							value=0.34999999;
 						};
 					};
 				};
@@ -36896,7 +37147,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=1;
+							value=0.28999999;
 						};
 					};
 				};
@@ -36922,7 +37173,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=1;
+							value=2;
 						};
 					};
 				};
@@ -36961,7 +37212,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=60;
+							value=127.18383;
 						};
 					};
 				};
@@ -37013,7 +37264,7 @@ class Mission
 						class data
 						{
 							singleType="BOOL";
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -37139,7 +37390,7 @@ class Mission
 						class data
 						{
 							singleType="BOOL";
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -37165,7 +37416,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=100;
+							value=110;
 						};
 					};
 				};
@@ -37217,7 +37468,7 @@ class Mission
 									class data
 									{
 										singleType="SCALAR";
-										value=2;
+										value=-1;
 									};
 								};
 								class Item3
@@ -37716,7 +37967,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=20;
 												};
 											};
 											class Item1
@@ -37724,7 +37975,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=50;
 												};
 											};
 											class Item2
@@ -37732,7 +37983,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=50;
 												};
 											};
 										};
@@ -37751,7 +38002,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=20;
 												};
 											};
 											class Item1
@@ -37759,7 +38010,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=50;
 												};
 											};
 											class Item2
@@ -37767,7 +38018,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=50;
 												};
 											};
 										};
@@ -37786,7 +38037,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=0;
 												};
 											};
 											class Item1
@@ -37794,7 +38045,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=20;
 												};
 											};
 											class Item2
@@ -37802,7 +38053,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=-1;
+													value=20;
 												};
 											};
 										};
@@ -40637,16 +40888,696 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item621
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1546.3391,51.630177,371.02664};
+				angles[]={6.2731848,0,6.2598572};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1425;
+			type="Land_SPE_Onion_Lamp";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item622
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1524.484,51.616566,365.57233};
+				angles[]={6.2731848,0,0.019996032};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1426;
+			type="Land_SPE_Onion_Lamp";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item623
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1503.84,51.79517,391.56119};
+				angles[]={6.2731905,1.8590696,0.0099949092};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1433;
+			type="Land_SPE_Onion_Lamp";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item624
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1504.8236,52.328362,414.06512};
+				angles[]={6.2598572,1.858959,6.2698536};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=1434;
+			type="Land_SPE_Onion_Lamp";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item625
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1352.7269,46.725906,211.26495};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1436;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1435;
+			atlOffset=3.8146973e-006;
+		};
+		class Item626
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1353.6257,46.669315,210.43417};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1438;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1437;
+			atlOffset=3.8146973e-006;
+		};
+		class Item627
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1351.5508,46.777012,212.26324};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1440;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1439;
+			atlOffset=3.8146973e-006;
+		};
+		class Item628
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1350.3716,46.814026,212.93607};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1442;
+					type="vn_b_men_sf_06";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1441;
+		};
+		class Item629
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1349.5507,46.850864,213.52153};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1444;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1443;
+			atlOffset=3.8146973e-006;
+		};
+		class Item630
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1348.5811,46.892941,214.10168};
+						angles[]={0,3.7519121,0};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						init="this addEventHandler [ ""HandleDamage"", { " \n "  params [""_unit"", ""_hitSelection"", ""_damage"",""_source"",""_projectile"",""_hitPartIndex"", ""_instigator"", ""_hitPoint""]; " \n " " \n "  private _damageMultiplierHead = 0.4; " \n "  private _damageMultiplierBody = 0.3; " \n "  private _damageMultiplierLimbs = 0.25; " \n "  private _damageMultiplierOverall = 0.25; " \n "  private _limitHead = 1.0; " \n "  private _limitBody = 0.25; " \n "  private _limitLimbs = 0.1; " \n "  private _limitOverall = 0.25; " \n "  private _oldDamage = 0; " \n "  if (_hitSelection isEqualTo """") then {_oldDamage = damage _unit} else {_oldDamage = _unit getHit _hitSelection}; " \n "  private _newDamage = _damage - _oldDamage max 0; " \n "  private _incomingDamage = _newDamage; " \n "  private _playerHealth = damage _unit; " \n " " \n "  if (_newDamage > 0 && !(_projectile isEqualTo """")) then { " \n "    private _damageMultiplier = _damageMultiplierBody; " \n "    private _upperLimit = _limitBody; " \n "    switch (_hitSelection) do { " \n "      case ""face_hub""; " \n "      case ""head"": { " \n "        _damageMultiplier = _damageMultiplierHead; " \n "        _upperLimit = _limitHead; " \n "      }; " \n "      case ""arms""; " \n "      case ""hands""; " \n "      case ""legs"": { " \n "        _damageMultiplier = _damageMultiplierLimbs; " \n "        _upperLimit = _limitLimbs; " \n "      }; " \n "      case """": { " \n "        _damageMultiplier = _damageMultiplierOverall; " \n "        _upperLimit = _limitOverall; " \n "      }; " \n "      default { " \n "        _damageMultiplier = _damageMultiplierBody; " \n "        _upperLimit = _limitBody; " \n "      }; " \n "    }; " \n "    _newDamage = _newDamage * _damageMultiplier; " \n "    if (_newDamage > _upperLimit) then { " \n "      _newDamage = _upperLimit; " \n "    }; " \n " " \n "    _damage = _oldDamage + _newDamage; " \n "  }; " \n " " \n "  if ( isPlayer _unit ) then { " \n "    if ( lifeState _unit == ""INCAPACITATED"" ) then { " \n "      _damage = _oldDamage; " \n "    } else { " \n "      _this set[ 2, _damage ]; " \n "      _damage = _this call bis_fnc_reviveEhHandleDamage; " \n "    }; " \n "  }; " \n "  _damage " \n "}]";
+						isPlayable=1;
+						class Inventory
+						{
+							class binocular
+							{
+								name="Binocular";
+							};
+							class uniform
+							{
+								typeName="U_SPE_US_HBT44";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+						};
+					};
+					id=1446;
+					type="vn_b_men_sf_06";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1445;
+			atlOffset=3.8146973e-006;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=138;
+			nextID=146;
 		};
 		class Links
 		{
-			items=138;
+			items=146;
 			class Item0
 			{
 				linkID=0;
@@ -42022,6 +42953,86 @@ class Mission
 				linkID=137;
 				item0=700;
 				item1=803;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item138
+			{
+				linkID=138;
+				item0=1419;
+				item1=1420;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item139
+			{
+				linkID=139;
+				item0=1421;
+				item1=1420;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item140
+			{
+				linkID=140;
+				item0=1422;
+				item1=1423;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item141
+			{
+				linkID=141;
+				item0=1424;
+				item1=1423;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item142
+			{
+				linkID=142;
+				item0=1427;
+				item1=1428;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item143
+			{
+				linkID=143;
+				item0=1429;
+				item1=1428;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item144
+			{
+				linkID=144;
+				item0=1430;
+				item1=1431;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item145
+			{
+				linkID=145;
+				item0=1432;
+				item1=1431;
 				class CustomData
 				{
 					type="Sync";

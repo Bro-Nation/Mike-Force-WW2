@@ -40,19 +40,19 @@ class destinations
 {
 	class spiketeam_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_spikebase_ca.paa";
+		image = "custom\images\5th_ranger_logo_tex.paa";
 		position_marker = "mf_respawn_spiketeam";
 	};
 
 	class mikeforce_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_mikebase_ca.paa";
+		image = "custom\images\1st_INF_tex.paa";
 		position_marker = "mf_respawn_mikeforce";
 	};
 
 	class acav_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_acavbase_ca.paa";
+		image = "custom\images\2nd_Armor_logo_tex.paa";
 		position_marker = "mf_respawn_acav";
 	};
 
@@ -78,7 +78,7 @@ class destinations
 
 	class greenhornets_base
 	{
-		image = "\vn\ui_f_vietnam\ui\wheelmenu\img\icons\vn_ico_mf_tel_airbase_ca.paa";
+		image = "custom\images\US_army_air_corps_tex.paa";
 		position_marker = "mf_respawn_greenhornets";
 	};
 };
