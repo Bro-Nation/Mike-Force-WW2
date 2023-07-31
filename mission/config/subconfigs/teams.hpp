@@ -2,7 +2,7 @@
 class MikeForce
 {
     name = "Mike Force [Infantry]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_MikeForce_HL.paa";
+    icon = "custom\images\1st_INF_tex.paa";
     shortname = "Mike Force";
     unit = "SPE_US_First_Lieutenant";
 
@@ -35,7 +35,7 @@ class MikeForce
 class SpikeTeam
 {
     name = "Spike Team [Special Forces]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_SpikeTeam_HL.paa";
+    icon = "custom\images\5th_ranger_logo_tex.paa";
     shortname = "Spike Team";
     unit = "SPE_US_First_Lieutenant";
 
@@ -69,7 +69,7 @@ class SpikeTeam
 class ACAV
 {
     name = "Armored Cavalry [Ground Support]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_ACAV_HL.paa";
+    icon = "custom\images\2nd_Armor_logo_tex.paa";
     shortname = "ACAV";
     unit = "SPE_US_First_Lieutenant";
 
@@ -102,7 +102,7 @@ class ACAV
 class GreenHornets
 {
     name = "Green Hornets [Air Support]";
-    icon = "\vn\ui_f_vietnam\ui\taskroster\img\logos\Logo_Hornets_HL.paa";
+    icon = "custom\images\US_army_air_corps_tex.paa";
     shortname = "Green Hornets";
     unit = "SPE_US_First_Lieutenant";
     
