@@ -52,6 +52,234 @@ class Land_vn_guardhouse_01
 	};
 };
 
+class Land_vn_quonset_02_01
+{
+	name = "STR_vn_mf_checkpoint";
+	type = "checkpoints";
+	categories[] = {"functional", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_quonset_02_01";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_quonset_02_01";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_quonset_02_01";
+		};
+	};
+
+	class features
+	{
+		class respawn {};
+	};
+};
+
+class Land_SPE_Guardbox
+{
+	name = "STR_vn_mf_checkpoint";
+	type = "checkpoints";
+	categories[] = {"functional", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Guardbox";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Guardbox";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Guardbox";
+		};
+	};
+
+	class features
+	{
+		class respawn {};
+	};
+};
+
+class Land_vn_wf_field_hospital_east
+{
+	name = "STR_vn_mf_checkpoint";
+	type = "checkpoints";
+	categories[] = {"functional", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_wf_field_hospital_east";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_wf_field_hospital_east";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_wf_field_hospital_east";
+		};
+	};
+
+	class features
+	{
+		class respawn {};
+	};
+};
+
+class Land_Calvary_01_V1_F
+{
+	name = "STR_vn_mf_checkpoint";
+	type = "checkpoints";
+	categories[] = {"functional", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_Calvary_01_V1_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_Calvary_01_V1_F";
+		};
+		class final_state
+		{
+			object_class = "Land_Calvary_01_V1_F";
+		};
+	};
+
+	class features
+	{
+		class respawn {};
+	};
+};
+
+class Land_Chapel_Small_V2_F
+{
+	name = "STR_vn_mf_checkpoint";
+	type = "checkpoints";
+	categories[] = {"functional", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_Chapel_Small_V2_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_Chapel_Small_V2_F";
+		};
+		class final_state
+		{
+			object_class = "Land_Chapel_Small_V2_F";
+		};
+	};
+
+	class features
+	{
+		class respawn {};
+	};
+};
+
+class Land_SPE_Church_Calvary_Mary
+{
+	name = "STR_vn_mf_checkpoint";
+	type = "checkpoints";
+	categories[] = {"functional", "buildings"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Church_Calvary_Mary";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Church_Calvary_Mary";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Church_Calvary_Mary";
+		};
+	};
+
+	class features
+	{
+		class respawn {};
+	};
+};
+
 class Land_vn_tent_mash_01
 {
 	name = "STR_vn_mf_aid_post";
@@ -83,6 +311,7 @@ class Land_vn_tent_mash_01
 		};
 	};
 };
+
 
 class Land_vn_b_tower_01
 {
@@ -186,6 +415,50 @@ class vn_b_ammobox_supply_07
 		class maintenance
 		{
 			canRearm = 1;
+		};
+	};
+};
+
+class Land_vn_wf_vehicle_service_point_east
+{
+	name = "STR_vn_mf_ammoresupply";
+	type = "servicepoint";
+	categories[] = {"resupply", "functional"};
+	rank = 0;
+	SUPPLY_CAPACITY(500, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	nearby[] = {"ammo"};
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_wf_vehicle_service_point_east";
+		};
+		class middle_state
+		{
+			//TODO: Fix this, this shouldn't able to resupply in middle state.
+			object_class = "Land_vn_wf_vehicle_service_point_east";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_wf_vehicle_service_point_east";
+		};
+	};
+
+	class features
+	{
+		class maintenance
+		{
+			canRearm = 1;
+			canRepair = 1;
+			canRefuel = 1;
 		};
 	};
 };
@@ -5904,6 +6177,999 @@ class Land_SPE_Straw_Bale_Stack_01
 		};
 	};
 };
+
+class Land_SPE_Bottle_Shelf
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Bottle_Shelf";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Bottle_Shelf";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Bottle_Shelf";
+		};
+	};
+};
+
+class Land_SPE_Cabinet
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Cabinet";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Cabinet";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Cabinet";
+		};
+	};
+};
+
+class SPE_ChateauChair
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_ChateauChair";
+		};
+		class middle_state
+		{
+			object_class = "SPE_ChateauChair";
+		};
+		class final_state
+		{
+			object_class = "SPE_ChateauChair";
+		};
+	};
+};
+
+class SPE_ChateauTable_01
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_ChateauTable_01";
+		};
+		class middle_state
+		{
+			object_class = "SPE_ChateauTable_01";
+		};
+		class final_state
+		{
+			object_class = "SPE_ChateauTable_01";
+		};
+	};
+};
+
+class SPE_CoffeeTable
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_CoffeeTable";
+		};
+		class middle_state
+		{
+			object_class = "SPE_CoffeeTable";
+		};
+		class final_state
+		{
+			object_class = "SPE_CoffeeTable";
+		};
+	};
+};
+
+class SPE_CoffeeTable_w
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_CoffeeTable_w";
+		};
+		class middle_state
+		{
+			object_class = "SPE_CoffeeTable_w";
+		};
+		class final_state
+		{
+			object_class = "SPE_CoffeeTable_w";
+		};
+	};
+};
+
+class SPE_DiningChair
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_DiningChair";
+		};
+		class middle_state
+		{
+			object_class = "SPE_DiningChair";
+		};
+		class final_state
+		{
+			object_class = "SPE_DiningChair";
+		};
+	};
+};
+
+class SPE_DiningChair_w
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_DiningChair_w";
+		};
+		class middle_state
+		{
+			object_class = "SPE_DiningChair_w";
+		};
+		class final_state
+		{
+			object_class = "SPE_DiningChair_w";
+		};
+	};
+};
+
+class SPE_DiningTable_01
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_DiningTable_01";
+		};
+		class middle_state
+		{
+			object_class = "SPE_DiningTable_01";
+		};
+		class final_state
+		{
+			object_class = "SPE_DiningTable_01";
+		};
+	};
+};
+
+class SPE_DiningTable_01_w
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_DiningTable_01_w";
+		};
+		class middle_state
+		{
+			object_class = "SPE_DiningTable_01_w";
+		};
+		class final_state
+		{
+			object_class = "SPE_DiningTable_01_w";
+		};
+	};
+};
+
+class SPE_LeatherChair
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_LeatherChair";
+		};
+		class middle_state
+		{
+			object_class = "SPE_LeatherChair";
+		};
+		class final_state
+		{
+			object_class = "SPE_LeatherChair";
+		};
+	};
+};
+
+class SPE_SideTable_01
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_SideTable_01";
+		};
+		class middle_state
+		{
+			object_class = "SPE_SideTable_01";
+		};
+		class final_state
+		{
+			object_class = "SPE_SideTable_01";
+		};
+	};
+};
+
+class SPE_SideTable_01_cr
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_SideTable_01_cr";
+		};
+		class middle_state
+		{
+			object_class = "SPE_SideTable_01_cr";
+		};
+		class final_state
+		{
+			object_class = "SPE_SideTable_01_cr";
+		};
+	};
+};
+
+class SPE_Desk_01
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_Desk_01";
+		};
+		class middle_state
+		{
+			object_class = "SPE_Desk_01";
+		};
+		class final_state
+		{
+			object_class = "SPE_Desk_01";
+		};
+	};
+};
+
+class SPE_Desk_01_w
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "SPE_Desk_01_w";
+		};
+		class middle_state
+		{
+			object_class = "SPE_Desk_01_w";
+		};
+		class final_state
+		{
+			object_class = "SPE_Desk_01_w";
+		};
+	};
+};
+
+class Land_SPE_Ger_Lamp
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Ger_Lamp";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Ger_Lamp";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Ger_Lamp";
+		};
+	};
+};
+
+class Land_SPE_US_Lamp
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_US_Lamp";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_US_Lamp";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_US_Lamp";
+		};
+	};
+};
+
+class Land_SPE_Onion_Lamp
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Onion_Lamp";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Onion_Lamp";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Onion_Lamp";
+		};
+	};
+};
+
+class Land_SPE_Artillery_Rounds_US
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Artillery_Rounds_US";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Artillery_Rounds_US";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Artillery_Rounds_US";
+		};
+	};
+};
+
+class Land_Money_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_Money_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_Money_F";
+		};
+		class final_state
+		{
+			object_class = "Land_Money_F";
+		};
+	};
+};
+
+class MetalBarrel_burning_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "MetalBarrel_burning_F";
+		};
+		class middle_state
+		{
+			object_class = "MetalBarrel_burning_F";
+		};
+		class final_state
+		{
+			object_class = "MetalBarrel_burning_F";
+		};
+	};
+};
+
+class Land_SPE_A3_Bulldozer_01_wreck_green_US
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_A3_Bulldozer_01_wreck_green_US";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_A3_Bulldozer_01_wreck_green_US";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_A3_Bulldozer_01_wreck_green_US";
+		};
+	};
+};
+
+class Land_WoodenTable_02_large_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_WoodenTable_02_large_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_WoodenTable_02_large_F";
+		};
+		class final_state
+		{
+			object_class = "Land_WoodenTable_02_large_F";
+		};
+	};
+};
+
+class Land_WoodenTable_large_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_WoodenTable_large_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_WoodenTable_large_F";
+		};
+		class final_state
+		{
+			object_class = "Land_WoodenTable_large_F";
+		};
+	};
+};
+
+class Land_WoodenTable_small_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_WoodenTable_small_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_WoodenTable_small_F";
+		};
+		class final_state
+		{
+			object_class = "Land_WoodenTable_small_F";
+		};
+	};
+};
+
+class Land_Bench_01_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_Bench_01_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_Bench_01_F";
+		};
+		class final_state
+		{
+			object_class = "Land_Bench_01_F";
+		};
+	};
+};
+
+class Land_vn_dkamna_bila
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_dkamna_bila";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_dkamna_bila";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_dkamna_bila";
+		};
+	};
+};
+
+class Land_vn_stul_kuch1
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_vn_stul_kuch1";
+		};
+		class middle_state
+		{
+			object_class = "Land_vn_stul_kuch1";
+		};
+		class final_state
+		{
+			object_class = "Land_vn_stul_kuch1";
+		};
+	};
+};
+
+class Land_BarGate_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_BarGate_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_BarGate_F";
+		};
+		class final_state
+		{
+			object_class = "Land_BarGate_F";
+		};
+	};
+};
+
+class Land_LampDecor_F
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_LampDecor_F";
+		};
+		class middle_state
+		{
+			object_class = "Land_LampDecor_F";
+		};
+		class final_state
+		{
+			object_class = "Land_LampDecor_F";
+		};
+	};
+};
+
+class Land_SPE_Church_Bell
+{
+	name = "";
+	type = "furnitures";
+	categories[] = {"decorative", "nonAcav", "1944"};
+	rank = 0;
+	SUPPLY_CAPACITY(50, DAYS_TO_SECONDS(1));
+	resupply = "BuildingSupplies";
+	conditions[] = {
+		CONDITION_HAS_RANK,
+		CONDITION_IS_ENGINEER,
+		CONDITION_IS_ON_FOOT,
+		CONDITION_NOT_IN_RESTRICTED_ZONE,
+		CONDITION_IS_ACAV
+	};
+	class build_states
+	{
+		class initial_state
+		{
+			object_class = "Land_SPE_Church_Bell";
+		};
+		class middle_state
+		{
+			object_class = "Land_SPE_Church_Bell";
+		};
+		class final_state
+		{
+			object_class = "Land_SPE_Church_Bell";
+		};
+	};
+};
+
 
 
 /*
