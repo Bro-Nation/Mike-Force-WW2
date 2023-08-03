@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1396;
+		nextID=1464;
 	};
 	class Camera
 	{
-		pos[]={1563.8105,205.74648,712.19};
-		dir[]={-0.18765262,-0.53794044,0.82184088};
-		up[]={-0.11974856,0.8429805,0.52444816};
-		aside[]={0.97491962,2.7043279e-007,0.22260585};
+		pos[]={5354.291,102.03693,11204.277};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -641,12 +641,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1321.1194,40.582344,-195.19482};
-				angles[]={6.2639928,0,0.041308183};
+				position[]={1003.3573,41.725208,-234.0542};
+				angles[]={0.019650225,0,6.2707033};
 			};
 			name="vn_mf_veh_asset_logic";
 			id=3;
 			type="Logic";
+			atlOffset=3.8146973e-006;
 		};
 		class Item3
 		{
@@ -6749,11 +6750,12 @@ class Mission
 		class Item51
 		{
 			dataType="Marker";
-			position[]={11920.265,47.574917,2421.7271};
-			name="marker_3";
+			position[]={11920.265,47.575001,2421.7271};
+			name="flag3";
 			text="French Resistance Supply Stash";
 			type="SPE_n_Icon_Flag_FFI";
 			id=337;
+			atlOffset=8.392334e-005;
 		};
 		class Item52
 		{
@@ -6847,7 +6849,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={6480.2749,55.606998,5275.1211};
-			name="marker_0";
+			name="flag1";
 			text="French Resistance Supply Stash";
 			type="SPE_n_Icon_Flag_FFI";
 			id=353;
@@ -6928,11 +6930,12 @@ class Mission
 		class Item61
 		{
 			dataType="Marker";
-			position[]={5340.3306,47.109665,11264.545};
-			name="marker_1";
+			position[]={5367.7749,46.823002,11273.831};
+			name="flag2";
 			text="French Resistance Supply Stash";
 			type="SPE_n_Icon_Flag_FFI";
 			id=369;
+			atlOffset=-0.0001411438;
 		};
 		class Item62
 		{
@@ -16181,12 +16184,13 @@ class Mission
 		class Item211
 		{
 			dataType="Marker";
-			position[]={1818.7548,43.783764,308.28238};
-			name="US Army Air Corp";
+			position[]={1818.755,43.784,308.28201};
+			name="icon6";
 			text="US Army Air Corp";
 			type="b_hq";
 			colorName="ColorGUER";
 			id=555;
+			atlOffset=0.00023651123;
 		};
 		class Item212
 		{
@@ -17718,7 +17722,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={1328.011,54.487999,513.67603};
-			name="marker_2";
+			name="icon4";
 			text="AA ";
 			type="SPE_n_Icon_Allies_AAMG";
 			id=612;
@@ -17728,7 +17732,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={1276.059,52.919998,498.67899};
-			name="marker_4";
+			name="icon1";
 			text="Tanks";
 			type="SPE_n_Icon_Allies_Armored";
 			id=613;
@@ -17738,7 +17742,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={1224.105,50.323002,649.29602};
-			name="marker_5";
+			name="icon5";
 			text="Artillery Emplacements";
 			type="n_art";
 			id=614;
@@ -20564,12 +20568,13 @@ class Mission
 		class Item353
 		{
 			dataType="Marker";
-			position[]={1329.5497,53.73061,552.04071};
-			name="marker_10";
+			position[]={1329.55,53.730999,552.04102};
+			name="icon3";
 			text="Halftracks";
 			type="SPE_n_Icon_Allies_Scout_Car";
 			colorName="ColorGUER";
 			id=726;
+			atlOffset=0.00039672852;
 		};
 		class Item354
 		{
@@ -32942,7 +32947,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={1226.14,47.472,538.81299};
-			name="marker_11";
+			name="icon2";
 			text="Heavy Statics";
 			type="SPE_n_Icon_Allies_Artillery";
 			id=1082;
@@ -33069,7 +33074,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={10428.01,29.84,10283.049};
-			name="marker_6";
+			name="flag4";
 			text="OKW Frankreich: Saint Lo";
 			type="SPE_n_Icon_Flag_GER";
 			id=1104;
@@ -35968,11 +35973,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1258.149,38.74136,-152.021};
-				angles[]={0.067282446,0,6.250216};
+				position[]={1133.6578,40.730343,-247.94922};
+				angles[]={0.033526264,0,6.2817621};
 			};
 			id=1271;
 			type="SPE_Module_Advanced_Revive";
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40355,11 +40361,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1299.235,37.182503,-129.258};
-				angles[]={0.07737045,0,6.2218542};
+				position[]={1174.4767,40.271847,-231.19775};
+				angles[]={6.2801557,0,6.2614908};
 			};
 			id=1447;
 			type="vn_module_artillery";
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40383,18 +40390,20 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1309.9037,37.606438,-143.62061};
-				angles[]={0.074618153,0,6.2188072};
+				position[]={1157.2312,40.563354,-251.13867};
+				angles[]={6.2727757,0,6.2668114};
 			};
 			id=1448;
 			type="vn_module_dynamicradiomusic_disable";
+			atlOffset=3.8146973e-006;
 		};
 		class Item631
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1237.9561,38.641911,-134.58501};
+				position[]={1113.4648,40.799591,-230.51323};
+				angles[]={0.0095932409,0,6.2457509};
 			};
 			id=1449;
 			type="SPE_Module_AI_Systems_HOTFIX";
@@ -40833,10 +40842,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1271.912,37.29134,-130.25999};
+				position[]={1147.421,40.605389,-226.188};
+				angles[]={0.0020420351,0,0.015323991};
 			};
 			id=1450;
 			type="SPE_Module_Indirect_Fire_Support_HOTFIX";
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -40872,7 +40883,7 @@ class Mission
 									class data
 									{
 										singleType="SCALAR";
-										value=2;
+										value=-1;
 									};
 								};
 								class Item3
@@ -41277,7 +41288,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=6;
+							value=14;
 						};
 					};
 				};
@@ -41496,7 +41507,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=20;
+													value=6;
 												};
 											};
 											class Item2
@@ -41504,7 +41515,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=20;
+													value=6;
 												};
 											};
 										};
@@ -41523,7 +41534,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=20;
+													value=6;
 												};
 											};
 											class Item1
@@ -41531,7 +41542,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=20;
+													value=6;
 												};
 											};
 											class Item2
@@ -41539,7 +41550,7 @@ class Mission
 												class data
 												{
 													singleType="SCALAR";
-													value=20;
+													value=6;
 												};
 											};
 										};
@@ -41571,7 +41582,7 @@ class Mission
 						class data
 						{
 							singleType="BOOL";
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -41645,7 +41656,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=760;
+							value=1000;
 						};
 					};
 				};
