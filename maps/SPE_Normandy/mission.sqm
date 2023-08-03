@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1449;
+		nextID=1451;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1362;
+		nextID=1396;
 	};
 	class Camera
 	{
 		pos[]={1563.8105,205.74648,712.19};
-		dir[]={-0.49415824,-0.59871531,0.6303674};
-		up[]={-0.36937946,0.80095971,0.47119454};
-		aside[]={0.78701133,2.1932647e-007,0.61695528};
+		dir[]={-0.18765262,-0.53794044,0.82184088};
+		up[]={-0.11974856,0.8429805,0.52444816};
+		aside[]={0.97491962,2.7043279e-007,0.22260585};
 	};
 };
 binarizationWanted=0;
@@ -82,13 +82,14 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Garbage",
 	"A3_Structures_F_Ind_AirPort",
 	"ww2_spe_missions_p_utilityfunctions_f_revivetoksa",
-	"A3_Structures_F_Civ_Accessories"
+	"A3_Structures_F_Civ_Accessories",
+	"ww2_spe_missions_p_utilityfunctions_f"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			className="modules_f_vietnam";
@@ -381,6 +382,11 @@ class AddonsMetaData
 			className="WW2_SPE_Missions_p_UtilityFunctions_f_ReviveToksa";
 			name="ww2_spe_missions_p_utilityfunctions_f_revivetoksa";
 		};
+		class Item49
+		{
+			className="WW2_SPE_Missions_p_UtilityFunctions_f";
+			name="ww2_spe_missions_p_utilityfunctions_f";
+		};
 	};
 };
 dlcs[]=
@@ -562,7 +568,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=631;
+		items=633;
 		class Item0
 		{
 			dataType="Logic";
@@ -40382,6 +40388,1269 @@ class Mission
 			};
 			id=1448;
 			type="vn_module_dynamicradiomusic_disable";
+		};
+		class Item631
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1237.9561,38.641911,-134.58501};
+			};
+			id=1449;
+			type="SPE_Module_AI_Systems_HOTFIX";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="SPE_Active_TweakAI";
+					expression="missionNamespace setVariable ['SPE_Active_TweakAI', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="SPE_AffectOurSide";
+					expression="missionNamespace setVariable ['SPE_AffectOurSide', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SPE_DoReliableEmbarking";
+					expression="missionNamespace setVariable ['SPE_DoReliableEmbarking', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="SPE_DoManTurrets";
+					expression="missionNamespace setVariable ['SPE_DoManTurrets', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="SPE_CleanUp_Distances_Surrendered";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [1, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1080.4399;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="SPE_DoTweakDisembarkInCombat";
+					expression="missionNamespace setVariable ['SPE_DoTweakDisembarkInCombat', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="SPE_OurSide";
+					expression="missionNamespace setVariable ['SPE_OurSide', [east, west, independent, civilian] select _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="SPE_PermanentShockProb";
+					expression="missionNamespace setVariable ['SPE_PermanentShockProb', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.33056593;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="SPE_DoHandleBlockingStuff";
+					expression="missionNamespace setVariable ['SPE_DoHandleBlockingStuff', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="SPE_CleanUp_Distances_Panicked:";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [2, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="SPE_RFSThresholds_MultiplierRF";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="SPE_RFSThresholds_Multipliers";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0.38999999;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="SPE_DoDiamondInCombat";
+					expression="missionNamespace setVariable ['SPE_DoDiamondInCombat', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="SPE_PlayerStressMultiplier";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1.3299999;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="SPE_Unstuck_HiddenOnly";
+					expression="missionNamespace setVariable ['SPE_Unstuck_HiddenOnly', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="SPE_NonCombatantKillsAllowed";
+					expression="missionNamespace setVariable ['SPE_NonCombatantKillsAllowed', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="SPE_RFS_POWWalkTimer";
+					expression="missionNamespace setVariable ['SPE_RFS_POWWalkTimer', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=60;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="SPE_Active_Unstuck";
+					expression="missionNamespace setVariable ['SPE_Active_Unstuck', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="SPE_DoLeaveFootmobilesBehind";
+					expression="missionNamespace setVariable ['SPE_DoLeaveFootmobilesBehind', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="SPE_DoCatchUp";
+					expression="missionNamespace setVariable ['SPE_DoCatchUp', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="SPE_Active_Flee";
+					expression="missionNamespace setVariable ['SPE_Active_Flee', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="SPE_Active_TweakAI_Rearm";
+					expression="missionNamespace setVariable ['SPE_Active_TweakAI_Rearm', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute22
+				{
+					property="SPE_ReliableEmbarking";
+					expression="if (isNil 'SPE_ReliableEmbarking') then {SPE_ReliableEmbarking = []}; 		if (_value param [0, -1] > -1) then {SPE_ReliableEmbarking append [west]}; 		if (_value param [1, -1] > -1) then {SPE_ReliableEmbarking append [east]}; 		if (_value param [2, -1] > -1) then {SPE_ReliableEmbarking append [independent]}; 		if (_value param [3, -1] > -1) then {SPE_ReliableEmbarking append [civilian]};";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=3;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute23
+				{
+					property="SPE_Active_InfoSharing";
+					expression="missionNamespace setVariable ['SPE_Active_InfoSharing', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute24
+				{
+					property="SPE_DoHideBlockingFoliage";
+					expression="missionNamespace setVariable ['SPE_DoHideBlockingFoliage', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute25
+				{
+					property="SPE_AddSpawnedGroups";
+					expression="missionNamespace setVariable ['SPE_AddSpawnedGroups', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute26
+				{
+					property="SPE_Active_Surrender";
+					expression="missionNamespace setVariable ['SPE_Active_Surrender', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute27
+				{
+					property="SPE_CrowdPsyche";
+					expression="missionNamespace setVariable ['SPE_CrowdPsyche', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute28
+				{
+					property="SPE_CleanUp_Distances_Retreating";
+					expression="if (isNil 'SPE_CleanUp_Distances') then {SPE_CleanUp_Distances = [0, 0, 0]}; SPE_CleanUp_Distances set [0, _value]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1080.4399;
+						};
+					};
+				};
+				class Attribute29
+				{
+					property="SPE_MoraleAffectingTargetsRange";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=150;
+						};
+					};
+				};
+				nAttributes=30;
+			};
+		};
+		class Item632
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1271.912,37.29134,-130.25999};
+			};
+			id=1450;
+			type="SPE_Module_Indirect_Fire_Support_HOTFIX";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="SPE_IFS_CASAvailability_Side";
+					expression="SPE_IFS_CASAvailability_Side = []; 		if (_value param [0, -1] > -1) then {SPE_IFS_DSAvailability_Side append [west]}; 		if (_value param [1, -1] > -1) then {SPE_IFS_DSAvailability_Side append [east]}; 		if (_value param [2, -1] > -1) then {SPE_IFS_DSAvailability_Side append [independent]}; 		publicVariable 'SPE_IFS_CASAvailability_Side';";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="SPE_IFS_CounterBatteryFireIsPriority";
+					expression="missionNamespace setVariable ['SPE_IFS_CounterBatteryFireIsPriority', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="SPE_IFS_AllowAdvancedHints";
+					expression="missionNamespace setVariable ['SPE_IFS_AllowAdvancedHints', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="SPE_IFS_RequestedMortarAmount";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedMortarAmount', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=16;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="SPE_IFS_DSAvailability_Side";
+					expression="SPE_IFS_DSAvailability_Side = []; 		if (_value param [0, -1] > -1) then {SPE_IFS_DSAvailability_Side append [west]}; 		if (_value param [1, -1] > -1) then {SPE_IFS_DSAvailability_Side append [east]}; 		if (_value param [2, -1] > -1) then {SPE_IFS_DSAvailability_Side append [independent]}; 		publicVariable 'SPE_IFS_DSAvailability_Side';";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="SPE_IFS_FOClass";
+					expression="missionNamespace setVariable ['SPE_IFS_FOClass', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=18;
+								class Item0
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_rangers_radioman";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_rangers_sniper";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_radioman";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_us_sniper";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_fr_sniper";
+									};
+								};
+								class Item5
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_fr_radioman";
+									};
+								};
+								class Item6
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_radioman";
+									};
+								};
+								class Item7
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_assist_squadlead";
+									};
+								};
+								class Item8
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_ober_grenadier";
+									};
+								};
+								class Item9
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_lieutenant";
+									};
+								};
+								class Item10
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_mgunner2";
+									};
+								};
+								class Item11
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_mgunner";
+									};
+								};
+								class Item12
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_ober_rifleman";
+									};
+								};
+								class Item13
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_rifleman";
+									};
+								};
+								class Item14
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_squadlead";
+									};
+								};
+								class Item15
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_ger_scout_sniper";
+									};
+								};
+								class Item16
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_sturmtrooper_radioman";
+									};
+								};
+								class Item17
+								{
+									class data
+									{
+										singleType="STRING";
+										value="spe_sturmtrooper_sniper";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="SPE_IFS_RequestedMortarETA";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedMortarETA', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=32;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="SPE_IFS_RequestedHeavyArtyAmount";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedHeavyArtyAmount', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=16;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="SPE_IFS_AllowMortarsAgainstTanks";
+					expression="missionNamespace setVariable ['SPE_IFS_AllowMortarsAgainstTanks', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="SPE_IFS_RequestedMortarSpread";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedMortarSpread', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=100;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="SPE_IFS_RequestedHeavyArtyETA";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedHeavyArtyETA', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=48;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="SPE_IFS_DS_CheckFriendlyFire";
+					expression="missionNamespace setVariable ['SPE_IFS_DS_CheckFriendlyFire', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="SPE_IFS_AcceptedRadioBackpacks";
+					expression="missionNamespace setVariable ['SPE_IFS_AcceptedRadioBackpacks', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=5;
+								class Item0
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_ger_radio";
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio";
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio_alt";
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio_packboard";
+									};
+								};
+								class Item4
+								{
+									class data
+									{
+										singleType="STRING";
+										value="b_spe_us_radio_packboard_light";
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="SPE_IFS_Amount";
+					expression="missionNamespace setVariable ['SPE_IFS_Amount', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=6;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="SPE_IFS_ArtyActive";
+					expression="missionNamespace setVariable ['SPE_IFS_ArtyActive', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="SPE_IFS_RequestedHeavyArtySpread";
+					expression="missionNamespace setVariable ['SPE_IFS_RequestedHeavyArtySpread', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=150;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="SPE_IFS_AmountMultiplier";
+					expression="missionNamespace setVariable ['SPE_IFS_AmountMultiplier', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="SPE_IFS_AvailableCalls";
+					expression="missionNamespace setVariable ['SPE_IFS_AvailableCalls', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+										};
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+										};
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=3;
+											class Item0
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=20;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="SPE_IFS_IncomingMarkRange";
+					expression="missionNamespace setVariable ['SPE_IFS_IncomingMarkRange', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1000;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="SPE_IFS_CASActive";
+					expression="missionNamespace setVariable ['SPE_IFS_CASActive', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="SPE_IFS_Acc";
+					expression="missionNamespace setVariable ['SPE_IFS_Acc', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2.55;
+						};
+					};
+				};
+				class Attribute21
+				{
+					property="SPE_IFS_ArtyAvailability_Side";
+					expression="SPE_IFS_ArtyAvailability_Side = [];		if (_value param [0, -1] > -1) then {SPE_IFS_ArtyAvailability_Side append [west]}; 		if (_value param [1, -1] > -1) then {SPE_IFS_ArtyAvailability_Side append [east]}; 		if (_value param [2, -1] > -1) then {SPE_IFS_ArtyAvailability_Side append [independent]}; 		publicVariable 'SPE_IFS_ArtyAvailability_Side';";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=4;
+								class Item0
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+								class Item2
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=2;
+									};
+								};
+								class Item3
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=-1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute22
+				{
+					property="SPE_IFS_IncomingNotificationRange";
+					expression="missionNamespace setVariable ['SPE_IFS_IncomingNotificationRange', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=760;
+						};
+					};
+				};
+				nAttributes=23;
+			};
 		};
 	};
 	class Connections
