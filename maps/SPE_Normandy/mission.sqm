@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1498;
+		nextID=1532;
 	};
 	class Camera
 	{
-		pos[]={1335.5957,84.980286,274.77332};
-		dir[]={0.48048601,-0.30727831,-0.82141727};
-		up[]={0.15515032,0.95161754,-0.26523834};
-		aside[]={-0.86317694,1.02591e-007,-0.50491321};
+		pos[]={1335.0728,50.272884,211.62411};
+		dir[]={0.48075354,-0.67384881,-0.56108737};
+		up[]={0.43844125,0.73886704,-0.51170492};
+		aside[]={-0.7593807,2.0487641e-007,-0.65065539};
 	};
 };
 binarizationWanted=0;
@@ -35756,8 +35756,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1133.6578,40.730343,-247.94922};
-				angles[]={0.033526264,0,6.2817621};
+				position[]={1133.658,40.730335,-247.94901};
+				angles[]={0.033527777,0,6.281754};
 			};
 			id=1271;
 			type="SPE_Module_Advanced_Revive";
@@ -35773,7 +35773,7 @@ class Mission
 						class data
 						{
 							singleType="SCALAR";
-							value=2;
+							value=1;
 						};
 					};
 				};
@@ -38325,6 +38325,7 @@ class Mission
 			};
 			id=1383;
 			type="vn_i_wheeled_m151_mg_01";
+			atlOffset=-8.7738037e-005;
 			class CustomAttributes
 			{
 				class Attribute0
