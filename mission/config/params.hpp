@@ -61,9 +61,9 @@ class Spacer1 : Spacer0 {};
 class hard_ai_limit
 {
     title = $STR_vn_mf_param_hard_ai_limit;
-    values[] = {50, 80, 100, 120, 140, 160, 180, 200, 300};
-    texts[] = {"60", "80 (recommended)", "100", "120", "140", "160", "180", "200", "300"};
-    default = 300;
+    values[] = {50, 80, 100, 120, 140, 160, 180, 200, 250, 300};
+    texts[] = {"60", "80 (recommended)", "100", "120", "140", "160", "180", "200", "250", "300"};
+    default = 200;
 };
 
 class hard_ai_limit_desc
@@ -81,7 +81,7 @@ class ai_scaling
     title = $STR_vn_mf_param_ai_scaling;
     values[] = {25, 50, 75, 100, 150, 200, 250, 300};
     texts[] = {"25%", "50%", "75%", "100%", "150%", "200%", "250%", "300%"};
-    default = 300;
+    default = 200;
 };
 
 class ai_scaling_desc
