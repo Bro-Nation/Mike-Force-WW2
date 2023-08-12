@@ -55,6 +55,7 @@ class CfgFunctions
 			class group_init {};
 			class is_team_full {};
 			class player_on_team {};
+			class update_channels {};
 		};
 
 		class core_workarounds
